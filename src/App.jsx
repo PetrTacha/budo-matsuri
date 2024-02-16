@@ -6,12 +6,12 @@ import { Performers } from "./pages/Performers.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/ucinkujici" element={<Performers />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
