@@ -1,0 +1,18 @@
+.row {
+  @apply relative py-16 overflow-hidden;
+}
+
+.bgOverlay {
+  background-image: url("/bg-wave.png");
+  background-color: transparent;
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.3;
+}
+
+.greyRow {
+  background: #f5f5f5;
+  background-image: url("/temple.jpg");
+  background-size: cover;
+  background-position: center; 
+}
