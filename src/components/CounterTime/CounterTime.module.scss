@@ -1,0 +1,48 @@
+@import "@/styles/variables.scss";
+
+// .row {
+//     @apply relative py-16 overflow-hidden grid gap-3;
+// font-size: $h1-font-size;
+// font-weight: $headers-font-weight;
+// line-height: 40px;
+// letter-spacing: 0.02em;
+// text-align: center;
+//   }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr 50px 1fr; /* Defines the columns */
+    grid-template-rows: auto auto;
+    font-size: $h2-font-size;
+    row-gap: 1rem;
+    gap: 5%;
+    justify-content: center; /* Centers content horizontally */
+    // align-items: center; /* Centers content vertically */
+    & > * {
+        // border: 1px solid black;
+        text-align: center;
+
+        text-shadow: $text-shadow;
+        
+    }
+}
+
+// .cell {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+.number {
+  font-size: $h1-font-size;
+}
+
+.delimiter{
+    font-size: calc($h1-font-size );
+    font-family: "DINCondensed-Medium";
+}
+
+.types {
+  font-size: $h3-font-size;
+
+}

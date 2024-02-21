@@ -1,3 +1,4 @@
+@import "@/styles/variables.scss";
 .row {
   @apply relative py-16 overflow-hidden;
 }
@@ -7,7 +8,7 @@
   background-color: transparent;
   background-repeat: repeat;
   background-size: auto;
-  opacity: 0.15;
+  opacity: 0.05;
 }
 
 .greyRow {
@@ -21,5 +22,36 @@
 .hero {
   display: flex;
   justify-content: center;
-  height: 40rem;
+  height: 100%;
+
+  
+}
+.heroTitle{
+  text-shadow: $text-shadow;
+  font-size: $h1-font-size;
+  font-weight: $headers-font-weight;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 7rem;
+
+  // letter-spacing: 10px;
+}
+
+.heroSubTitle{
+  margin-top: 7rem;
+  font-size: $h2-font-size;
+  font-weight: $headers-font-weight;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-shadow: $text-shadow;
+}
+
+.rowDate{
+  display: flex;
+  gap: 5rem;
+
+  h3{
+    font-size: $h3-font-size;
+  }
 }
