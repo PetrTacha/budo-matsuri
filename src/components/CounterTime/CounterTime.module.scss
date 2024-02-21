@@ -12,10 +12,9 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 50px 1fr 50px 1fr; /* Defines the columns */
-    grid-template-rows: auto auto;
+    grid-template-rows: calc($h1-font-size + 1rem) 1fr;
     font-size: $h2-font-size;
-    row-gap: 1rem;
-    gap: 5%;
+    column-gap: 5%;
     justify-content: center; /* Centers content horizontally */
     // align-items: center; /* Centers content vertically */
     & > * {
