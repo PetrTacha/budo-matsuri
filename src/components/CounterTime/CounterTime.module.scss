@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 1fr 50px 1fr 50px 1fr; /* Defines the columns */
     grid-template-rows: calc($h1-font-size + 1rem) 1fr;
-    font-size: $h2-font-size;
+   
     column-gap: 5%;
     justify-content: center; /* Centers content horizontally */
     // align-items: center; /* Centers content vertically */
@@ -32,8 +32,8 @@
 //   align-items: center;
 // }
 
-.number {
-  font-size: $h1-font-size;
+.numbers {
+  font-weight: 400;
 }
 
 .delimiter{
@@ -41,7 +41,3 @@
     font-family: "DINCondensed-Medium";
 }
 
-.types {
-  font-size: $h3-font-size;
-
-}

@@ -1,4 +1,5 @@
 import React from "react"
+import styles from "./Citate.module.scss";
 
 const Citate = ({citate, author}) => {
     return <div className="row">

@@ -1,4 +1,4 @@
-import Citate from "@/components/Citate";
+import Citate from "@/components/Citate/Citate";
 import Hero from "@/components/Hero";
 import Information from "@/components/Information";
 import Partners from "@/components/Partners";

@@ -2,32 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 @font-face {
-  font-family: 'DINCondensed';
-  src: url('/fonts/DINCondensed-Bold.ttf') format('truetype');
-  src: url('/fonts/DINCondensed-Regular.ttf') format('truetype'),
-       url('/fonts/DINCondensed-Medium.ttf') format('truetype'),
-       url('/fonts/DINCondensed-BlackAlternate.ttf') format('truetype');
+  font-family: "DINCondensed";
+  src: url("/fonts/DINCondensed-Bold.ttf") format("truetype");
+  src: url("/fonts/DINCondensed-Regular.ttf") format("truetype"),
+    url("/fonts/DINCondensed-Medium.ttf") format("truetype"),
+    url("/fonts/DINCondensed-BlackAlternate.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-@import 'variables'; 
+@import "variables";
 
 body {
-    & > * {
-      box-sizing: border-box;
-    }
-  
-    color: $primary-color;
-    font-family: $font-family;
-    // font-family: 'Lato', sans-serif;
-  
+  & > * {
+    box-sizing: border-box;
   }
-  
-  @layer utilities {
-    .text-balance {
-      text-wrap: balance;
-    }
+
+  color: $primary-color;
+  font-family: $font-family;
+  // font-family: 'Lato', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+p {
+  font-size: $paragraph-font-size
+}

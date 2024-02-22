@@ -53,16 +53,16 @@ const CounterTime = () => {
     // </div>
 
     <div className={styles.grid}>
-        <div className={styles.number}>88</div>
-        <div className={styles.delimiter}>|</div>
-        <div className={styles.number}>22</div>
-        <div className={styles.delimiter}>|</div>
-        <div className={styles.number}>11</div>
-        <div className={styles.types}>dní</div>
-        <div></div>
-        <div className={styles.types}>hodin</div>
-        <div></div>
-        <div className={styles.types}>minut</div>
+        <h1 className={styles.number}>{timeRemaining.days}</h1>
+        <h1 className={styles.delimiter}>|</h1>
+        <h1 className={styles.number}>{timeRemaining.hours}</h1>
+        <h1 className={styles.delimiter}>|</h1>
+        <h1 className={styles.number}>{timeRemaining.minutes}</h1>
+        <h3 className={styles.types}>dní</h3>
+        <h3></h3>
+        <h3 className={styles.types}>hodin</h3>
+        <h3></h3>
+        <h3 className={styles.types}>minut</h3>
     </div>
 
 
