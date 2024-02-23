@@ -1,5 +1,5 @@
 import Citate from "@/components/Citate/Citate";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Hero/Hero";
 import Information from "@/components/Information";
 import Partners from "@/components/Partners";
 import SocialNetworks from "@/components/SocialNetworks";

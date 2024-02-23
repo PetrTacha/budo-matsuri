@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import styles from '@/components/Hero.module.scss';
+import styles from '@/components/Hero/Hero.module.scss';
 import CounterTime from "@/components/CounterTime/CounterTime";
+import BudoRow from "@/components/BudoRow/BudoRow";
 
 const Hero = () => {
 
 
   return (
-    <section className={`relative overflow-hidden ${styles.greyRow}`}>
-      <div className="container mx-auto flex items-center justify-start flex-col relative z-20 pt-40 pb-40">
+      <BudoRow withImage={true}>
+      <div className="container mx-auto flex items-center justify-start flex-col relative z-20 pt-16 pb-40">
         <h1 className={`font-bold mb-10 text-center font-bold ${styles.heroTitle}`}>BUDO MATSURI</h1>
         <CounterTime />
         <h2 className={`mb-8 text-center font-bold ${styles.heroSubTitle}`}>- FESTIVAL JAPONSKÝCH BOJOVÝCH UMĚNÍ -</h2>
@@ -17,8 +18,7 @@ const Hero = () => {
           <h3>Pod Juliskou 4</h3>
         </div>
       </div>
-      <div className={`absolute inset-0 z-0 ${styles.bgOverlay}`}></div>
-    </section>
+      </BudoRow>
   );
 };
 
