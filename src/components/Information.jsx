@@ -1,5 +1,5 @@
 import React from "react";
-import BudoButton from "./BudoButton/BudoButton";
+import BudoButtonLink from "./BudoButton/BudoButton";
 
 const Information = () => {
   return (
@@ -7,14 +7,14 @@ const Information = () => {
       <h2 className=" z-20 mb-16 text-center font-bold">
         Nenechte si utéct příležitost poznat zblízka svět BUDO!
       </h2>
-      <p className="text-center mb-32">
+      <h4 className="text-center mb-32">
         Na místě Vás bude čekat bohatý program. Chybět rozhodně nebude
         představení jednotlivých bojových umění a jejich workshopy i pro úplné
         začátečníky! Těšit se můžete také na vystoupení divadla Kyogen, výstavu
         japonské kalligrafie školy Petry Vitáskové, ochutnávku japonských
         specialit a mnoho dalšího.
-      </p>
-      <BudoButton name="Chci vědět více!" href={"/"} />
+      </h4>
+      <BudoButtonLink name="Chci vědět více!" href={"/ucinkujici"} />
     </section>
   );
 };
