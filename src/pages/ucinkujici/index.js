@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 
 import ucinkujici from "@/pages/ucinkujici/ucinkujici.json";
 import Citate from "@/components/Citate/Citate";
 import { Klub } from "@/components/Klub/Klub";
 import styles from "@/pages/ucinkujici/Ucinkujici.module.scss";
+import { ClubModal } from "@/components/Modals/ClubModal/ClubModal";
 
 export default function Preformers() {
   const currentYear = new Date().getFullYear();
+
+  const [open, setOpen] = useState(false);
+  const [currentClub, setCurrentClub] = useState(null);
+
+  const openModal = useCallback((klub) => {
+    setCurrentClub(klub);
+    setOpen(true);
+  }, []);
 
   // const shuffleArray = (array) => {
   //   for (let i = array.length - 1; i > 0; i--) {
@@ -28,13 +37,15 @@ export default function Preformers() {
         </h2>
         <div className={`mb-32 ${styles.gridContainer}`}>
           {ucinkujici.map((klub) => {
-            return <Klub data={klub} />;
+            return <Klub handleClick={() => openModal(klub)} data={klub} />;
           })}
         </div>
         <Citate
           citate="Cestou bojovníka je nastolení harmonie."
           author="Morihei Ueshiba, zakladatel Aikido"
         />
+
+        <ClubModal klub={currentClub} open={open} setOpen={setOpen} />
       </main>
     </div>
   );

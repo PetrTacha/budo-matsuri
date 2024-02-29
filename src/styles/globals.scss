@@ -48,9 +48,16 @@ h4 {
 }
 
 p {
-  font-size: $paragraph-font-size
+  font-size: $paragraph-font-size;
+  text-align: justify;
+  color: $font-color-secondary;
+
 }
 
 .grey-row {
   background: $bg-secondary;
+}
+
+a{
+  text-decoration: underline;
 }
