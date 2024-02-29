@@ -39,7 +39,7 @@ export const ClubModal = ({ klub, open = false, setOpen }) => {
                   >
                     <h3>- {klub.name} -</h3>
                   </Dialog.Title>
-                  <div className="flex gap-8 relative overflow-hidden">
+                  <div className="flex gap-8 relative overflow-hidden mb-10">
                     {/* Left half with rectangle picture */}
                     <div className="w-1/2 h-3/4 mt-1">
                       <img
@@ -52,7 +52,7 @@ export const ClubModal = ({ klub, open = false, setOpen }) => {
                     {/* Right half with scrollable text */}
                     <div className="w-1/2 overflow-y-auto h-full">
                       <p
-                        className=""
+                        className="mb-10"
                         dangerouslySetInnerHTML={{ __html: klub.description }}
                       />
                     </div>
