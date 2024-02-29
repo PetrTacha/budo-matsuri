@@ -1,27 +1,97 @@
 [
-{
-    "name":"kobudō",
-    "thumbnail":"/ucinkujici-photo/kobudō.jpg",
-    "description":"Kobudō 古武道 je bojové umění se zbraněmi, které se vyvinulo na Okinawě a dalších ostrovech Ryūkyū a bylo cvičeno jako součást karate. Protože byl vydán zákaz vlastnění zbraní, Okinawané byli nuceni používat různé nástroje a předměty jako zbraně. Slovo kobudō se skládá ze tří znaků: ko 古 – „starý, starodávný“, bu 武 – „bojový“ a dō 道 – „umění, cesta“. Souhrnně lze přeložit jako „starodávné bojové umění“. Okinawské kobudō má stejné principy jako okinawské karate. V rámci kobudō se používají zbraně: bō, sai, tonfa, nunchaku, kama, eku, jō, sansetsukon, kwe, tekkō, suruchin, nunti, timbe + seiryuto, tekkō. Umění kobudō předvedou studenti České federace okinavského karate a kobudō (www.shuri-te.cz) pod vedením pana Jana Kopeckého (5.dan)."
-},
-{
-    "name":"okinawské karate-dō",
-    "thumbnail":"/ucinkujici-photo/okinawske-karate-dō.jpg",
-    "description":""
-},
-{
-    "name":"naginata-dō",
-    "thumbnail":"/ucinkujici-photo/naginata-dō.jpg",
-    "description":""
-},
-{
-    "name":"iaidō",
-    "thumbnail":"/ucinkujici-photo/iaidō.jpg",
-    "description":""
-},
-{
-    "name":"kyūdō",
-    "thumbnail":"/ucinkujici-photo/kyūdō.jpg",
-    "description":""
-}
+  {
+    "name": "kobudō",
+    "thumbnail": "/ucinkujici-photo/kobudō.jpg",
+    "description": "<p>Kobudō 古武道 je bojové umění se zbraněmi, které se vyvinulo na Okinawě a dalších ostrovech Ryūkyū a bylo cvičeno jako součást karate. Protože byl vydán zákaz vlastnění zbraní, Okinawané byli nuceni používat různé nástroje a předměty jako zbraně. Slovo kobudō se skládá ze tří znaků: ko 古 – „starý, starodávný“, bu 武 – „bojový“ a dō 道 – „umění, cesta“. Souhrnně lze přeložit jako „starodávné bojové umění“.</p><p>Okinawské kobudō má stejné principy jako okinawské karate. V rámci kobudō se používají zbraně: bō, sai, tonfa, nunchaku, kama, eku, jō, sansetsukon, kwe, tekkō, suruchin, nunti, timbe + seiryuto, tekkō. Umění kobudō předvedou studenti České federace okinavského karate a kobudō (<a href='https://www.shuri-te.cz' target='_blank'>www.shuri-te.cz</a>) pod vedením pana Jana Kopeckého (5.dan).</p>"
+  },
+  {
+    "name": "okinawské karate-dō",
+    "thumbnail": "/ucinkujici-photo/okinawske-karate-dō.jpg",
+    "description": ""
+  },
+  {
+    "name": "naginata-dō",
+    "thumbnail": "/ucinkujici-photo/naginata-dō.jpg",
+    "description": ""
+  },
+  {
+    "name": "iaidō",
+    "thumbnail": "/ucinkujici-photo/iaidō.jpg",
+    "description": ""
+  },
+  {
+    "name": "kyūdō",
+    "thumbnail": "/ucinkujici-photo/kyūdō.jpg",
+    "description": ""
+  },
+  {
+    "name": "ninjutsu",
+    "thumbnail": "/ucinkujici-photo/ninjutsu.jpg",
+    "description": ""
+  },
+  {
+    "name": "taijutsu",
+    "thumbnail": "/ucinkujici-photo/taijutsu.jpg",
+    "description": ""
+  },
+  {
+    "name": "Katori shintō ryū",
+    "thumbnail": "/ucinkujici-photo/katori-shintō-ryū.jpg",
+    "description": ""
+  },
+  {
+    "name": "aikidō",
+    "thumbnail": "/ucinkujici-photo/aikidō.jpg",
+    "description": ""
+  },
+  {
+    "name": "kendō",
+    "thumbnail": "/ucinkujici-photo/kendō.jpg",
+    "description": ""
+  },
+  {
+    "name": "kenjutsu stylu Kashima no tachi",
+    "thumbnail": "/ucinkujici-photo/kenjutsu-stylu-Kashima-no-tachi.jpg",
+    "description": ""
+  },
+  {
+    "name": "Shintō musō ryū jō a připojené školy",
+    "thumbnail": "/ucinkujici-photo/shintō-musō-ryu-jō-a-pripojene-skoly.jpg",
+    "description": ""
+  },
+  {
+    "name": "battōjutsu",
+    "thumbnail": "/ucinkujici-photo/battōjutsu.jpg",
+    "description": ""
+  },
+  {
+    "name": "jūdō",
+    "thumbnail": "/ucinkujici-photo/jūdō.jpg",
+    "description": ""
+  },
+  {
+    "name": "nihontō",
+    "thumbnail": "/ucinkujici-photo/nihontō.jpg",
+    "description": ""
+  },
+  {
+    "name": "japonský čaj",
+    "thumbnail": "/ucinkujici-photo/japonsky-caj.jpg",
+    "description": ""
+  },
+  {
+    "name": "restaurace Miyabi",
+    "thumbnail": "/ucinkujici-photo/restaurace-Miyabi.jpg",
+    "description": ""
+  },
+  {
+    "name": "japonská kaligrafie",
+    "thumbnail": "/ucinkujici-photo/japonska-kaligrafie.jpg",
+    "description": ""
+  },
+  {
+    "name": "shakuhachi",
+    "thumbnail": "/ucinkujici-photo/shakuhachi.jpg",
+    "description": ""
+  }
 ]
