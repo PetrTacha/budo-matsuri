@@ -1,0 +1,11 @@
+@import "@/styles/variables.scss";
+.menuButton{
+    border: $primary-color 5px solid;
+    border-radius: 9999px;
+    font-size: $paragraph-font-size;
+    cursor: pointer;
+
+    .dots{
+        gap: 0.2rem;
+    }
+}

@@ -1,13 +1,20 @@
 import React from "react";
 import BudoRow from "./BudoRow/BudoRow";
+import CJSpolecnostLogo from "@/svgs/CJSpolecnostLogo";
+import BujicanLogo from "@/svgs/BujicanLogo";
 
 const Partners = () => {
+  const logoColor = "#EF0000" 
+
   return (
     <BudoRow>
       <div className="container mx-auto flex items-center justify-around relative z-20 pt-40 pb-40">
         <div className="items-center">
           <h4 className="mb-5 font-bold">Pořadatelé:</h4>
-          <div className="logos"></div>
+          <div className="logos">
+            <CJSpolecnostLogo className="text-red-500" color={logoColor}/>
+            <BujicanLogo color={logoColor} />
+          </div>
         </div>
         <div className="flex flex-col items-center">
           <h4 className="mb-5 font-bold">Hlavní organizátoři:</h4>
