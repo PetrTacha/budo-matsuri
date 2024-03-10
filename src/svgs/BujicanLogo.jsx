@@ -1,11 +1,13 @@
 import * as React from "react";
+import styles from "@/svgs/svgStyles.module.scss"
+
 const BujicanLogo = (props) => {
   const { color } = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
-      className="icon-org"
+      className={styles.icon}
       style={{
         fillRule: "evenodd",
         clipRule: "evenodd",

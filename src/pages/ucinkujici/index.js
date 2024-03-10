@@ -37,7 +37,7 @@ export default function Preformers() {
         </h2>
         <div className={`mb-32 ${styles.gridContainer}`}>
           {ucinkujici.map((klub) => {
-            return <Klub handleClick={() => openModal(klub)} data={klub} />;
+            return <Klub key={klub.name} handleClick={() => openModal(klub)} data={klub} />;
           })}
         </div>
         <Citate

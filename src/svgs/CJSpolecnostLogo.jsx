@@ -1,4 +1,6 @@
 import * as React from "react";
+import styles from "@/svgs/svgStyles.module.scss"
+
 const CJSpolecnost = (props) => {
   const { color } = props;
   return (
@@ -11,6 +13,7 @@ const CJSpolecnost = (props) => {
         strokeLinejoin: "round",
         strokeMiterlimit: 2,
       }}
+      className={styles.icon}
       viewBox="0 0 413 413"
       {...props}
     >

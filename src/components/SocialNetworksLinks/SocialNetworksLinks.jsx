@@ -1,13 +1,17 @@
 import React from "react";
-import styles from '@/components/SocialNetworksLinks/SocialNetworksLinks.module.scss'
+import FacebookLogo from "@/svgs/FacebookLogo";
+import InstagramLogo from "@/svgs/InstagramLogo";
+import BojoUmeniLogo from "@/svgs/BojoUmeniLogo";
 
 const SocialNetworksLinks = () => {
-    return ( 
-        <div className="flex gap-2 pt-10">
-            <div className={`font-bold text-center border-solid border-2 p-2 rounded-full ${styles.icon}`}>F</div>
-            <div className={`font-bold text-center border-solid border-2 p-2 rounded-full ${styles.icon}`}>IG</div>
-        </div>
-     );
-}
- 
+  const logoColor = "#EF0000";
+
+  return (
+    <div className="flex gap-5 pt-10">
+      <FacebookLogo color={logoColor} />
+      <InstagramLogo color={logoColor} />
+    </div>
+  );
+};
+
 export default SocialNetworksLinks;

@@ -1,0 +1,23 @@
+.icon {
+  transition: scale ease-in-out .5s;
+  cursor: pointer;
+  height: 6rem;
+  fill:white;
+
+  // &:hover {
+  //   scale: 1.1
+  // }
+}
+
+.icon-org {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen  and (min-width: 769px) {
+
+}
+
+@media screen  and (min-width: 1025px){
+
+}

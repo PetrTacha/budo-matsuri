@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { MenuButton } from "../MenuButton/MenuButton";
+import Link from "next/link";
 
 export const WebMenu = ({ closeMenu }) => {
   const menuRef = useRef(null);
@@ -25,14 +26,14 @@ export const WebMenu = ({ closeMenu }) => {
       <div className="flex flex-col items-end text-end gap-3 w-full">
         <MenuButton color="white" onClick={closeMenu} />
         <div className="flex flex-col gap-10 pr-6 mt-5">
-          <a href="/ucinkujici">Účinkující</a>
-          <a href="/vstupenky">Vstupenky</a>
-          <a href="/merchandise">Merchandise</a>
-          <a href="/fotografie">Fotogalerie</a>
-          <a href="/kontakt">Kontakt</a>
+          <Link href="/ucinkujici">Účinkující</Link>
+          <Link href="/vstupenky">Vstupenky</Link>
+          <Link href="/merchandise">Merchandise</Link>
+          <Link href="/fotografie">Fotogalerie</Link>
+          <Link href="/kontakt">Kontakt</Link>
         </div>
         <div className=" w-3/4 mt-3 border-t-4 border-slate-400 mr-6 pt-3 ">
-            IG
+          IG
         </div>
       </div>
     </div>
