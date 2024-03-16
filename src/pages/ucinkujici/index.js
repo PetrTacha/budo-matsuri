@@ -5,6 +5,7 @@ import Citate from "@/components/Citate/Citate";
 import { Klub } from "@/components/Klub/Klub";
 import styles from "@/pages/ucinkujici/Ucinkujici.module.scss";
 import { ClubModal } from "@/components/Modals/ClubModal/ClubModal";
+import { Layout } from "@/components/Layout/Layout";
 
 export default function Preformers() {
   const currentYear = new Date().getFullYear();
@@ -30,23 +31,25 @@ export default function Preformers() {
   //<div dangerouslySetInnerHTML={{ __html: klub.description }} />
 
   return (
-    <div className="flex flex-col h-screen">
-      <main className="flex-grow">
-        <h2 className="my-32 text-center">
-          Účinkující pro ročník {currentYear}
-        </h2>
-        <div className={`mb-32 ${styles.gridContainer}`}>
-          {ucinkujici.map((klub) => {
-            return <Klub key={klub.name} handleClick={() => openModal(klub)} data={klub} />;
-          })}
-        </div>
-        <Citate
-          citate="Cestou bojovníka je nastolení harmonie."
-          author="Morihei Ueshiba, zakladatel Aikido"
-        />
+    <Layout>
+      <div className="flex flex-col h-screen">
+        <main className="flex-grow">
+          <h2 className="my-32 text-center">
+            Účinkující pro ročník {currentYear}
+          </h2>
+          <div className={`mb-32 ${styles.gridContainer}`}>
+            {ucinkujici.map((klub) => {
+              return <Klub key={klub.name} handleClick={() => openModal(klub)} data={klub} />;
+            })}
+          </div>
+          <Citate
+            citate="Cestou bojovníka je nastolení harmonie."
+            author="Morihei Ueshiba, zakladatel Aikido"
+          />
 
-        <ClubModal klub={currentClub} open={open} setOpen={setOpen} />
-      </main>
-    </div>
+          <ClubModal klub={currentClub} open={open} setOpen={setOpen} />
+        </main>
+      </div>
+    </Layout>
   );
 }
