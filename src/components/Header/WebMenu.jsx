@@ -29,7 +29,7 @@ export const WebMenu = ({ closeMenu }) => {
           <Link href="/ucinkujici">Účinkující</Link>
           <Link href="/vstupenky">Vstupenky</Link>
           <Link href="/merchandise">Merchandise</Link>
-          <Link href="/fotografie">Fotogalerie</Link>
+          <Link href="/fotogalerie">Fotogalerie</Link>
           <Link href="/kontakt">Kontakt</Link>
         </div>
         <div className=" w-3/4 mt-3 border-t-4 border-slate-400 mr-6 pt-3 ">
