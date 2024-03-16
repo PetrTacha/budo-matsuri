@@ -6,6 +6,7 @@ import { Klub } from "@/components/Klub/Klub";
 import styles from "@/pages/ucinkujici/Ucinkujici.module.scss";
 import { ClubModal } from "@/components/Modals/ClubModal/ClubModal";
 import { Layout } from "@/components/Layout/Layout";
+import SocialNetworks from "@/components/SocialNetworks";
 
 export default function Preformers() {
   const currentYear = new Date().getFullYear();
@@ -46,6 +47,7 @@ export default function Preformers() {
             citate="Cestou bojovníka je nastolení harmonie."
             author="Morihei Ueshiba, zakladatel Aikido"
           />
+          <SocialNetworks />
 
           <ClubModal klub={currentClub} open={open} setOpen={setOpen} />
         </main>

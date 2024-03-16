@@ -83,6 +83,7 @@ export const Carousel = () => {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
+              onClick={(e)=>{console.log('%csrc/components/Carousel/Carousel.jsx:86 e', 'color: #007acc;', imageUrl);}}
             />
           </SwiperSlide>
         ))}

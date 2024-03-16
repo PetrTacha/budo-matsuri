@@ -5,6 +5,10 @@ import { Dialog, Transition } from "@headlessui/react";
 export const ClubModal = ({ klub, open = false, setOpen }) => {
   if (!klub) return;
 
+  const removeNewSpace = (text) => {
+    return text.replace("{/n}", " ");
+  }
+
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setOpen}>
@@ -37,14 +41,14 @@ export const ClubModal = ({ klub, open = false, setOpen }) => {
                     as="h3"
                     className="text-base font-semibold leading-6 text-gray-900 "
                   >
-                    <h3>- {klub.name} -</h3>
+                    <h3>- {removeNewSpace(klub.name)} -</h3>
                   </Dialog.Title>
                   <div className="flex gap-8 relative overflow-hidden mb-10">
                     {/* Left half with rectangle picture */}
                     <div className="w-1/2 h-3/4 mt-1">
                       <img
                         src={klub.thumbnail}
-                        alt={klub.name}
+                        alt={removeNewSpace(klub.name)}
                         className="object-cover w-full h-full"
                       />
                     </div>
