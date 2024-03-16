@@ -58,6 +58,10 @@ p {
   background: $bg-secondary;
 }
 
-a{
-  text-decoration: underline;
+a {
+  text-decoration: none;
+  color: inherit;
+  /* Additional properties */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  /* Add more properties as needed */
 }
