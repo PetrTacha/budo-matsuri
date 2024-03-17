@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "@/pages/Vstupenky/Vstupenky.module.scss";
+import styles from "@/pages/vstupenky/Vstupenky.module.scss";
 import { Layout } from "@/components/Layout/Layout";
 import Citate from "@/components/Citate/Citate";
 import SocialNetworks from "@/components/SocialNetworks";

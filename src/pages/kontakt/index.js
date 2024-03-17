@@ -2,11 +2,21 @@ import React from "react";
 
 import styles from "@/pages/kontakt/Kontakt.module.scss";
 import { Layout } from "@/components/Layout/Layout";
-import Citate from "@/components/Citate/Citate";
 import SocialNetworks from "@/components/SocialNetworks";
 import Partners from "@/components/Partners";
+// import dynamic from "next/dynamic";
+// import OpenStreetMap from "@/components/OpenStreetMap/OpenStreetMap";
+import dynamic from "next/dynamic";
 
-export default function Kontakt() {
+// const OpenStreetMap = dynamic(() => import('@/components/OpenStreetMap/OpenStreetMap'), {
+//   ssr: false, // This line is crucial
+//  });
+
+const OpenStreetMap = dynamic(() => import('@/components/OpenStreetMap/OpenStreetMap'), {
+  ssr: false,
+})
+
+const Kontakt = () => {
 
   return (
     <Layout>
@@ -43,6 +53,8 @@ export default function Kontakt() {
               </div>
             </div>
           </div>
+          <OpenStreetMap />
+
           <Partners />
           <SocialNetworks />
         </main>
@@ -50,3 +62,5 @@ export default function Kontakt() {
     </Layout>
   );
 }
+
+export default Kontakt;
