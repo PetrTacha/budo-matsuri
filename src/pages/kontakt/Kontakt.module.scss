@@ -1,0 +1,12 @@
+@import "@/styles/variables.scss";
+
+.columnBorder {
+  border-right: solid $primary-color 2px;
+}
+
+@media (max-width: 640px) {
+  .columnBorder {
+    border-right: none;
+    border-bottom: solid $primary-color 2px;
+  }
+}
