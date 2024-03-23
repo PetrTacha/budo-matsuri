@@ -53,16 +53,16 @@ const CounterTime = () => {
     // </div>
 
     <div className={styles.grid}>
-        <h1 className={styles.number}>{timeRemaining.days}</h1>
-        <h1 className={styles.delimiter}>|</h1>
-        <h1 className={styles.number}>{timeRemaining.hours}</h1>
-        <h1 className={styles.delimiter}>|</h1>
-        <h1 className={styles.number}>{timeRemaining.minutes}</h1>
-        <h3 className={styles.types}>dní</h3>
-        <h3></h3>
-        <h3 className={styles.types}>hodin</h3>
-        <h3></h3>
-        <h3 className={styles.types}>minut</h3>
+        <div className={`text-5xl md:text-8xl ${styles.number}`}>{timeRemaining.days}</div>
+        <div className={`text-5xl md:text-8xl ${styles.delimiter}`}>|</div>
+        <div className={`text-5xl md:text-8xl ${styles.number}`}>{timeRemaining.hours}</div>
+        <div className={`text-5xl md:text-8xl ${styles.delimiter}`}>|</div>
+        <div className={`text-5xl md:text-8xl ${styles.number}`}>{timeRemaining.minutes}</div>
+        <div className={`text-xl md:text-4xl ${styles.types}`}>dní</div>
+        <div className="text-xl md:text-4xl"></div>
+        <div className={`text-xl md:text-4xl ${styles.types}`}>hodin</div>
+        <div className="text-xl md:text-4xl"></div>
+        <div className={`text-xl md:text-4xl ${styles.types}`}>minut</div>
     </div>
 
 

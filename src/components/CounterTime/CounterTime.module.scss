@@ -12,17 +12,34 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 50px 1fr 50px 1fr; /* Defines the columns */
-    grid-template-rows: calc($h1-font-size + 1rem) 1fr;
+    grid-template-rows: 3rem 1fr;
    
-    column-gap: 5%;
+    column-gap: 0.5rem;
     justify-content: center; /* Centers content horizontally */
     // align-items: center; /* Centers content vertically */
     & > * {
         // border: 1px solid black;
         text-align: center;
-
         text-shadow: $text-shadow;
         
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 768px) {
+    .grid {
+        /* Adjust grid properties for medium screens */
+        grid-template-columns: 1fr 50px 1fr 50px 1fr; /* Example adjustment */
+        grid-template-rows: calc($h1-font-size + 1rem) 1fr; /* Example adjustment */
+        column-gap: 5%; /* Example adjustment */
+        justify-content: center; /* Example adjustment */
+        /* align-items: center; /* Example adjustment */
+    }
+
+    .grid > * {
+        /* Adjust child elements for medium screens */
+        text-align: center; /* Example adjustment */
+        text-shadow: $text-shadow; /* Example adjustment */
     }
 }
 
@@ -37,7 +54,7 @@
 }
 
 .delimiter{
-    font-size: calc($h1-font-size );
+    //font-size: calc($h1-font-size );
     font-family: "DINCondensed-Medium";
 }
 

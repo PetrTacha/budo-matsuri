@@ -6,17 +6,13 @@
   text-shadow: $text-shadow;
   font-weight: $headers-font-weight;
   letter-spacing: 0.02em;
-  text-align: center;
   margin-top: 7rem;
-
-  // letter-spacing: 10px;
 }
 
 .heroSubTitle{
-  margin-top: 7rem;
   font-weight: $headers-font-weight;
-  line-height: 40px;
-  letter-spacing: 0.02em;
+  // line-height: 40px;
+  // letter-spacing: 0.02em;
   text-align: center;
   text-shadow: $text-shadow;
 }

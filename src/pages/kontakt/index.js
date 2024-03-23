@@ -54,7 +54,6 @@ const Kontakt = () => {
             </div>
           </div>
           <OpenStreetMap />
-
           <Partners />
           <SocialNetworks />
         </main>

@@ -12,15 +12,25 @@ const Partners = () => {
 
   return (
     <BudoRow>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-24 sm:gap-5 md:gap-5 items-center justify-around relative z-20 pt-40 pb-40 justify-items-center">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16 md:gap-5 justify-around relative z-20 md:pt-40 pt-16 pb-40 justify-items-center">
         <div className="items-center align-middle text-center px-5">
           <h4 className="mb-5 font-bold">Pořadatelé:</h4>
           <div className="flex flex-wrap gap-4 items-center justify-center ">
-            <CJSpolecnostLogo  color={logoColor} />
-            <BujicanLogo color={logoColor} />
-            <CvutLogo color={logoColor} />
-            <PrahaLogo  color={logoColor} />
-            <BojoUmeniLogo color={logoColor} />
+            <div className="h-20">
+              <CJSpolecnostLogo color={logoColor} />
+            </div>
+            <div className="h-20">
+              <BujicanLogo color={logoColor} />
+            </div>
+            <div className="h-20">
+              <CvutLogo color={logoColor} />
+            </div>
+            <div className="h-20">
+              <PrahaLogo color={logoColor} />
+            </div>
+            <div className="h-20">
+              <BojoUmeniLogo color={logoColor} />
+            </div>
           </div>
         </div>
         <div className="text-center px-5">
@@ -34,7 +44,9 @@ const Partners = () => {
         <div className="text-center px-5">
           <h4 className="mb-5 font-bold">Partneři akce:</h4>
           <div className="flex gap-3 px-5">
-            <HayashiLogo color={logoColor} />
+            <div className=" h-16">
+              <HayashiLogo color={logoColor} />
+            </div>
           </div>
         </div>
       </div>
