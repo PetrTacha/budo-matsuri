@@ -1,13 +1,14 @@
 import React from "react";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import styles from "./ClubModal.module.scss";
 
 export const ClubModal = ({ klub, open = false, setOpen }) => {
   if (!klub) return;
 
   const removeNewSpace = (text) => {
     return text.replace("{/n}", " ");
-  }
+  };
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -35,16 +36,40 @@ export const ClubModal = ({ klub, open = false, setOpen }) => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform rounded-lg bg-white px-4 pb-4 pt-5 shadow-xl transition-all w-4/5 h-3/4 ">
-                <div className="mt-3 text-center sm:mt-5 flex flex-col gap-7 h-full">
-                  <Dialog.Title
+              <Dialog.Panel className="relative transform rounded-lg bg-white shadow-xl transition-all w-4/6 h-3/4 flex">
+                {/* <div className="mt-3 text-center sm:mt-5 flex flex-col gap-7 h-full"> */}
+                <span
+                  className={`absolute right-2 top-2 cursor-pointer ${styles.crossStandAlone}`}
+                  onClick={() => setOpen(false)}
+                ></span>
+                <div className="flex-1 overflow-hidden rounded-l-lg">
+                  <img
+                    src={klub.thumbnail}
+                    alt={removeNewSpace(klub.name)}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="bg-red flex-1 rounded-r-lg">
+                  <h3 className="flex-1 mt-5">{removeNewSpace(klub.name)}</h3>
+
+                  <div className="relative h-4/6">
+                    <div className="mx-10 mt-12 mb-12 overflow-y-auto h-full">
+                      <p
+                        className="mb-16 "
+                        dangerouslySetInnerHTML={{ __html: klub.description }}
+                      />
+                    </div>
+                    <div className={styles.gradientback}></div>
+                  </div>
+                </div>
+
+                {/* <Dialog.Title
                     as="h3"
                     className="text-base font-semibold leading-6 text-gray-900 "
                   >
                     <h3>- {removeNewSpace(klub.name)} -</h3>
                   </Dialog.Title>
                   <div className="flex gap-8 relative overflow-hidden mb-10">
-                    {/* Left half with rectangle picture */}
                     <div className="w-1/2 h-3/4 mt-1">
                       <img
                         src={klub.thumbnail}
@@ -53,25 +78,14 @@ export const ClubModal = ({ klub, open = false, setOpen }) => {
                       />
                     </div>
 
-                    {/* Right half with scrollable text */}
                     <div className="w-1/2 overflow-y-auto h-full">
                       <p
                         className="mb-10"
                         dangerouslySetInnerHTML={{ __html: klub.description }}
                       />
                     </div>
-                  </div>
-
-                  {/* 
-                    <div>
-                        <img src={klub.thumbnail} />
-                    </div>
-                    <div className="mt-2">
-                      <p className="text-sm text-gray-500">
-                        <div dangerouslySetInnerHTML={{ __html: klub.description }} />
-                      </p>
-                    </div> */}
-                </div>
+                  </div> */}
+                {/* </div> */}
               </Dialog.Panel>
             </Transition.Child>
           </div>
