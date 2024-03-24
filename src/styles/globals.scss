@@ -37,6 +37,7 @@ h1 {
 
 h2 {
   font-size: $h2-font-size;
+  font-weight: 600;
 }
 
 h3 {
@@ -72,4 +73,21 @@ a {
   height: 100%;
   --swiper-navigation-color: var(--color-bg-0);
   margin-bottom: 10rem;
+}
+
+@media (max-width: 640px) {
+
+  h2 {
+    font-size: $h2-font-size-small;
+    font-weight: 600;
+  }
+
+
+  h3 {
+    font-size: $h3-font-size-small;
+  }
+
+  p {
+    font-size: $paragraph-font-size-small;
+  }
 }

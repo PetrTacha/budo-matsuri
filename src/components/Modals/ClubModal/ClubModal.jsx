@@ -36,30 +36,33 @@ export const ClubModal = ({ klub, open = false, setOpen }) => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform rounded-lg bg-white shadow-xl transition-all sm:w-4/6 w-5/6 sm:h-3/4 h-5/6 flex sm:flex-row flex-col">
-                {/* <div className="mt-3 text-center sm:mt-5 flex flex-col gap-7 h-full"> */}
+              <Dialog.Panel className="relative transform rounded-3xl bg-white shadow-xl transition-all sm:w-4/6 w-5/6  h-5/6 flex sm:flex-row flex-col overflow-y-auto">
                 <span
-                  className={`absolute right-2 top-2 cursor-pointer ${styles.crossStandAlone}`}
+                  className={`absolute right-5 top-5 cursor-pointer ${styles.crossStandAlone}`}
                   onClick={() => setOpen(false)}
                 ></span>
-                <div className={`flex-none sm:flex-1 overflow-hidden ${styles.rounded}`}>
+                <div
+                  className={`flex-none sm:flex-1 overflow-hidden ${styles.rounded}`}
+                >
                   <img
                     src={klub.thumbnail}
                     alt={removeNewSpace(klub.name)}
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="bg-red flex-none sm:flex-1 rounded-r-lg">
-                  <h3 className="flex-1 mt-10">{removeNewSpace(klub.name)}</h3>
+                <div className="bg-red flex-none sm:flex-1">
+                  <h3 className="flex-1 mt-2 sm:mt-10 mx-2">
+                    {removeNewSpace(klub.name)}
+                  </h3>
 
-                  <div className="relative h-4/6">
-                    <div className="mx-10 mt-12 mb-12 overflow-y-auto h-full">
+                  <div className="relative h-full sm:h-4/6">
+                    <div className="sm:mx-10 mx-4 mt-3 sm:mt-12  sm:overflow-y-auto h-full">
                       <p
-                        className="mb-16"
+                        className="mb-2 sm:mb-16"
                         dangerouslySetInnerHTML={{ __html: klub.description }}
                       />
                     </div>
-                    <div className={styles.gradientback}></div>
+                    <div className={`hidden sm:block ${styles.gradientback}`}></div>
                   </div>
                 </div>
               </Dialog.Panel>

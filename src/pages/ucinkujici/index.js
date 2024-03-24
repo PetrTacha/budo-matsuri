@@ -35,7 +35,7 @@ export default function Preformers() {
     <Layout>
       <div className="flex flex-col h-screen">
         <main className="flex-grow">
-          <h2 className="my-32 text-center">
+          <h2 className="sm:my-32 my-16 mt-28 text-center">
             Účinkující pro ročník {currentYear}
           </h2>
           <div className={`mb-32 ${styles.gridContainer}`}>

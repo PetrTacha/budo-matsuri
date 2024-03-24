@@ -29,23 +29,23 @@ export const WebMenu = ({ closeMenu }) => {
       <div className="flex flex-col items-end text-end gap-3 w-full">
         <MenuButton color="white" onClick={closeMenu} />
         <div className="flex flex-col gap-10 pr-6 mt-5">
-          <Link className="font-semibold" href="/ucinkujici">
+          <Link className="font-medium" href="/ucinkujici">
             Účinkující
           </Link>
-          <Link className="font-semibold" href="/vstupenky">
+          <Link className="font-medium" href="/vstupenky">
             Vstupenky
           </Link>
-          <Link className="font-semibold" href="/merchandise">
+          {/* <Link className="font-medium" href="/merchandise">
             Merchandise
-          </Link>
-          <Link className="font-semibold" href="/fotogalerie">
+          </Link> */}
+          {/* <Link className="font-medium" href="/fotogalerie">
             Fotogalerie
-          </Link>
-          <Link className="font-semibold" href="/kontakt">
+          </Link> */}
+          <Link className="font-medium" href="/kontakt">
             Kontakt
           </Link>
         </div>
-        <div className=" w-3/4 mt-3 border-t-4 border-slate-400 mr-6 pt-3 flex gap-5 h-16 justify-end">
+        <div className=" w-3/4 mt-3 border-t-2 border-slate-400 mr-6 pt-5 flex gap-5 h-16 justify-end">
           <FacebookLogo color={logoColor} />
           <InstagramLogo color={logoColor} />
         </div>

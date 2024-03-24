@@ -1,6 +1,12 @@
 .gridContainer {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .gridContainer {
+    gap: 3rem;
   }
+}

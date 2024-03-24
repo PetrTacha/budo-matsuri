@@ -20,7 +20,7 @@ export const Klub = ({ data, handleClick }) => {
         </div>
       );
     } else {
-      return <div className=" text-center"> {array[0]} </div>;
+      return <div className=" sm:max-w-32 max-w-24 text-center"> {array[0]} </div>;
     }
   };
 
@@ -29,14 +29,14 @@ export const Klub = ({ data, handleClick }) => {
       <div
         onClick={handleClick}
         key={data.name}
-        className={`rounded-full h-72 w-72 ${styles.ucinkujici} transition-all transform hover:scale-110 hover:filter-none filter grayscale`}
+        className={`rounded-full sm:h-72 h-32 w-32 sm:w-72 ${styles.ucinkujici} transition-all transform hover:scale-110 hover:filter-none filter grayscale opacity-80 hover:opacity-100`}
         style={thumbnailStyle}
       />
-      <h4 className="flex gap-2  items-center align-middle leading-7">
+      <div className="flex gap-2 font-medium sm:text-2xl text-lg items-center align-middle leading-7">
         <div className="hyphen">-</div>
         {renderTextWithLineBreaks(data.name)}
         <div className="hyphen">-</div>
-      </h4>
+      </div>
     </div>
   );
 };
