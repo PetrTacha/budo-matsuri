@@ -21,7 +21,6 @@ export const WebHeader = () => {
             width={72}
             height={72}
           />
-          <h6 className="font-bold flex items-center">BUDO MATSURI</h6>
         </div>
       </Link>
       <div className="flex-grow bg-transparent pointer-events-none "></div>

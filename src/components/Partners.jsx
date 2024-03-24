@@ -12,39 +12,39 @@ const Partners = () => {
 
   return (
     <BudoRow>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16 md:gap-5 justify-around relative z-20 md:pt-40 pt-16 pb-40 justify-items-center">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16 md:gap-5 justify-around relative z-20 md:pt-24 pt-16 pb-28 justify-items-center">
         <div className="items-center align-middle text-center px-5">
-          <h4 className="mb-5 font-bold">Pořadatelé:</h4>
+          <h4 className="mb-5 text-2xl font-bold">Pořadatelé:</h4>
           <div className="flex flex-wrap gap-4 items-center justify-center ">
-            <div className="h-20">
+            <div className="sm:h-16 h-14">
               <CJSpolecnostLogo color={logoColor} />
             </div>
-            <div className="h-20">
+            <div className="sm:h-16 h-14">
               <BujicanLogo color={logoColor} />
             </div>
-            <div className="h-20">
+            <div className="sm:h-16 h-14">
               <CvutLogo color={logoColor} />
             </div>
-            <div className="h-20">
+            <div className="sm:h-16 h-14">
               <PrahaLogo color={logoColor} />
             </div>
-            <div className="h-20">
+            <div className="sm:h-16 h-14">
               <BojoUmeniLogo color={logoColor} />
             </div>
           </div>
         </div>
         <div className="text-center px-5">
-          <h4 className="mb-5 font-bold">Hlavní organizátoři:</h4>
+          <h4 className="mb-5 text-2xl font-bold">Hlavní organizátoři:</h4>
           <div className="organisators flex flex-col items-center leading-10">
-            <h4>Pavel Slavík</h4>
-            <h4>Karolína Motejízková (předsedkyně klubu)</h4>
-            <h4>Česko-japonská společnost ???</h4>
+            <div className=" text-base sm:text-lg">Pavel Slavík</div>
+            <div className=" text-base sm:text-lg">Karolína Motejízková (předsedkyně klubu)</div>
+            <div className=" text-base sm:text-lg">Česko-japonská společnost ???</div>
           </div>
         </div>
         <div className="text-center px-5">
-          <h4 className="mb-5 font-bold">Partneři akce:</h4>
+          <h4 className="mb-5 text-2xl font-bold">Partneři akce:</h4>
           <div className="flex gap-3 px-5">
-            <div className=" h-16">
+            <div className=" sm:h-16 h-12">
               <HayashiLogo color={logoColor} />
             </div>
           </div>
