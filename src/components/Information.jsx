@@ -4,7 +4,7 @@ import BudoButtonLink from "./BudoButton/BudoButton";
 const Information = () => {
   return (
     <section className={`relative sm:px-12 px-5 overflow-hidden container mx-auto flex items-center justify-center flex-col md:pt-40 md:pb-44 py-16`}>
-      <div className="md:text-5xl text-2xl md:mb-16 mb-8 text-center font-bold">
+      <div className="md:text-5xl text-2xl z-10 md:mb-16 mb-8 text-center font-bold">
         Nenechte si utéct příležitost poznat zblízka svět BUDO!
       </div>
       <div className="md:text-2xl text-base text-center md:mb-32 mb-16">

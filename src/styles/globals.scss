@@ -6,10 +6,6 @@
 
 @font-face {
   font-family: "DINCondensed";
-  src: url("/fonts/DINCondensed-Bold.ttf") format("truetype");
-  src: url("/fonts/DINCondensed-Regular.ttf") format("truetype"),
-    url("/fonts/DINCondensed-Medium.ttf") format("truetype"),
-    url("/fonts/DINCondensed-BlackAlternate.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -52,7 +48,6 @@ p {
   font-size: $paragraph-font-size;
   text-align: justify;
   color: $font-color-secondary;
-
 }
 
 .grey-row {
@@ -70,7 +65,6 @@ a {
   /* Add more properties as needed */
 }
 
-
 .swiper {
   width: 90%;
   height: 100%;
@@ -79,12 +73,10 @@ a {
 }
 
 @media (max-width: 640px) {
-
   h2 {
     font-size: $h2-font-size-small;
     font-weight: 600;
   }
-
 
   h3 {
     font-size: $h3-font-size-small;

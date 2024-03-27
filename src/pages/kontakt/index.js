@@ -7,6 +7,7 @@ import Partners from "@/components/Partners";
 // import dynamic from "next/dynamic";
 // import OpenStreetMap from "@/components/OpenStreetMap/OpenStreetMap";
 import dynamic from "next/dynamic";
+import BudoRow from "@/components/BudoRow/BudoRow";
 
 // const OpenStreetMap = dynamic(() => import('@/components/OpenStreetMap/OpenStreetMap'), {
 //   ssr: false, // This line is crucial
@@ -57,6 +58,22 @@ const Kontakt = () => {
           <OpenStreetMap />
           <Partners />
           <SocialNetworks />
+          <BudoRow>
+            <div className="container mx-auto grid grid-cols-1 z-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-16 md:gap-5 justify-around relative md:pt-16 pt-16 pb-16 justify-items-center">
+              <div className="text-center px-5">
+                <h4 className="mb-5 text-2xl font-bold">Grafický design:</h4>
+                <div className="organisators flex flex-col items-center leading-10">
+                  <div className=" text-base sm:text-lg"><a href="https://www.linkedin.com/in/nikola-zemanov%C3%A1-04b9541b0/" target="_blank">Nikola Zemanová</a></div>
+                </div>
+              </div>
+              <div className="text-center px-5">
+                <h4 className="mb-5 text-2xl font-bold">Tvorba webu:</h4>
+                <div className="organisators flex flex-col items-center leading-10">
+                <div className="text-base sm:text-lg"><a href="https://www.linkedin.com/in/petr-t%C3%A1cha-499022199/" target="_blank">Petr Tácha</a></div>
+                </div>
+              </div>
+            </div>
+          </BudoRow>
         </main>
       </div>
     </Layout>

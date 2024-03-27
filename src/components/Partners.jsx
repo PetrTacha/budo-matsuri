@@ -6,13 +6,14 @@ import CvutLogo from "@/svgs/CvutLogo";
 import HayashiLogo from "@/svgs/HayashiLogo";
 import PrahaLogo from "@/svgs/PrahaLogo";
 import BojoUmeniLogo from "@/svgs/BojoUmeniLogo";
+// import Image from "next/image";
 
 const Partners = () => {
   const logoColor = "#EF0000";
 
   return (
     <BudoRow>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16 md:gap-5 justify-around relative md:pt-24 pt-16 pb-28 justify-items-center">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16 md:gap-5 justify-around relative z-10 md:pt-24 pt-16 pb-28 justify-items-center">
         <div className="items-center align-middle text-center px-5">
           <h4 className="mb-5 text-2xl font-bold">Pořadatelé:</h4>
           <div className="flex flex-wrap gap-4 items-center justify-center ">
@@ -31,14 +32,34 @@ const Partners = () => {
             <div className="sm:h-16 h-14">
               <BojoUmeniLogo color={logoColor} />
             </div>
+            {/* <div>
+              <Image
+                src="/dobra-cajovna.png"
+                alt="Dobra-cajonva"
+                width={72}
+                height={72}
+              />
+            </div>
+            <div>
+              <Image
+                src="/myabi-logo.png"
+                alt="myabi-logo"
+                width={72}
+                height={72}
+              />
+            </div> */}
           </div>
         </div>
         <div className="text-center px-5">
           <h4 className="mb-5 text-2xl font-bold">Hlavní organizátoři:</h4>
           <div className="organisators flex flex-col items-center leading-10">
             <div className=" text-base sm:text-lg">Pavel Slavík</div>
-            <div className=" text-base sm:text-lg">Karolína Motejízková (předsedkyně klubu)</div>
-            <div className=" text-base sm:text-lg">Česko-japonská společnost ???</div>
+            <div className=" text-base sm:text-lg">
+              Karolína Motejízková (předsedkyně klubu)
+            </div>
+            <div className=" text-base sm:text-lg">
+              Česko-japonská společnost ???
+            </div>
           </div>
         </div>
         <div className="text-center px-5">

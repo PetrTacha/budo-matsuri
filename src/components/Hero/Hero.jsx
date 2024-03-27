@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
       <BudoRow withImage={true}>
-      <div className="container mx-auto flex items-center justify-start flex-col relative pt-16 md:pb-40 pb-16">
+      <div className="container mx-auto flex items-center justify-start flex-col relative pt-16 md:pb-40 z-10 pb-16">
         <div className={`text-6xl md:text-8xl font-bold mb-10 mx-2 text-center ${styles.heroTitle}`}>BUDO MATSURI</div>
         <CounterTime />
         <div className={`text-2xl md:text-5xl mb-8 text-center mx-3 font-bold mt-7 md:mt-24 ${styles.heroSubTitle}`}>FESTIVAL JAPONSKÝCH BOJOVÝCH UMĚNÍ</div>

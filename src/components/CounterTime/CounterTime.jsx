@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 import styles from "./CounterTime.module.scss";
+import stylesHeader from "../Hero/Hero.module.scss";
 
 const CounterTime = () => {
-  const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
-  function calculateTimeRemaining() {
-    const endTime = new Date("2024-04-20T08:00:00Z");
+  const calculateTimeRemaining = () => {
+    const endTimeUTC = "2024-04-20T10:00:00Z";
+
+    const endTime = new Date(endTimeUTC);
     const currentTime = new Date();
     let difference = Math.max(endTime - currentTime, 0);
 
@@ -24,7 +26,9 @@ const CounterTime = () => {
       hours,
       minutes,
     };
-  }
+  };
+
+  const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -34,45 +38,54 @@ const CounterTime = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  const pluralize = (count, singular, plural, plurals) => {
+    if (count < 1) return plurals;
+    if (count === 1) {
+      return singular;
+    }
+    if (count > 1 && count <= 4) return plural;
+    if (count > 4) return plurals;
+  };
+
+  const isCounterEnd =
+    timeRemaining.hours < 1 &&
+    timeRemaining.minutes < 1 &&
+    timeRemaining.days < 1;
+
   return (
-    // <div className={styles.grid}>
-    //   <div className={styles.cell}>
-    //     <p className={styles.number}>88</p>
-    //     <p className={styles.name}>Days</p>
-    //   </div>
-    //   <div className={styles.separator}></div> {/* Separator */}
-    //   <div className={styles.cell}>
-    //     <p className={styles.number}>22</p>
-    //     <p className={styles.name}>Hours</p>
-    //   </div>
-    //   <div className={styles.separator}></div> {/* Separator */}
-    //   <div className={styles.cell}>
-    //     <p className={styles.number}>12</p>
-    //     <p className={styles.name}>Minutes</p>
-    //   </div>
-    // </div>
-
-    <div className={styles.grid}>
-        <div className={`text-5xl md:text-8xl ${styles.number}`}>{timeRemaining.days}</div>
+    <>
+      {isCounterEnd && (
+        <div
+          className={`text-2xl md:text-5xl mb-8 text-center mx-3 font-bold mt-7 md:mt-24 ${stylesHeader.heroSubTitle}`}
+        >
+          PRÁVĚ PROBÍHÁ!
+        </div>
+      )}
+      <div className={styles.grid}>
+        <div className={`text-5xl md:text-8xl ${styles.number}`}>
+          {timeRemaining.days}
+        </div>
         <div className={`text-5xl md:text-8xl ${styles.delimiter}`}>|</div>
-        <div className={`text-5xl md:text-8xl ${styles.number}`}>{timeRemaining.hours}</div>
+        <div className={`text-5xl md:text-8xl ${styles.number}`}>
+          {timeRemaining.hours}
+        </div>
         <div className={`text-5xl md:text-8xl ${styles.delimiter}`}>|</div>
-        <div className={`text-5xl md:text-8xl ${styles.number}`}>{timeRemaining.minutes}</div>
-        <div className={`text-xl md:text-4xl ${styles.types}`}>dní</div>
+        <div className={`text-5xl md:text-8xl ${styles.number}`}>
+          {timeRemaining.minutes}
+        </div>
+        <div className={`text-xl md:text-4xl ${styles.types}`}>
+          {pluralize(timeRemaining.days, "den", "dny", "dní")}
+        </div>
         <div className="text-xl md:text-4xl"></div>
-        <div className={`text-xl md:text-4xl ${styles.types}`}>hodin</div>
+        <div className={`text-xl md:text-4xl ${styles.types}`}>
+          {pluralize(timeRemaining.hours, "hodina", "hodiny", "hodin")}
+        </div>
         <div className="text-xl md:text-4xl"></div>
-        <div className={`text-xl md:text-4xl ${styles.types}`}>minut</div>
-    </div>
-
-
-    // <div className={`${styles.grid}`}>
-    //   <p>Days: {timeRemaining.days}</p>
-    //   <div>|</div>
-    //   <p>Hours: {timeRemaining.hours}</p>
-    //   <div>|</div>
-    //   <p>Minutes: {timeRemaining.minutes}</p>
-    // </div>
+        <div className={`text-xl md:text-4xl ${styles.types}`}>
+          {pluralize(timeRemaining.minutes, "minuta", "minuty", "minut")}
+        </div>
+      </div>
+    </>
   );
 };
 
