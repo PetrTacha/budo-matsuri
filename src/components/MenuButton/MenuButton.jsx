@@ -11,49 +11,49 @@ export const MenuButton = ({ color, onClick }) => {
     >
       <div className={`grid grid-cols-3 my-3 ${styles.dots}`}>
         <div
-          className={`w-2 h-2 rounded-full bg-red-500 ${
+          className={`rounded-full bg-red-500 ${
             color === "white" ? "border-red-500" : ""
-          } focus:outline-none`}
+          } focus:outline-none ${styles.dot}`}
         ></div>
         <div
-          className={`w-2 h-2 rounded-full bg-red-500 ${
+          className={`rounded-full bg-red-500 ${
             color === "white" ? "border-red-500" : ""
-          } focus:outline-none`}
+          } focus:outline-none ${styles.dot}`}
         ></div>
         <div
-          className={`w-2 h-2 rounded-full bg-red-500 ${
+          className={`rounded-full bg-red-500 ${
             color === "white" ? "border-red-500" : ""
-          } focus:outline-none`}
+          } focus:outline-none ${styles.dot}`}
         ></div>
         <div
-          className={`w-2 h-2 rounded-full bg-red-500 ${
+          className={`rounded-full bg-red-500 ${
             color === "white" ? "border-red-500" : ""
-          } focus:outline-none`}
+          } focus:outline-none ${styles.dot}`}
         ></div>
         <div
-          className={`w-2 h-2 rounded-full bg-red-500 ${
+          className={`rounded-full bg-red-500 ${
             color === "white" ? "border-red-500" : ""
-          } focus:outline-none`}
+          } focus:outline-none ${styles.dot}`}
         ></div>
         <div
-          className={`w-2 h-2 rounded-full bg-red-500 ${
+          className={`rounded-full bg-red-500 ${
             color === "white" ? "border-red-500" : ""
-          } focus:outline-none`}
+          } focus:outline-none ${styles.dot}`}
         ></div>
         <div
-          className={`w-2 h-2 rounded-full bg-red-500 ${
+          className={`rounded-full bg-red-500 ${
             color === "white" ? "border-red-500" : ""
-          } focus:outline-none`}
+          } focus:outline-none ${styles.dot}`}
         ></div>
         <div
-          className={`w-2 h-2 rounded-full bg-red-500 ${
+          className={`rounded-full bg-red-500 ${
             color === "white" ? "border-red-500" : ""
-          } focus:outline-none`}
+          } focus:outline-none ${styles.dot}`}
         ></div>
         <div
-          className={`w-2 h-2 rounded-full bg-red-500 ${
+          className={`rounded-full bg-red-500 ${
             color === "white" ? "border-red-500" : ""
-          } focus:outline-none`}
+          } focus:outline-none ${styles.dot}`}
         ></div>
       </div>
     </div>

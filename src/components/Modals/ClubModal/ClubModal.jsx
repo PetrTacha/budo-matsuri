@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import styles from "./ClubModal.module.scss";
+import DOMPurify from "dompurify";
 
 export const ClubModal = ({ klub, open = false, setOpen }) => {
-  if (!klub) return;
 
   const removeNewSpace = (text) => {
     return text.replace("{/n}", " ");
@@ -59,8 +59,8 @@ export const ClubModal = ({ klub, open = false, setOpen }) => {
                     <div className="sm:mx-10 mx-4 mt-3 sm:mt-12  sm:overflow-y-auto h-full">
                       <p
                         className="mb-2 sm:mb-16"
-                        dangerouslySetInnerHTML={{ __html: klub.description }}
-                      />
+                        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(klub.description) }}
+                      />       
                     </div>
                     <div className={`hidden sm:block ${styles.gradientback}`}></div>
                   </div>

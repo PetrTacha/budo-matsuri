@@ -49,7 +49,7 @@ export default function Preformers() {
           />
           <SocialNetworks />
 
-          <ClubModal klub={currentClub} open={open} setOpen={setOpen} />
+          {currentClub && <ClubModal klub={currentClub} open={open} setOpen={setOpen} />}
         </main>
       </div>
     </Layout>

@@ -12,7 +12,7 @@ const Partners = () => {
 
   return (
     <BudoRow>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16 md:gap-5 justify-around relative z-20 md:pt-24 pt-16 pb-28 justify-items-center">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16 md:gap-5 justify-around relative md:pt-24 pt-16 pb-28 justify-items-center">
         <div className="items-center align-middle text-center px-5">
           <h4 className="mb-5 text-2xl font-bold">Pořadatelé:</h4>
           <div className="flex flex-wrap gap-4 items-center justify-center ">

@@ -12,7 +12,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 // import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
-const icon = L.icon({ iconUrl: "/calligraphy.png", iconSize: [100, 100] });
+const icon = L.icon({ iconUrl: "/calligraphy-red.png", iconSize: [100, 100] });
 
 // let DefaultIcon = L.icon({
 //     iconUrl: icon,
@@ -22,7 +22,7 @@ const icon = L.icon({ iconUrl: "/calligraphy.png", iconSize: [100, 100] });
 //   L.Marker.prototype.options.icon = DefaultIcon;
 
 const OpenStreetMap = () => {
-  const [center, setCenter] = useState({ lat: 50.110428, lng: 14.391107 });
+  const [center, setCenter] = useState({ lat: 50.1105, lng: 14.3907 });
   const ZOOM_LEVEL = 17;
   const mapRef = useRef();
 

@@ -3,7 +3,7 @@ import styles from "./BudoButton.module.scss";
 import Link from "next/link";
 
 const BudoButtonLink = ({name, href}) => {
-  return <Link href={href} className={`font-bold px-6 py-3 ${styles.budoButtno}`}>{name}</Link>;
+  return <Link href={href} className={`font-bold px-6 py-3 no-underline ${styles.budoButtno}`}>{name}</Link>;
 };
 
 
