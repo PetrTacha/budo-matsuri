@@ -53,12 +53,9 @@ const Partners = () => {
         <div className="text-center px-5">
           <h4 className="mb-5 text-2xl font-bold">Hlavní organizátoři:</h4>
           <div className="organisators flex flex-col items-center leading-10">
-            <div className=" text-base sm:text-lg">Pavel Slavík</div>
+            <div className=" text-base sm:text-lg">Budō kenkyūkai</div>
             <div className=" text-base sm:text-lg">
-              Karolína Motejízková (předsedkyně klubu)
-            </div>
-            <div className=" text-base sm:text-lg">
-              Česko-japonská společnost ???
+              Česko-japonská společnost
             </div>
           </div>
         </div>

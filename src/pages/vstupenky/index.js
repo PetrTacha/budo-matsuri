@@ -21,8 +21,8 @@ export default function Vstupenky() {
                 </ul>
               </div>
               <div className="flex-1 pr-1 px-10 flex mt-10  flex-col gap-1 sm:gap-10 sm:pb-0 pb-10">
-                <div className="sm:text-2xl text-lg  "><span className="font-bold mr-3">Členové ČJS:</span><span className="font-light">80 Kč</span></div>
-                <div className="sm:text-2xl text-lg  "><span className="font-bold mr-3">Veřejnost:</span><span className="font-light">100 Kč</span></div>
+                <div className="sm:text-2xl text-lg  "><span className="font-bold mr-3">Členové ČJS:</span><span className="font-light">100 Kč</span></div>
+                <div className="sm:text-2xl text-lg  "><span className="font-bold mr-3">Veřejnost:</span><span className="font-light">150 Kč</span></div>
                 <div className="sm:text-2xl text-lg  "><span className="font-bold mr-3">Děti do 10 let:</span><span className="font-light">zdarma</span></div>
               </div>
             </div>

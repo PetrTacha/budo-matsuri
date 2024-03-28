@@ -28,7 +28,7 @@ const Kontakt = () => {
             <div className="flex flex-col mt-3 sm:flex-row">
               <div className="flex-1 pl-10">
                 <div className={`flex-1 px-10 py-6 ${styles.columnBorder} flex flex-col gap-5`}>
-                  <div className="sm:text-2xl text-lg font-bold">Sportovní areál<br />Pod Juliskou 4, Praha 6</div>
+                  <div className="sm:text-2xl text-lg font-bold">Sportovní areál ČVUT<br />Pod Juliskou 4, Praha 6</div>
                   <div className="sm:text-xl text-lg">
                     <span className=" font-bold">Dopravní spoje poblíž:</span>
                     <br />

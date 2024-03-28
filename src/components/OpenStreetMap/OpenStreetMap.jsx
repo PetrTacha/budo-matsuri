@@ -52,7 +52,7 @@ const OpenStreetMap = () => {
           position={[center.lat, center.lng]}
           icon={icon}
         >
-          <Popup>Sportovní areál Pod Juliskou 4, Praha 6</Popup>
+          <Popup>Sportovní areál ČVUT Pod Juliskou 4, Praha 6</Popup>
         </Marker>
       </MapContainer>
     </div>

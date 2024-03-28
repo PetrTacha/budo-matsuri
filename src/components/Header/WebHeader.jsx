@@ -17,7 +17,7 @@ export const WebHeader = () => {
         <div className="flex-shrink-0 ml-6 mt-4 flex justify-center ">
           <Image
             src="/calligraphy-red.png"
-            alt="Budo matsuri"
+            alt="Budō matsuri"
             width={72}
             height={72}
           />
