@@ -8,7 +8,7 @@ import Partners from "@/components/Partners";
 // import OpenStreetMap from "@/components/OpenStreetMap/OpenStreetMap";
 import dynamic from "next/dynamic";
 import BudoRow from "@/components/BudoRow/BudoRow";
-import NewWindowIcon from "@/svgs/newWindowIcon";
+import NewWindowIcon from "@/svgs/NewWindowIcon";
 
 // const OpenStreetMap = dynamic(() => import('@/components/OpenStreetMap/OpenStreetMap'), {
 //   ssr: false, // This line is crucial
