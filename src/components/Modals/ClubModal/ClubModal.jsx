@@ -13,7 +13,7 @@ export const ClubModal = ({ klub, open = false, closeModal }) => {
   useEffect(() => {
     if (open) {
       // Assuming the description property contains the path to the HTML file
-      const htmlPath = encodeURIComponent(klub.description);
+      const htmlPath = klub.description;
       fetch(htmlPath)
         .then((response) => {
           if (response.status === 404) {
