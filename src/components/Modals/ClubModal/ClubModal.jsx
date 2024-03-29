@@ -7,7 +7,7 @@ import DOMPurify from "dompurify";
 export const ClubModal = ({ klub, open = false, setOpen }) => {
   const [htmlContent, setHtmlContent] = useState("");
   const removeNewSpace = (text) => {
-    return text.replace("{/n}", " ");
+    return text.replaceAll("{/n}", " ");
   };
 
   useEffect(() => {
@@ -71,7 +71,7 @@ export const ClubModal = ({ klub, open = false, setOpen }) => {
                   />
                 </div>
                 <div className="bg-red flex-none sm:flex-1">
-                  <h3 className="flex-1 mt-2 sm:mt-10 mx-2">
+                  <h3 className="flex-1 mt-2 sm:mt-10 mx-3 sm:mx-5">
                     {removeNewSpace(klub.name)}
                   </h3>
 

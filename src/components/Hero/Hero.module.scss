@@ -1,24 +1,26 @@
 @import "@/styles/variables.scss";
 
-
-
-.heroTitle{
+.heroTitle {
   text-shadow: $text-shadow;
   font-weight: $headers-font-weight;
   letter-spacing: 0.02em;
   margin-top: 7rem;
 }
 
-.heroSubTitle{
+.heroSubTitle {
   font-weight: $headers-font-weight;
-  // line-height: 40px;
-  // letter-spacing: 0.02em;
   text-align: center;
   text-shadow: $text-shadow;
+  line-height: 4rem;
 }
 
-.rowDate{
+@media (max-width: 768px) {
+  .heroSubTitle {
+    line-height: 2rem;
+  }
+}
+
+.rowDate {
   display: flex;
   gap: 5rem;
-
 }
