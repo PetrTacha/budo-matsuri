@@ -43,7 +43,7 @@ export const CarouselSlicker = () => {
 
   return (
     <Slider {...settings}>
-      <div>
+      {/* <div>
         <img src={images[0]} alt="Slide 1" />
       </div>
       <div>
@@ -51,7 +51,7 @@ export const CarouselSlicker = () => {
       </div>
       <div>
         <img src={images[2]} alt="Slide 3" />
-      </div>
+      </div> */}
     </Slider>
   );
 };
