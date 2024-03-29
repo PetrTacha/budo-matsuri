@@ -38,23 +38,23 @@ export const WebMenu = ({ closeMenu }) => {
             </Link>
           )}
           {router.pathname !== "/ucinkujici" && (
-            <Link className="font-medium no-underline" href="/ucinkujici">
+            <Link className="font-medium no-underline" href="/ucinkujici.html">
               Účinkující
             </Link>
           )}
           {router.pathname !== "/vstupenky" && (
-            <Link className="font-medium no-underline" href="/vstupenky">
+            <Link className="font-medium no-underline" href="/vstupenky.html">
               Vstupenky
             </Link>
           )}
-          {/* <Link className="font-medium" href="/merchandise">
+          {/* <Link className="font-medium" href="/merchandise.html">
             Merchandise
           </Link> */}
-          {/* <Link className="font-medium" href="/fotogalerie">
+          {/* <Link className="font-medium" href="/fotogalerie.html">
             Fotogalerie
           </Link> */}
           {router.pathname !== "/kontakt" && (
-            <Link className="font-medium no-underline" href="/kontakt">
+            <Link className="font-medium no-underline" href="/kontakt.html">
               Kontakt
             </Link>
           )}

@@ -19,11 +19,12 @@ export default function Preformers() {
   const [currentClub, setCurrentClub] = useState(null);
 
   const openModal = useCallback((klub) => {
-    router.push(`?ucinkujici=${klub.url}`, undefined, { shallow: true });
+    router.replace(`/ucinkujici.html?ucinkujici=${klub.url}`, undefined, { shallow: true });
+    // router.push(`?ucinkujici=${klub.url}`, undefined, { shallow: true });
   }, [router]);
 
   const closeModal = useCallback(() => {
-    router.replace('/ucinkujici', undefined, { shallow: true });
+    router.replace('/ucinkujici.html', undefined, { shallow: true });
     setOpen(false)
   }, [router]);
 

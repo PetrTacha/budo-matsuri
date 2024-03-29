@@ -15,7 +15,7 @@ const Information = () => {
         japonské kalligrafie školy Petry Vitáskové, ochutnávku japonských
         specialit a mnoho dalšího.
       </div>
-      <BudoButtonLink name="Chci vědět více!" href={"/ucinkujici"} />
+      <BudoButtonLink name="Chci vědět více!" href={"/ucinkujici.html"} />
     </section>
   );
 };
