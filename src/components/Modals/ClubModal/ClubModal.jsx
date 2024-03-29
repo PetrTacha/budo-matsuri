@@ -1,14 +1,34 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import styles from "./ClubModal.module.scss";
 import DOMPurify from "dompurify";
 
 export const ClubModal = ({ klub, open = false, setOpen }) => {
-
+  const [htmlContent, setHtmlContent] = useState("");
   const removeNewSpace = (text) => {
     return text.replace("{/n}", " ");
   };
+
+  useEffect(() => {
+    if (open) {
+      // Assuming the description property contains the path to the HTML file
+      const htmlPath = klub.description;
+      fetch(htmlPath)
+        .then((response) => {
+          if (response.status === 404) {
+            // Set the HTML content to an empty string or handle the error as needed
+            setHtmlContent("");
+            console.error(`Chyba načtení dat pro klub ${klub.name}`);
+            return;
+          }
+          return response.text();
+        })
+        .then((data) => {
+          setHtmlContent(data);
+        });
+    }
+  }, [klub.description, klub.name, open]);
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -59,10 +79,16 @@ export const ClubModal = ({ klub, open = false, setOpen }) => {
                     <div className="sm:mx-10 mx-4 mt-3 sm:mt-12  sm:overflow-y-auto h-full">
                       <p
                         className="mb-2 sm:mb-16"
-                        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(klub.description) }}
-                      />       
+                        dangerouslySetInnerHTML={{
+                          __html: DOMPurify.sanitize(htmlContent, {
+                            ALLOWED_ATTR: ["target", "tabindex", "href"],
+                          }),
+                        }}
+                      />
                     </div>
-                    <div className={`hidden sm:block ${styles.gradientback}`}></div>
+                    <div
+                      className={`hidden sm:block ${styles.gradientback}`}
+                    ></div>
                   </div>
                 </div>
               </Dialog.Panel>
