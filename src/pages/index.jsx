@@ -15,8 +15,8 @@ export default function Home() {
           <Hero />
           <Information />
           <Citate
-            citate="Účelem tréninku je utáhnout oslabené, posílit tělo a vyleštit ducha."
-            author="Morihei Ueshiba, zakladatel Aikido"
+            citate="Účelem tréninku je bojovat se slabostmi, posilovat tělo a zlepšovat ducha."
+            author="Morihei Ueshiba, zakladatel aikidō"
           />
           <SocialNetworks />
           <Partners />

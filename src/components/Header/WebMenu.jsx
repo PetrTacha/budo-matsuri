@@ -4,6 +4,7 @@ import Link from "next/link";
 import FacebookLogo from "@/svgs/FacebookLogo";
 import InstagramLogo from "@/svgs/InstagramLogo";
 import { useRouter } from "next/router";
+import styles from "./WebHeader.module.scss"
 
 export const WebMenu = ({ closeMenu }) => {
   const menuRef = useRef(null);
@@ -26,22 +27,22 @@ export const WebMenu = ({ closeMenu }) => {
   return (
     <div
       ref={menuRef}
-      className="bg-white h-auto  w-64 flex justify-end absolute -translate-x-full rounded-xl text-black opacity-80 pb-10"
+      className={`${styles.menu} h-auto  w-64 flex justify-end absolute -mt-6 -translate-x-full rounded-xl text-black pb-10`}
     >
       <div className="flex flex-col items-end text-end gap-3 w-full">
         <MenuButton color="white" onClick={closeMenu} />
         <div className="flex flex-col gap-10 pr-6 mt-5">
-          {(router.pathname !== "/") && (
+          {router.pathname !== "/" && (
             <Link className="font-medium no-underline" href="/">
               Hlavní stránka
             </Link>
           )}
-          {(router.pathname !== "/ucinkujici") && (
+          {router.pathname !== "/ucinkujici" && (
             <Link className="font-medium no-underline" href="/ucinkujici">
               Účinkující
             </Link>
           )}
-          {(router.pathname !== "/vstupenky") && (
+          {router.pathname !== "/vstupenky" && (
             <Link className="font-medium no-underline" href="/vstupenky">
               Vstupenky
             </Link>
@@ -52,15 +53,27 @@ export const WebMenu = ({ closeMenu }) => {
           {/* <Link className="font-medium" href="/fotogalerie">
             Fotogalerie
           </Link> */}
-          {(router.pathname !== "/kontakt") && (
+          {router.pathname !== "/kontakt" && (
             <Link className="font-medium no-underline" href="/kontakt">
               Kontakt
             </Link>
           )}
         </div>
         <div className=" w-3/4 mt-3 border-t-2 border-slate-400 mr-6 pt-5 flex gap-5 h-16 justify-end">
-          <FacebookLogo color={logoColor} />
-          <InstagramLogo color={logoColor} />
+          <a
+            className="h-full"
+            href="https://www.facebook.com/events/253428993975057"
+            target="_blank"
+          >
+            <FacebookLogo color={logoColor} />
+          </a>
+          <a
+            className="h-full"
+            href="https://www.facebook.com/events/253428993975057"
+            target="_blank"
+          >
+            <InstagramLogo color={logoColor} />
+          </a>
         </div>
       </div>
     </div>

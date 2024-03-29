@@ -4,7 +4,7 @@ import styles from "./MenuButton.module.scss";
 export const MenuButton = ({ color, onClick }) => {
   return (
     <div
-      className={`w-14 h-14 flex justify-center items-center focus:outline-none mt-4 mr-6 ${
+      className={`w-12 h-12  mr-4 flex justify-center items-center focus:outline-none ${
         styles.menuButton
       } ${color === "white" ? "border-red-500" : ""}`}
       onClick={() => onClick()}

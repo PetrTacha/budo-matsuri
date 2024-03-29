@@ -28,8 +28,8 @@ export default function Vstupenky() {
             </div>
           </div>
           <Citate
-            citate="Cestou bojovníka je nastolení harmonie."
-            author="Morihei Ueshiba, zakladatel Aikido"
+            citate="Nikdy neztrácejte svou cestu, protože to je to, co vás dělá jedinečným."
+            author="Miyamoto Musashi, slavný japonský šermíř"
           />
           <SocialNetworks />
         </main>

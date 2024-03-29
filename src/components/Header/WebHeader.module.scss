@@ -1,0 +1,13 @@
+@import "@/styles/variables.scss";
+
+
+.header{
+  // background-color: rgb(255 255 255 / 30%);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 60%);
+  // backdrop-filter: blur(10px);
+  // mask: linear-gradient(black, black, transparent);
+}
+
+.menu{
+  background-color: rgb(255 255 255 / 80%);
+}

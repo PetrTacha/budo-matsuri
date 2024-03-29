@@ -18,19 +18,35 @@ const Partners = () => {
           <h4 className="mb-5 text-2xl font-bold">Pořadatelé:</h4>
           <div className="flex flex-wrap gap-4 items-center justify-center ">
             <div className="sm:h-16 h-14">
-              <CJSpolecnostLogo color={logoColor} />
+              <a href="https://japan.cz/" target="_blank">
+                <CJSpolecnostLogo color={logoColor} />
+              </a>
             </div>
             <div className="sm:h-16 h-14">
-              <BujicanLogo color={logoColor} />
+              <a
+                href="https://www.bujinkanprague.com/bujinkan-dojo-prague/"
+                target="_blank"
+              >
+                <BujicanLogo color={logoColor} />
+              </a>
             </div>
             <div className="sm:h-16 h-14">
-              <CvutLogo color={logoColor} />
+              <a href="https://www.utvs.cvut.cz/" target="_blank">
+                <CvutLogo color={logoColor} />
+              </a>
             </div>
             <div className="sm:h-16 h-14">
-              <PrahaLogo color={logoColor} />
+              <a href="https://www.praha.eu/jnp/" target="_blank">
+                <PrahaLogo color={logoColor} />
+              </a>
             </div>
             <div className="sm:h-16 h-14">
-              <BojoUmeniLogo color={logoColor} />
+              <a
+                href="https://japan.cz/aktivity-projekty/bojova-umeni/"
+                target="_blank"
+              >
+                <BojoUmeniLogo color={logoColor} />
+              </a>
             </div>
             {/* <div>
               <Image
@@ -63,7 +79,9 @@ const Partners = () => {
           <h4 className="mb-5 text-2xl font-bold">Partneři akce:</h4>
           <div className="flex gap-3 px-5">
             <div className=" sm:h-16 h-12">
-              <HayashiLogo color={logoColor} />
+              <a href="https://www.hayashi.cz/" target="_blank">
+                <HayashiLogo color={logoColor} />
+              </a>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import { MenuButton } from "../MenuButton/MenuButton";
 import { WebMenu } from "./WebMenu";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./WebHeader.module.scss";
 
 export const WebHeader = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -12,19 +13,19 @@ export const WebHeader = () => {
   };
   // px-6 py-4
   return (
-    <div className="fixed top-0 w-full z-50 bg-transparent flex justify-between">
+    <div className={`fixed top-0 w-full z-50 flex justify-between items-center ${styles.header}`}>
       <Link href="/">
-        <div className="flex-shrink-0 ml-6 mt-4 flex justify-center ">
+        <div className="flex-shrink-0 flex justify-center ">
           <Image
             src="/calligraphy-red.png"
             alt="Budō matsuri"
-            width={72}
-            height={72}
+            width={86}
+            height={86}
           />
         </div>
       </Link>
       <div className="flex-grow bg-transparent pointer-events-none "></div>
-      <div className="flex-shrink-0 text-white text-xl focus:outline-none">
+      <div className="flex-shrink-0 text-white text-xl focus:outline-none ">
         {openMenu ? (
           <WebMenu closeMenu={closeMenu} />
         ) : (

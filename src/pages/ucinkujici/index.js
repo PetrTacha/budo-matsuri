@@ -44,8 +44,8 @@ export default function Preformers() {
             })}
           </div>
           <Citate
-            citate="Cestou bojovníka je nastolení harmonie."
-            author="Morihei Ueshiba, zakladatel Aikido"
+            citate="Ve chvíli skutečného boje neexistuje velký mistr ani žák. Kasty mizejí a přežívají pouze ti, kteří pochopili podstatu skutečného budō."
+            author="Masaaki Hatsumi, 34. sōke Togakure ryū ninjutsu"
           />
           <SocialNetworks />
 

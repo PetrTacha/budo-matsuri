@@ -8,6 +8,7 @@ import Partners from "@/components/Partners";
 // import OpenStreetMap from "@/components/OpenStreetMap/OpenStreetMap";
 import dynamic from "next/dynamic";
 import BudoRow from "@/components/BudoRow/BudoRow";
+import NewWindowIcon from "@/svgs/newWindowIcon";
 
 // const OpenStreetMap = dynamic(() => import('@/components/OpenStreetMap/OpenStreetMap'), {
 //   ssr: false, // This line is crucial
@@ -18,6 +19,7 @@ const OpenStreetMap = dynamic(() => import('@/components/OpenStreetMap/OpenStree
 })
 
 const Kontakt = () => {
+  const logoColor = "#EF0000";
 
   return (
     <Layout>
@@ -39,7 +41,7 @@ const Kontakt = () => {
                     Metro A, stanice Dejvická
                   </div>
                   <div className="font-bold sm:text-2xl text-lg">
-                    <a href="http://www.juliska.v360.cz" target="_blank">Virtuální prohlídka</a>
+                    <a className="flex justify-start items-center gap-2" href="http://www.juliska.v360.cz" target="_blank">Virtuální prohlídka <NewWindowIcon className={`mb-1 sm:h-5 sm:w-5 h-4 w-4 ${styles.newWindowIcon}`} /></a>
                   </div>
                   <div className="sm:text-xl text-lg  font-light">V případě nejasností se obraťte na: <a className="font-bold" href="mailto:budo.matsuri@japan.cz">budo.matsuri@japan.cz</a>   </div>
                 </div>
@@ -63,13 +65,13 @@ const Kontakt = () => {
               <div className="text-center px-5">
                 <h4 className="mb-5 text-2xl font-bold">Grafický design:</h4>
                 <div className="organisators flex flex-col items-center leading-10">
-                  <div className=" text-base sm:text-lg"><a href="https://www.linkedin.com/in/nikola-zemanov%C3%A1-04b9541b0/" target="_blank">Nikola Zemanová</a></div>
+                  <div className=" text-base sm:text-lg"><a href="https://www.behance.net/nikolazemanov/" target="_blank">Nikola Zemanová</a></div>
                 </div>
               </div>
               <div className="text-center px-5">
                 <h4 className="mb-5 text-2xl font-bold">Tvorba webu:</h4>
                 <div className="organisators flex flex-col items-center leading-10">
-                <div className="text-base sm:text-lg"><a href="https://www.linkedin.com/in/petr-t%C3%A1cha-499022199/" target="_blank">Petr Tácha</a></div>
+                  <div className="text-base sm:text-lg"><a href="https://www.linkedin.com/in/petr-t%C3%A1cha-499022199/" target="_blank">Petr Tácha</a></div>
                 </div>
               </div>
             </div>
