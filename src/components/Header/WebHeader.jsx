@@ -17,7 +17,7 @@ export const WebHeader = () => {
       <Link href="/">
         <div className="flex-shrink-0 flex justify-center ">
           <Image
-            src="/calligraphy-red.png"
+            src="/calligraphy-red-small.png"
             alt="Budō matsuri"
             width={86}
             height={86}

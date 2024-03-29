@@ -12,7 +12,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 // import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
-const icon = L.icon({ iconUrl: "/calligraphy-red.png", iconSize: [100, 100] });
+const icon = L.icon({ iconUrl: "/calligraphy-red-small.png", iconSize: [100, 100] });
 
 // let DefaultIcon = L.icon({
 //     iconUrl: icon,

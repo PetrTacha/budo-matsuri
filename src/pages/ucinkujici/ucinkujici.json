@@ -1,32 +1,32 @@
 [
   {
     "name": "kobudō",
-    "url":"kobudō",
-    "thumbnail": "/photo-square/kobudō.jpg",
+    "url":"kobudo",
+    "thumbnail": "/photo-square/kobudo.jpg",
     "description": "/texts/kobudo.html"
   },
   {
     "name": "okinawské karate-dō",
-    "url":"okinawske-karate-dō",
-    "thumbnail": "/photo-square/okinawske-karate-dō.jpg",
+    "url":"okinawske-karate-do",
+    "thumbnail": "/photo-square/okinawske-karate-do.jpg",
     "description": "/texts/okinawske-karate-do.html"
   },
   {
     "name": "naginata-dō",
-    "url":"naginata-dō",
-    "thumbnail": "/photo-square/naginata-dō.jpg",
+    "url":"naginata-do",
+    "thumbnail": "/photo-square/naginata-do.jpg",
     "description": "/texts/naginata-do.html"
   },
   {
     "name": "iaidō",
-    "url":"iaidō",
-    "thumbnail": "/photo-square/iaidō.jpg",
+    "url":"iaido",
+    "thumbnail": "/photo-square/iaido.jpg",
     "description": "/texts/iaido.html"
   },
   {
     "name": "kyūdō",
-    "url":"kyūdō",
-    "thumbnail": "/photo-square/kyūdō.jpg",
+    "url":"kyudo",
+    "thumbnail": "/photo-square/kyudo.jpg",
     "description": "/texts/kyudo.html"
   },
   {
@@ -43,20 +43,20 @@
   },
   {
     "name": "Katori shintō ryū",
-    "url":"katori-shintō-ryū",
-    "thumbnail": "/photo-square/katori-shintō-ryū.jpg",
+    "url":"katori-shinto-ryu",
+    "thumbnail": "/photo-square/katori-shinto-ryu.jpg",
     "description": "/texts/katori-shinto-ryu.html"
   },
   {
     "name": "aikidō",
-    "url":"aikidō",
-    "thumbnail": "/photo-square/aikidō.jpg",
+    "url":"aikido",
+    "thumbnail": "/photo-square/aikido.jpg",
     "description": "/texts/aikido.html"
   },
   {
     "name": "kendō",
-    "url":"kendō",
-    "thumbnail": "/photo-square/kendō.jpg",
+    "url":"kendo",
+    "thumbnail": "/photo-square/kendo.jpg",
     "description": "/texts/kendo.html"
   },
   {
@@ -67,26 +67,26 @@
   },
   {
     "name": "Shintō musō{/n}ryū jō{/n}a připojené školy",
-    "url":"shintō-musō-ryu-jō-a-pripojene-skoly",
-    "thumbnail": "/photo-square/shintō-musō-ryu-jō-a-pripojene-skoly.jpg",
+    "url":"shinto-muso-ryu-jo-a-pripojene-skoly",
+    "thumbnail": "/photo-square/shinto-muso-ryu-jo-a-pripojene-skoly.jpg",
     "description": "/texts/shinto-muso-ryu-jo-a-pripojene-skoly.html"
   },
   {
     "name": "battōjutsu",
-    "url":"battōjutsu",
-    "thumbnail": "/photo-square/battōjutsu.jpg",
+    "url":"battojutsu",
+    "thumbnail": "/photo-square/battojutsu.jpg",
     "description": "/texts/battojutsu.html"
   },
   {
     "name": "jūdō",
-    "url":"jūdō",
-    "thumbnail": "/photo-square/jūdō.jpg",
+    "url":"judo",
+    "thumbnail": "/photo-square/judo.jpg",
     "description": "/texts/judo.html"
   },
   {
     "name": "nihontō",
-    "url":"nihontō",
-    "thumbnail": "/photo-square/nihontō.jpg",
+    "url":"nihonto",
+    "thumbnail": "/photo-square/nihonto.jpg",
     "description": "/texts/nihonto.html"
   },
   {
