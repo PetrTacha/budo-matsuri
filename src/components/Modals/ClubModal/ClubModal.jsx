@@ -4,7 +4,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import styles from "./ClubModal.module.scss";
 import DOMPurify from "dompurify";
 
-export const ClubModal = ({ klub, open = false, setOpen }) => {
+export const ClubModal = ({ klub, open = false, closeModal }) => {
   const [htmlContent, setHtmlContent] = useState("");
   const removeNewSpace = (text) => {
     return text.replaceAll("{/n}", " ");
@@ -32,7 +32,7 @@ export const ClubModal = ({ klub, open = false, setOpen }) => {
 
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-50" onClose={setOpen}>
+      <Dialog as="div" className="relative z-50" onClose={closeModal}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -59,7 +59,7 @@ export const ClubModal = ({ klub, open = false, setOpen }) => {
               <Dialog.Panel className="relative transform rounded-3xl bg-white shadow-xl transition-all sm:w-4/6 w-5/6  h-5/6 flex sm:flex-row flex-col overflow-y-auto">
                 <span
                   className={`absolute right-5 top-5 cursor-pointer ${styles.crossStandAlone}`}
-                  onClick={() => setOpen(false)}
+                  onClick={closeModal}
                 ></span>
                 <div
                   className={`flex-none sm:flex-1 overflow-hidden ${styles.rounded}`}

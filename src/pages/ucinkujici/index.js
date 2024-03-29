@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 import ucinkujici from "@/pages/ucinkujici/ucinkujici.json";
 import Citate from "@/components/Citate/Citate";
@@ -7,17 +7,34 @@ import styles from "@/pages/ucinkujici/Ucinkujici.module.scss";
 import { ClubModal } from "@/components/Modals/ClubModal/ClubModal";
 import { Layout } from "@/components/Layout/Layout";
 import SocialNetworks from "@/components/SocialNetworks";
+import { useRouter } from "next/router";
+import { useSearchParams } from 'next/navigation';
 
 export default function Preformers() {
+  const searchParams = useSearchParams()
   const currentYear = new Date().getFullYear();
+  const router = useRouter();
 
   const [open, setOpen] = useState(false);
   const [currentClub, setCurrentClub] = useState(null);
 
   const openModal = useCallback((klub) => {
-    setCurrentClub(klub);
-    setOpen(true);
-  }, []);
+    router.push(`?ucinkujici=${klub.url}`, undefined, { shallow: true });
+  }, [router]);
+
+  const closeModal = useCallback(() => {
+    router.replace('/ucinkujici', undefined, { shallow: true });
+    setOpen(false)
+  }, [router]);
+
+  useEffect(() => {
+    const ucinkujiciParam = searchParams.get('ucinkujici');
+    const klub = ucinkujici.find(k => k.url === ucinkujiciParam)
+    if (klub) {
+      setCurrentClub(klub);
+      setOpen(true);
+    }
+  }, [searchParams]);
 
   // const shuffleArray = (array) => {
   //   for (let i = array.length - 1; i > 0; i--) {
@@ -28,8 +45,6 @@ export default function Preformers() {
   // };
 
   // const uscinkujiciRandom = shuffleArray(ucinkujici);
-
-  //<div dangerouslySetInnerHTML={{ __html: klub.description }} />
 
   return (
     <Layout>
@@ -49,7 +64,7 @@ export default function Preformers() {
           />
           <SocialNetworks />
 
-          {currentClub && <ClubModal klub={currentClub} open={open} setOpen={setOpen} />}
+          {currentClub && <ClubModal klub={currentClub} open={open} closeModal={closeModal} />}
         </main>
       </div>
     </Layout>

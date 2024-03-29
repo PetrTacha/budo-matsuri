@@ -1,96 +1,115 @@
 [
   {
     "name": "kobudō",
+    "url":"kobudō",
     "thumbnail": "/photo-square/kobudō.jpg",
     "description": "/texts/kobudō.html"
   },
   {
     "name": "okinawské karate-dō",
+    "url":"okinawske-karate-dō",
     "thumbnail": "/photo-square/okinawske-karate-dō.jpg",
     "description": "/texts/okinawske-karate-dō.html"
   },
   {
     "name": "naginata-dō",
+    "url":"naginata-dō",
     "thumbnail": "/photo-square/naginata-dō.jpg",
     "description": "/texts/naginata-dō.html"
   },
   {
     "name": "iaidō",
+    "url":"iaidō",
     "thumbnail": "/photo-square/iaidō.jpg",
     "description": "/texts/iaidō.html"
   },
   {
     "name": "kyūdō",
+    "url":"kyūdō",
     "thumbnail": "/photo-square/kyūdō.jpg",
     "description": "/texts/kyūdō.html"
   },
   {
     "name": "ninjutsu",
+    "url":"ninjutsu",
     "thumbnail": "/photo-square/ninjutsu.jpg",
     "description": "/texts/ninjutsu.html"
   },
   {
     "name": "taijutsu",
+    "url":"taijutsu",
     "thumbnail": "/photo-square/taijutsu.jpg",
     "description": "/texts/taijutsu.html"
   },
   {
     "name": "Katori shintō ryū",
+    "url":"katori-shintō-ryū",
     "thumbnail": "/photo-square/katori-shintō-ryū.jpg",
     "description": "/texts/katori-shintō-ryū.html"
   },
   {
     "name": "aikidō",
+    "url":"aikidō",
     "thumbnail": "/photo-square/aikidō.jpg",
     "description": "/texts/aikidō.html"
   },
   {
     "name": "kendō",
+    "url":"kendō",
     "thumbnail": "/photo-square/kendō.jpg",
     "description": "/texts/kendō.html"
   },
   {
     "name": "kenjutsu stylu Kashima no tachi",
+    "url":"kenjutsu-stylu-Kashima-no-tachi",
     "thumbnail": "/photo-square/kenjutsu-stylu-Kashima-no-tachi.jpg",
     "description": "/texts/kenjutsu-stylu-Kashima-no-tachi.html"
   },
   {
     "name": "Shintō musō{/n}ryū jō{/n}a připojené školy",
+    "url":"shintō-musō-ryu-jō-a-pripojene-skoly",
     "thumbnail": "/photo-square/shintō-musō-ryu-jō-a-pripojene-skoly.jpg",
     "description": "/texts/shintō-musō-ryu-jō-a-pripojene-skoly.html"
   },
   {
     "name": "battōjutsu",
+    "url":"battōjutsu",
     "thumbnail": "/photo-square/battōjutsu.jpg",
     "description": "/texts/battōjutsu.html"
   },
   {
     "name": "jūdō",
+    "url":"jūdō",
     "thumbnail": "/photo-square/jūdō.jpg",
     "description": "/texts/jūdō.html"
   },
   {
     "name": "nihontō",
+    "url":"nihontō",
     "thumbnail": "/photo-square/nihontō.jpg",
     "description": "/texts/nihontō.html"
   },
   {
     "name": "Dobrá čajovna Praha",
+    "url":"dobra-cajovna-praha",
     "thumbnail": "/photo-square/dobra-cajovna-praha.jpg",
     "description": "/texts/dobra-cajovna-praha.html"
   },
   {
     "name": "restaurace Miyabi",
+    "url":"restaurace-Miyabi",
     "thumbnail": "/photo-square/restaurace-Miyabi.jpg",
     "description": "/texts/restaurace-Miyabi.html"
   },
   {
     "name": "japonská kaligrafie",
+    "url":"japonska-kaligrafie",
     "thumbnail": "/photo-square/japonska-kaligrafie.jpg",
     "description": "/texts/japonska-kaligrafie.html"
   },
   {
     "name": "shakuhachi Vlastislav Matoušek",
+    "url":"shakuhachi",
     "thumbnail": "/photo-square/shakuhachi.jpg",
     "description": "/texts/shakuhachi.html"
   }
