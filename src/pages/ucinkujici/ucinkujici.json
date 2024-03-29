@@ -3,31 +3,31 @@
     "name": "kobudō",
     "url":"kobudō",
     "thumbnail": "/photo-square/kobudō.jpg",
-    "description": "/texts/kobudō.html"
+    "description": "/texts/kobudo.html"
   },
   {
     "name": "okinawské karate-dō",
     "url":"okinawske-karate-dō",
     "thumbnail": "/photo-square/okinawske-karate-dō.jpg",
-    "description": "/texts/okinawske-karate-dō.html"
+    "description": "/texts/okinawske-karate-do.html"
   },
   {
     "name": "naginata-dō",
     "url":"naginata-dō",
     "thumbnail": "/photo-square/naginata-dō.jpg",
-    "description": "/texts/naginata-dō.html"
+    "description": "/texts/naginata-do.html"
   },
   {
     "name": "iaidō",
     "url":"iaidō",
     "thumbnail": "/photo-square/iaidō.jpg",
-    "description": "/texts/iaidō.html"
+    "description": "/texts/iaido.html"
   },
   {
     "name": "kyūdō",
     "url":"kyūdō",
     "thumbnail": "/photo-square/kyūdō.jpg",
-    "description": "/texts/kyūdō.html"
+    "description": "/texts/kyudo.html"
   },
   {
     "name": "ninjutsu",
@@ -45,19 +45,19 @@
     "name": "Katori shintō ryū",
     "url":"katori-shintō-ryū",
     "thumbnail": "/photo-square/katori-shintō-ryū.jpg",
-    "description": "/texts/katori-shintō-ryū.html"
+    "description": "/texts/katori-shinto-ryu.html"
   },
   {
     "name": "aikidō",
     "url":"aikidō",
     "thumbnail": "/photo-square/aikidō.jpg",
-    "description": "/texts/aikidō.html"
+    "description": "/texts/aikido.html"
   },
   {
     "name": "kendō",
     "url":"kendō",
     "thumbnail": "/photo-square/kendō.jpg",
-    "description": "/texts/kendō.html"
+    "description": "/texts/kendo.html"
   },
   {
     "name": "kenjutsu stylu Kashima no tachi",
@@ -69,25 +69,25 @@
     "name": "Shintō musō{/n}ryū jō{/n}a připojené školy",
     "url":"shintō-musō-ryu-jō-a-pripojene-skoly",
     "thumbnail": "/photo-square/shintō-musō-ryu-jō-a-pripojene-skoly.jpg",
-    "description": "/texts/shintō-musō-ryu-jō-a-pripojene-skoly.html"
+    "description": "/texts/shinto-muso-ryu-jo-a-pripojene-skoly.html"
   },
   {
     "name": "battōjutsu",
     "url":"battōjutsu",
     "thumbnail": "/photo-square/battōjutsu.jpg",
-    "description": "/texts/battōjutsu.html"
+    "description": "/texts/battojutsu.html"
   },
   {
     "name": "jūdō",
     "url":"jūdō",
     "thumbnail": "/photo-square/jūdō.jpg",
-    "description": "/texts/jūdō.html"
+    "description": "/texts/judo.html"
   },
   {
     "name": "nihontō",
     "url":"nihontō",
     "thumbnail": "/photo-square/nihontō.jpg",
-    "description": "/texts/nihontō.html"
+    "description": "/texts/nihonto.html"
   },
   {
     "name": "Dobrá čajovna Praha",
