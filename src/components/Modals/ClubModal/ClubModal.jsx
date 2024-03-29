@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import styles from "./ClubModal.module.scss";
 import DOMPurify from "dompurify";
+import Image from "next/image";
 
 export const ClubModal = ({ klub, open = false, closeModal }) => {
   const [htmlContent, setHtmlContent] = useState("");
@@ -85,6 +86,16 @@ export const ClubModal = ({ klub, open = false, closeModal }) => {
                           }),
                         }}
                       />
+                      {klub.logo && (
+                        <div className="w-full h-auto flex justify-center items-center" >
+                          <Image
+                            src={klub.logo}
+                            alt="Dobra-cajonva-Praha"
+                            width={250}
+                            height={250}
+                          />
+                        </div>
+                      )}
                     </div>
                     <div
                       className={`hidden sm:block ${styles.gradientback}`}

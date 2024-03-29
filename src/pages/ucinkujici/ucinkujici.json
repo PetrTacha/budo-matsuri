@@ -93,13 +93,15 @@
     "name": "Dobrá čajovna Praha",
     "url":"dobra-cajovna-praha",
     "thumbnail": "/photo-square/dobra-cajovna-praha.jpg",
-    "description": "/texts/dobra-cajovna-praha.html"
+    "description": "/texts/dobra-cajovna-praha.html",
+    "logo": "/logos/dobra-cajovna.jpg"
   },
   {
     "name": "restaurace Miyabi",
     "url":"restaurace-Miyabi",
     "thumbnail": "/photo-square/restaurace-Miyabi.jpg",
-    "description": "/texts/restaurace-Miyabi.html"
+    "description": "/texts/restaurace-Miyabi.html",
+    "logo": "/logos/myabi-logo.jpg"
   },
   {
     "name": "japonská kaligrafie",
