@@ -5,22 +5,22 @@ import styles from "./ClubModal.module.scss";
 import DOMPurify from "dompurify";
 import Image from "next/image";
 
-export const ClubModal = ({ klub, open = false, closeModal }) => {
+export const ClubModal = ({ klub, open, closeModal }) => {
   const [htmlContent, setHtmlContent] = useState("");
   const removeNewSpace = (text) => {
     return text.replaceAll("{/n}", " ");
   };
 
   useEffect(() => {
-    if (open) {
+    if (open && klub?.description) {
       // Assuming the description property contains the path to the HTML file
-      const htmlPath = klub.description;
+      const htmlPath = klub?.description;
       fetch(htmlPath)
         .then((response) => {
           if (response.status === 404) {
             // Set the HTML content to an empty string or handle the error as needed
             setHtmlContent("");
-            console.error(`Chyba načtení dat pro klub ${klub.name}`);
+            console.error(`Chyba načtení dat pro klub ${klub?.name}`);
             return;
           }
           return response.text();
@@ -29,7 +29,7 @@ export const ClubModal = ({ klub, open = false, closeModal }) => {
           setHtmlContent(data);
         });
     }
-  }, [klub.description, klub.name, open]);
+  }, [klub?.description, klub?.name, open]);
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -65,32 +65,32 @@ export const ClubModal = ({ klub, open = false, closeModal }) => {
                 <div
                   className={`flex-none sm:flex-1 overflow-hidden ${styles.rounded}`}
                 >
-                  <img
-                    src={klub.thumbnail}
-                    alt={removeNewSpace(klub.name)}
+                  {klub && <img
+                    src={klub?.thumbnail}
+                    alt={removeNewSpace(klub?.name)}
                     className="object-cover w-full h-full"
-                  />
+                  />}
                 </div>
                 <div className="bg-red flex-none sm:flex-1">
                   <h3 className="flex-1 mt-2 sm:mt-10 mx-3 sm:mx-5">
-                    {removeNewSpace(klub.name)}
+                    {klub && removeNewSpace(klub?.name)}
                   </h3>
 
                   <div className="relative h-full sm:h-4/6">
                     <div className="sm:mx-10 mx-4 mt-3 sm:mt-12  sm:overflow-y-auto h-full">
-                      <p
+                      {htmlContent && <p
                         className="mb-2 sm:mb-16"
                         dangerouslySetInnerHTML={{
                           __html: DOMPurify.sanitize(htmlContent, {
                             ALLOWED_ATTR: ["target", "tabindex", "href"],
                           }),
                         }}
-                      />
-                      {klub.logo && (
-                        <div className="w-full h-auto flex justify-center items-center" >
+                      />}
+                      {klub?.logo && (
+                        <div className="w-full h-auto flex justify-center items-center">
                           <Image
-                            src={klub.logo}
-                            alt="Dobra-cajonva-Praha"
+                            src={klub?.logo}
+                            alt={klub?.logo}
                             width={250}
                             height={250}
                           />

@@ -7,26 +7,40 @@ import styles from "@/pages/ucinkujici/Ucinkujici.module.scss";
 import { ClubModal } from "@/components/Modals/ClubModal/ClubModal";
 import { Layout } from "@/components/Layout/Layout";
 import SocialNetworks from "@/components/SocialNetworks";
-import { useRouter } from "next/router";
 import { useSearchParams } from 'next/navigation';
 
 export default function Preformers() {
   const searchParams = useSearchParams()
   const currentYear = new Date().getFullYear();
-  const router = useRouter();
 
   const [open, setOpen] = useState(false);
   const [currentClub, setCurrentClub] = useState(null);
 
   const openModal = useCallback((klub) => {
-    router.replace(`/ucinkujici.html?ucinkujici=${klub.url}`, undefined, { shallow: true });
+    // router.replace(`/ucinkujici.html?ucinkujici=${klub.url}`, undefined, { shallow: true });
+    // setCurrentClub(klub);
+    // setOpen(true);
     // router.push(`?ucinkujici=${klub.url}`, undefined, { shallow: true });
-  }, [router]);
+    // Create a URL object from the current URL
+    const url = new URL(window.location.href);
+
+    // Set the new query parameter
+    url.searchParams.set("ucinkujici", klub.url);
+
+    // Update the URL in the browser's address bar without reloading the page
+    window.history.pushState({}, document.title, url.toString());
+    setCurrentClub(klub);
+    setOpen(true);
+  }, []);
 
   const closeModal = useCallback(() => {
-    router.replace('/ucinkujici.html', undefined, { shallow: true });
-    setOpen(false)
-  }, [router]);
+    const url = new URL(window.location.href);
+    url.searchParams.delete("ucinkujici");
+    window.history.replaceState({}, document.title, url.toString());
+    setTimeout(() => { setCurrentClub(null) }, 200)
+    // setCurrentClub(null);
+    setOpen(false);
+  }, []);
 
   useEffect(() => {
     const ucinkujiciParam = searchParams.get('ucinkujici');
@@ -64,8 +78,8 @@ export default function Preformers() {
             author="Masaaki Hatsumi, 34. sōke Togakure ryū ninjutsu"
           />
           <SocialNetworks />
-
-          {currentClub && <ClubModal klub={currentClub} open={open} closeModal={closeModal} />}
+          <ClubModal klub={currentClub} open={open} closeModal={closeModal} />
+          {/* {currentClub && <ClubModal klub={currentClub} open={open} closeModal={closeModal} />} */}
         </main>
       </div>
     </Layout>
