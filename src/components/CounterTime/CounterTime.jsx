@@ -6,7 +6,7 @@ import stylesHeader from "../Hero/Hero.module.scss";
 const CounterTime = () => {
 
   const calculateTimeRemaining = () => {
-    const endTimeUTC = "2024-04-20T10:00:00Z";
+    const endTimeUTC = "2024-04-20T09:00:00Z";
 
     const endTime = new Date(endTimeUTC);
     const currentTime = new Date();

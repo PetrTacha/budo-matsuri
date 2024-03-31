@@ -69,7 +69,7 @@ export const WebMenu = ({ closeMenu }) => {
           </a>
           <a
             className="h-full"
-            href="https://www.facebook.com/events/253428993975057"
+            href="https://www.instagram.com/budomatsuri"
             target="_blank"
           >
             <InstagramLogo color={logoColor} />
