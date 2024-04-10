@@ -76,11 +76,25 @@ const Partners = () => {
           </div>
         </div>
         <div className="text-center px-5">
-          <h4 className="mb-5 text-2xl font-bold">Partneři akce:</h4>
+          <h4 className="mb-14 text-2xl font-bold sm:mb-10">Partneři akce:</h4>
           <div className="flex gap-3 px-5">
-            <div className=" sm:h-16 h-12">
-              <a href="https://www.hayashi.cz/" target="_blank">
+            <div className=" sm:h-16 h-12 flex flex-col justify-center gap-6">
+              <a className="h-10 flex justify-center" href="https://www.hayashi.cz/" target="_blank">
                 <HayashiLogo color={logoColor} />
+              </a>
+              <a
+                className="flex justify-center"
+                href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner"
+                title="Kudyznudy.cz - tipy na výlet"
+              >
+                <img
+                  className="h-10 w-auto"
+                  src="/kudyznudy_black.png"
+                  width="150"
+                  height="64"
+                  border="0"
+                  alt="Kudyznudy.cz - tipy na výlet"
+                />
               </a>
             </div>
           </div>
