@@ -14,7 +14,7 @@ const Partners = () => {
 
   return (
     <BudoRow>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16 md:gap-5 justify-around relative z-10 md:pt-24 pt-16 pb-28 justify-items-center">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16 md:gap-5 justify-around relative z-10 md:pt-24 pt-16 pb-56 justify-items-center">
         <div className="items-center align-middle text-center px-5">
           <h4 className="mb-5 text-2xl font-bold">Pořadatelé:</h4>
           <div className="flex flex-wrap gap-4 items-center justify-center ">
@@ -76,11 +76,15 @@ const Partners = () => {
             </div>
           </div>
         </div>
-        <div className="text-center px-5 mb-16">
+        <div className="text-center px-5 pb-5">
           <h4 className="mb-5 text-2xl font-bold sm:mb-5">Partneři akce:</h4>
           <div className="flex gap-3 px-5">
             <div className=" sm:h-16 h-12 flex flex-col gap-6">
-              <a className="h-10 flex justify-center" href="https://www.hayashi.cz/" target="_blank">
+              <a
+                className="h-10 flex justify-center"
+                href="https://www.hayashi.cz/"
+                target="_blank"
+              >
                 <HayashiLogo color={logoColor} />
               </a>
               <a
@@ -97,8 +101,26 @@ const Partners = () => {
                   alt="Kudyznudy.cz - tipy na výlet"
                 />
               </a>
-              <a className="h-10 flex justify-center" href="https://www.obchod.crew.cz/" target="_blank">
+              <a
+                className="h-10 flex justify-center"
+                href="https://www.obchod.crew.cz/"
+                target="_blank"
+              >
                 <CrewLogo />
+              </a>
+              <a
+                className="h-10 flex justify-center"
+                href="https://www.cz.emb-japan.go.jp/itprtop_cs/index.html"
+                target="_blank"
+              >
+                <img
+                  className="h-16 w-auto"
+                  src="/velvyslanectvi_japonska.jpg"
+                  width="150"
+                  height="64"
+                  border="0"
+                  alt="Velvyslanectví Japonska v České republice"
+                />
               </a>
             </div>
           </div>
