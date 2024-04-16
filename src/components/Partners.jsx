@@ -6,6 +6,7 @@ import CvutLogo from "@/svgs/CvutLogo";
 import HayashiLogo from "@/svgs/HayashiLogo";
 import PrahaLogo from "@/svgs/PrahaLogo";
 import BojoUmeniLogo from "@/svgs/BojoUmeniLogo";
+import CrewLogo from "@/svgs/CrewLogo";
 // import Image from "next/image";
 
 const Partners = () => {
@@ -75,10 +76,10 @@ const Partners = () => {
             </div>
           </div>
         </div>
-        <div className="text-center px-5">
-          <h4 className="mb-14 text-2xl font-bold sm:mb-10">Partneři akce:</h4>
+        <div className="text-center px-5 mb-16">
+          <h4 className="mb-5 text-2xl font-bold sm:mb-5">Partneři akce:</h4>
           <div className="flex gap-3 px-5">
-            <div className=" sm:h-16 h-12 flex flex-col justify-center gap-6">
+            <div className=" sm:h-16 h-12 flex flex-col gap-6">
               <a className="h-10 flex justify-center" href="https://www.hayashi.cz/" target="_blank">
                 <HayashiLogo color={logoColor} />
               </a>
@@ -95,6 +96,9 @@ const Partners = () => {
                   border="0"
                   alt="Kudyznudy.cz - tipy na výlet"
                 />
+              </a>
+              <a className="h-10 flex justify-center" href="https://www.obchod.crew.cz/" target="_blank">
+                <CrewLogo />
               </a>
             </div>
           </div>
