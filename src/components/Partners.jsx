@@ -88,6 +88,20 @@ const Partners = () => {
                 <HayashiLogo color={logoColor} />
               </a>
               <a
+                className="h-10 flex justify-center mb-5"
+                href="https://www.cz.emb-japan.go.jp/itprtop_cs/index.html"
+                target="_blank"
+              >
+                <img
+                  className="h-16 w-auto"
+                  src="/velvyslanectvi_japonska.jpg"
+                  width="150"
+                  height="64"
+                  border="0"
+                  alt="Velvyslanectví Japonska v České republice"
+                />
+              </a>
+              <a
                 className="flex justify-center"
                 href="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner"
                 title="Kudyznudy.cz - tipy na výlet"
@@ -107,20 +121,6 @@ const Partners = () => {
                 target="_blank"
               >
                 <CrewLogo />
-              </a>
-              <a
-                className="h-10 flex justify-center"
-                href="https://www.cz.emb-japan.go.jp/itprtop_cs/index.html"
-                target="_blank"
-              >
-                <img
-                  className="h-16 w-auto"
-                  src="/velvyslanectvi_japonska.jpg"
-                  width="150"
-                  height="64"
-                  border="0"
-                  alt="Velvyslanectví Japonska v České republice"
-                />
               </a>
             </div>
           </div>
