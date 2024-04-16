@@ -17,7 +17,7 @@ export default function Vstupenky() {
               <div className={`flex-1 px-10 ${styles.columnBorder}`}>
                 <ul className="list-disc">
                   <li className={`sm:text-2xl text-lg  font-light mt-10 mb-5 ${styles.vstupenkyList}`}>Vstupenky bude možné zakoupit osobně na recepci v den události. Najdete nás na adrese Pod Juliskou 4, Praha 6.</li>
-                  <li className="sm:text-2xl text-lg  font-light  sm:mb-16 mb-10">Každá vstupenka zahrnuje celodenní vstup na akci, výstavu japonské kaligrafie, liadelní představení, klubové workshopy i veškerá vystoupení.</li>
+                  <li className="sm:text-2xl text-lg  font-light  sm:mb-16 mb-10">Každá vstupenka zahrnuje celodenní vstup na akci, výstavu japonské kaligrafie, divadelní představení, klubové workshopy i veškerá vystoupení.</li>
                 </ul>
               </div>
               <div className="flex-1 pr-1 px-10 flex mt-10  flex-col gap-1 sm:gap-10 sm:pb-0 pb-10">
