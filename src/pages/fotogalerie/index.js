@@ -5,11 +5,11 @@ import { Layout } from "@/components/Layout/Layout";
 import Citate from "@/components/Citate/Citate";
 import SocialNetworks from "@/components/SocialNetworks";
 import { Carousel } from "@/components/Carousel/Carousel";
+// import photos2024 from "@/pages/fotogalerie/photos_2024.json";
+// import PhotoGallery from "@/components/PhotoGallery/PhotoGallery";
+// import Gallery from "react-photo-gallery";
 
-export default function Preformers() {
-
-
-
+export default function Fotogalerie() {
 
   return (
     <Layout>
@@ -18,10 +18,16 @@ export default function Preformers() {
           <h2 className="my-32 text-center">
             Fotogalerie
           </h2>
-          <Carousel />
+
+          <h4 className="text-center mb-10">Pracujeme na tom...</h4>
+          {/* <Carousel /> */}
+
+          {/* <PhotoGallery images={photos2024} /> */}
+          {/* <Gallery photos={photos2024} />; */}
+
           <Citate
-            citate="Pokorně připomínám všem, kteří hledají Cestu, aby nepromarnili přítomný okamžik."
-            author="Musaši Mijamoto, japonský šermíř, stratég a rónin"
+            citate="Nikdy neztrácejte svou cestu, protože to je to, co vás dělá jedinečným."
+            author="Miyamoto Musashi, slavný japonský šermíř"
           />
           <SocialNetworks />
         </main>

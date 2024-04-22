@@ -42,17 +42,19 @@ export const WebMenu = ({ closeMenu }) => {
               Účinkující
             </Link>
           )}
-          {router.pathname !== "/vstupenky" && (
+          {/* {router.pathname !== "/vstupenky" && (
             <Link className="font-medium no-underline" href="/vstupenky.html">
               Vstupenky
             </Link>
-          )}
+          )} */}
           {/* <Link className="font-medium" href="/merchandise.html">
             Merchandise
           </Link> */}
-          {/* <Link className="font-medium" href="/fotogalerie.html">
+          {router.pathname !== "/fotogalerie" && (
+          <Link className="font-medium no-underline" href="/fotogalerie.html">
             Fotogalerie
-          </Link> */}
+          </Link>
+          )}
           {router.pathname !== "/kontakt" && (
             <Link className="font-medium no-underline" href="/kontakt.html">
               Kontakt
