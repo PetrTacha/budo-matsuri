@@ -19,7 +19,7 @@ const Hero = () => {
         >
           Děkujeme všem, kteří dorazili na Budō matsuri.
         </div>
-        <div className="md:text-4xl text-xl  mx-3 text-center ">Na další ročník se můžete těšit v roce 2026!</div>
+        <div className="md:text-4xl text-xl  mx-3 text-center ">Uvidíme se na dalších slavnostech v roce 2026!</div>
         <div className="md:text-2xl text-md mx-3 md:mt-20 mt-10 text-center mb-5">Mezitím si můžete prohlédnout fotografie z minulých ročníků.</div>
         <BudoButtonLink name="Fotogalerie" href={"/fotogalerie.html"} />
         {/* <div
