@@ -3,7 +3,8 @@
     "jsx": "react",
     "checkJs": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/content/*": ["./content/*"]
     }
   }
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { MenuButton } from "../MenuButton/MenuButton";
 import { WebMenu } from "./WebMenu";

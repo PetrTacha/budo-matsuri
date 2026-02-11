@@ -1,11 +1,11 @@
 import styles from "@/components/Klub/Klub.module.scss";
 import React from "react";
 
-export const Klub = ({ data, handleClick }) => {
+export const Klub = ({ data }) => {
   const thumbnailStyle = {
     backgroundImage: `url("${data.thumbnail}")`,
-    backgroundSize: "cover", // Optional: adjust to your needs
-    backgroundPosition: "center", // Optional: adjust to your needs
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   };
 
   const renderTextWithLineBreaks = (text) => {
@@ -22,7 +22,7 @@ export const Klub = ({ data, handleClick }) => {
       </>
     );
   };
-  // pointer-events-none
+
   return (
     <div className="relative">
       <div
@@ -33,9 +33,8 @@ export const Klub = ({ data, handleClick }) => {
         </div>
       </div>
       <div
-        onClick={handleClick}
         key={data.name}
-        className={`rounded-full sm:h-72 h-32 w-32 sm:w-72 ${styles.ucinkujici} transition-all transform hover:scale-110 hover:filter-none filter grayscale opacity-80 hover:opacity-100`}
+        className={`rounded-full sm:h-72 h-32 w-32 sm:w-72 ${styles.ucinkujici} transition-all transform hover:scale-110 hover:filter-none filter grayscale opacity-80 hover:opacity-100 cursor-pointer`}
         style={thumbnailStyle}
       ></div>
     </div>

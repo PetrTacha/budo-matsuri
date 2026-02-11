@@ -1,24 +1,19 @@
-import React from "react";
+"use client";
 
-import styles from "@/pages/kontakt/Kontakt.module.scss";
+import React from "react";
+import dynamic from "next/dynamic";
+import styles from "@/styles/Kontakt.module.scss";
 import { Layout } from "@/components/Layout/Layout";
 import SocialNetworks from "@/components/SocialNetworks";
 import Partners from "@/components/Partners";
-// import dynamic from "next/dynamic";
-// import OpenStreetMap from "@/components/OpenStreetMap/OpenStreetMap";
-import dynamic from "next/dynamic";
 import BudoRow from "@/components/BudoRow/BudoRow";
 import NewWindowIcon from "@/svgs/NewWindowIcon";
 
-// const OpenStreetMap = dynamic(() => import('@/components/OpenStreetMap/OpenStreetMap'), {
-//   ssr: false, // This line is crucial
-//  });
-
 const OpenStreetMap = dynamic(() => import('@/components/OpenStreetMap/OpenStreetMap'), {
   ssr: false,
-})
+});
 
-const Kontakt = () => {
+export default function KontaktPage() {
   const logoColor = "#EF0000";
 
   return (
@@ -43,18 +38,9 @@ const Kontakt = () => {
                   <div className="font-bold sm:text-2xl text-lg">
                     <a className="flex justify-start items-center gap-2" href="http://www.juliska.v360.cz" target="_blank">Virtuální prohlídka <NewWindowIcon className={`mb-1 sm:h-5 sm:w-5 h-4 w-4 ${styles.newWindowIcon}`} /></a>
                   </div>
-                  <div className="sm:text-xl text-lg  font-light">V případě nejasností se obraťte na: <a className="font-bold" href="mailto:budo.matsuri@japan.cz">budo.matsuri@japan.cz</a>   </div>
+                  <div className="sm:text-xl text-lg  font-light">V případě nejasností se obraťte na: <a className="font-bold" href="mailto:budo.matsuri@japan.cz">budo.matsuri@japan.cz</a></div>
                 </div>
               </div>
-              {/* <div className="flex-1 pl-10">
-                
-                <div className="pr-1 px-10 flex mt-3 flex-col gap-10">
-                  <ul className="list-disc">
-                    <li className={`text-2xl font-light mt-10 mb-5 ${styles.vstupenkyList}`}></li>
-                  </ul>
-                </div>
-              </div> */}
-
             </div>
           </div>
           <OpenStreetMap />
@@ -81,5 +67,3 @@ const Kontakt = () => {
     </Layout>
   );
 }
-
-export default Kontakt;
