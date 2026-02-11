@@ -1,0 +1,74 @@
+// Flexbox mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Responsive text sizing
+@mixin responsive-text($mobile, $desktop) {
+  font-size: $mobile;
+  
+  @media (min-width: 768px) {
+    font-size: $desktop;
+  }
+}
+
+// Common transitions
+@mixin smooth-transition($properties: all, $duration: 0.3s) {
+  transition: $properties $duration ease;
+}
+
+// Hover lift effect
+@mixin hover-lift {
+  @include smooth-transition(transform);
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// Container queries helpers
+@mixin container($max-width: 1200px) {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+// Media query breakpoints
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}

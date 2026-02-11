@@ -4,6 +4,7 @@ import Information from "@/components/Information";
 import { Layout } from "@/components/Layout/Layout";
 import Partners from "@/components/Partners";
 import SocialNetworks from "@/components/SocialNetworks";
+import { QUOTES } from "@/constants";
 import React from "react";
 
 
@@ -15,8 +16,8 @@ export default function Home() {
           <Hero />
           <Information />
           <Citate
-            citate="Účelem tréninku je bojovat se slabostmi, posilovat tělo a zlepšovat ducha."
-            author="Morihei Ueshiba, zakladatel aikidō"
+            citate={QUOTES[0].text}
+            author={QUOTES[0].author}
           />
           <SocialNetworks />
           <Partners />

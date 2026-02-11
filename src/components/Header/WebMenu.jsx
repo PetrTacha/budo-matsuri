@@ -5,6 +5,7 @@ import FacebookLogo from "@/svgs/FacebookLogo";
 import InstagramLogo from "@/svgs/InstagramLogo";
 import { useRouter } from "next/router";
 import styles from "./WebHeader.module.scss"
+import { ROUTES } from "@/constants/routes";
 
 export const WebMenu = ({ closeMenu }) => {
   const menuRef = useRef(null);
@@ -32,31 +33,31 @@ export const WebMenu = ({ closeMenu }) => {
       <div className="flex flex-col items-end text-end gap-3 w-full">
         <MenuButton color="white" onClick={closeMenu} />
         <div className="flex flex-col gap-10 pr-6 mt-5">
-          {router.pathname !== "/" && (
-            <Link className="font-medium no-underline" href="/">
+          {router.pathname !== ROUTES.HOME && (
+            <Link className="font-medium no-underline" href={ROUTES.HOME}>
               Hlavní stránka
             </Link>
           )}
-          {router.pathname !== "/ucinkujici" && (
-            <Link className="font-medium no-underline" href="/ucinkujici.html">
+          {router.pathname !== ROUTES.PERFORMERS && (
+            <Link className="font-medium no-underline" href={ROUTES.PERFORMERS}>
               Účinkující
             </Link>
           )}
-          {/* {router.pathname !== "/vstupenky" && (
-            <Link className="font-medium no-underline" href="/vstupenky.html">
+          {/* {router.pathname !== ROUTES.TICKETS && (
+            <Link className="font-medium no-underline" href={ROUTES.TICKETS}>
               Vstupenky
             </Link>
           )} */}
-          {/* <Link className="font-medium" href="/merchandise.html">
+          {/* <Link className="font-medium" href={ROUTES.MERCHANDISE}>
             Merchandise
           </Link> */}
-          {router.pathname !== "/fotogalerie" && (
-          <Link className="font-medium no-underline" href="/fotogalerie.html">
+          {router.pathname !== ROUTES.GALLERY && (
+          <Link className="font-medium no-underline" href={ROUTES.GALLERY}>
             Fotogalerie
           </Link>
           )}
-          {router.pathname !== "/kontakt" && (
-            <Link className="font-medium no-underline" href="/kontakt.html">
+          {router.pathname !== ROUTES.CONTACT && (
+            <Link className="font-medium no-underline" href={ROUTES.CONTACT}>
               Kontakt
             </Link>
           )}

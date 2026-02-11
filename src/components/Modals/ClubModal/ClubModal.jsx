@@ -1,35 +1,21 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import styles from "./ClubModal.module.scss";
 import DOMPurify from "dompurify";
 import Image from "next/image";
+import { removeNewSpace, fetchHtmlContent } from "@/utils";
 
 export const ClubModal = ({ klub, open, closeModal }) => {
   const [htmlContent, setHtmlContent] = useState("");
-  const removeNewSpace = (text) => {
-    return text.replaceAll("{/n}", " ");
-  };
 
   useEffect(() => {
     if (open && klub?.description) {
-      // Assuming the description property contains the path to the HTML file
-      const htmlPath = klub?.description;
-      fetch(htmlPath)
-        .then((response) => {
-          if (response.status === 404) {
-            // Set the HTML content to an empty string or handle the error as needed
-            setHtmlContent("");
-            console.error(`Chyba načtení dat pro klub ${klub?.name}`);
-            return;
-          }
-          return response.text();
-        })
-        .then((data) => {
-          setHtmlContent(data);
-        });
+      fetchHtmlContent(klub.description).then((data) => {
+        setHtmlContent(data);
+      });
     }
-  }, [klub?.description, klub?.name, open]);
+  }, [klub?.description, open]);
 
   return (
     <Transition.Root show={open} as={Fragment}>

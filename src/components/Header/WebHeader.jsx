@@ -4,6 +4,7 @@ import { WebMenu } from "./WebMenu";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./WebHeader.module.scss";
+import { ROUTES } from "@/constants/routes";
 
 export const WebHeader = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -14,7 +15,7 @@ export const WebHeader = () => {
   // px-6 py-4
   return (
     <div className={`fixed top-0 w-full z-50 flex justify-between items-center ${styles.header}`}>
-      <Link href="/">
+      <Link href={ROUTES.HOME}>
         <div className="flex-shrink-0 flex justify-center ">
           <Image
             src="/calligraphy-red-small.png"

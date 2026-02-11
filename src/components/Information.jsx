@@ -1,6 +1,7 @@
 import React from "react";
 import BudoButtonLink from "./BudoButton/BudoButton";
 import styles from "./Hero/Hero.module.scss"
+import { ROUTES } from "@/constants";
 
 const Information = () => {
   return (
@@ -15,7 +16,7 @@ const Information = () => {
         japonské kalligrafie školy Petry Vitáskové, ochutnávku japonských
         specialit a mnoho dalšího.
       </div>
-      <BudoButtonLink name="Chci vědět více!" href={"/ucinkujici.html"} />
+      <BudoButtonLink name="Chci vědět více!" href={ROUTES.PERFORMERS} />
     </section>
   );
 };
