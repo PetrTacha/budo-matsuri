@@ -1,3 +1,3 @@
 export * from "./routes";
-export * from "./socialLinks";
+export * from "./links";
 export * from "./event";

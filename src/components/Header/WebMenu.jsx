@@ -3,7 +3,7 @@
 import React, { useRef, useEffect } from "react";
 import Link from "next/link";
 import { ROUTES } from "@/constants/routes";
-import { SOCIAL_LINKS } from "@/constants/socialLinks";
+import { LINKS } from "@/constants/links";
 import styles from "./WebHeader.module.scss";
 
 export const WebMenu = ({ closeMenu }) => {
@@ -71,7 +71,7 @@ export const WebMenu = ({ closeMenu }) => {
           <div className="border-t-2 border-gray-300 pt-6">
             <div className="flex gap-6">
               <a
-                href={SOCIAL_LINKS.FACEBOOK}
+                href={LINKS.FACEBOOK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-70 transition-opacity"
@@ -86,7 +86,7 @@ export const WebMenu = ({ closeMenu }) => {
                 />
               </a>
               <a
-                href={SOCIAL_LINKS.INSTAGRAM}
+                href={LINKS.INSTAGRAM}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-70 transition-opacity"

@@ -7,7 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./WebHeader.module.scss";
 import { ROUTES } from "@/constants/routes";
-import { SOCIAL_LINKS } from "@/constants/socialLinks";
+import { LINKS } from "@/constants/links";
 
 export const WebHeader = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -75,7 +75,7 @@ export const WebHeader = () => {
           {/* Desktop social ikony - napravo */}
           <div className="hidden md:flex gap-4 items-center">
             <a
-              href={SOCIAL_LINKS.FACEBOOK}
+              href={LINKS.FACEBOOK}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity"
@@ -90,7 +90,7 @@ export const WebHeader = () => {
               />
             </a>
             <a
-              href={SOCIAL_LINKS.INSTAGRAM}
+              href={LINKS.INSTAGRAM}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity"
