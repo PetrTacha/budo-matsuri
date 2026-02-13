@@ -6,7 +6,7 @@ import Link from "next/link";
 import FacebookLogo from "@/svgs/FacebookLogo";
 import InstagramLogo from "@/svgs/InstagramLogo";
 import { usePathname } from "next/navigation";
-import styles from "./WebHeader.module.scss"
+import styles from "./WebHeader.module.scss";
 import { ROUTES } from "@/constants/routes";
 
 export const WebMenu = ({ closeMenu }) => {
@@ -35,16 +35,9 @@ export const WebMenu = ({ closeMenu }) => {
       <div className="flex flex-col items-end text-end gap-3 w-full">
         <MenuButton color="white" onClick={closeMenu} />
         <div className="flex flex-col gap-10 pr-6 mt-5">
-          {pathname !== ROUTES.HOME && (
-            <Link className="font-medium no-underline" href={ROUTES.HOME}>
-              Hlavní stránka
-            </Link>
-          )}
-          {pathname !== ROUTES.PERFORMERS && (
-            <Link className="font-medium no-underline" href={ROUTES.PERFORMERS}>
-              Účinkující
-            </Link>
-          )}
+          <Link className="font-medium no-underline" href={ROUTES.PERFORMERS}>
+            Účinkující
+          </Link>
           {/* {pathname !== ROUTES.TICKETS && (
             <Link className="font-medium no-underline" href={ROUTES.TICKETS}>
               Vstupenky
@@ -53,16 +46,12 @@ export const WebMenu = ({ closeMenu }) => {
           {/* <Link className="font-medium" href={ROUTES.MERCHANDISE}>
             Merchandise
           </Link> */}
-          {pathname !== ROUTES.GALLERY && (
           <Link className="font-medium no-underline" href={ROUTES.GALLERY}>
             Fotogalerie
           </Link>
-          )}
-          {pathname !== ROUTES.CONTACT && (
-            <Link className="font-medium no-underline" href={ROUTES.CONTACT}>
-              Kontakt
-            </Link>
-          )}
+          <Link className="font-medium no-underline" href={ROUTES.CONTACT}>
+            Kontakt
+          </Link>
         </div>
         <div className=" w-3/4 mt-3 border-t-2 border-slate-400 mr-6 pt-5 flex gap-5 h-16 justify-end">
           <a

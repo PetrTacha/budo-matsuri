@@ -28,11 +28,11 @@ const Hero = () => {
         <Button href={ROUTES.GALLERY}>
           Fotogalerie
         </Button> */}
-        <div
-          className={`text-2xl md:text-5xl mb-8 text-center mx-3 font-bold mt-7 md:mt-24 ${styles.heroSubTitle}`}
+        <h3
+          className={`text-2xl md:text-5xl mb-8 text-center mx-3 mt-7 md:mt-24 ${styles.heroSubTitle}`}
         >
           FESTIVAL JAPONSKÝCH BOJOVÝCH UMĚNÍ
-        </div>
+        </h3>
         <div className="flex md:gap-16 font-normal mx-2 mt-5 flex-col md:flex-row text-center">
           <div className="md:text-4xl text-xl">28. října 2026</div>
           <div className="md:text-4xl text-xl font-bold">11:00 - 18:00</div>

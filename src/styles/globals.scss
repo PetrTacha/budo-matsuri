@@ -29,15 +29,21 @@ body {
 
 h1 {
   font-size: $h1-font-size;
+  font-family: $font-family-header;
+  font-weight: 800;
+  font-style: normal;
 }
 
 h2 {
+  font-family: $font-family-header;
   font-size: $h2-font-size;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 h3 {
   font-size: $h3-font-size;
+  font-family: $font-family-header;
+  font-weight: 400;
 }
 
 h4 {

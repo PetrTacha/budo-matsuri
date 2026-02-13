@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import ucinkujici from "@/data/ucinkujici.json";
 import Citate from "@/components/Citate/Citate";
 import { Klub } from "@/components/Klub/Klub";
@@ -11,9 +11,22 @@ import SocialNetworks from "@/components/SocialNetworks";
 import { QUOTES } from "@/constants";
 
 export default function UcinkujiciPage() {
+  const router = useRouter();
+  const [isNavigating, setIsNavigating] = useState(false);
+
+  const handleKlubClick = (url) => {
+    setIsNavigating(true);
+    setTimeout(() => {
+      router.push(`/ucinkujici/${url}`);
+    }, 150);
+  };
   return (
     <Layout>
-      <div className="flex flex-col h-screen">
+      <div 
+        className={`flex flex-col h-screen transition-opacity duration-300 ${
+          isNavigating ? 'opacity-0' : 'opacity-100'
+        }`}
+      >
         <main className="flex-grow">
           <h2 className="sm:my-32 my-16 mt-28 text-center">
             Účinkující pro ročník 2026
@@ -21,13 +34,13 @@ export default function UcinkujiciPage() {
           <div className={`mb-32 ${styles.gridContainer}`}>
             {ucinkujici.map((klub) => {
               return (
-                <Link 
+                <div 
                   key={klub.name} 
-                  href={`/ucinkujici/${klub.url}`}
-                  className="block"
+                  onClick={() => handleKlubClick(klub.url)}
+                  className="block cursor-pointer"
                 >
                   <Klub data={klub} />
-                </Link>
+                </div>
               );
             })}
           </div>
