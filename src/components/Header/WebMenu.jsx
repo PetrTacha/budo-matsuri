@@ -1,18 +1,13 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
-import { MenuButton } from "../MenuButton/MenuButton";
 import Link from "next/link";
-import FacebookLogo from "@/svgs/FacebookLogo";
-import InstagramLogo from "@/svgs/InstagramLogo";
-import { usePathname } from "next/navigation";
-import styles from "./WebHeader.module.scss";
 import { ROUTES } from "@/constants/routes";
+import { SOCIAL_LINKS } from "@/constants/socialLinks";
+import styles from "./WebHeader.module.scss";
 
 export const WebMenu = ({ closeMenu }) => {
   const menuRef = useRef(null);
-  const logoColor = "grey";
-  const pathname = usePathname();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -28,46 +23,85 @@ export const WebMenu = ({ closeMenu }) => {
   }, [closeMenu]);
 
   return (
-    <div
-      ref={menuRef}
-      className={`${styles.menu} h-auto  w-64 flex justify-end absolute -mt-6 -translate-x-full rounded-xl text-black pb-10`}
+    <div 
+      className="md:hidden fixed inset-0 z-40 bg-black bg-opacity-50"
+      onClick={closeMenu}
     >
-      <div className="flex flex-col items-end text-end gap-3 w-full">
-        <MenuButton color="white" onClick={closeMenu} />
-        <div className="flex flex-col gap-10 pr-6 mt-5">
-          <Link className="font-medium no-underline" href={ROUTES.PERFORMERS}>
-            Účinkující
-          </Link>
-          {/* {pathname !== ROUTES.TICKETS && (
-            <Link className="font-medium no-underline" href={ROUTES.TICKETS}>
-              Vstupenky
+      <div
+        ref={menuRef}
+        className={`${styles.mobileMenu} fixed top-0 right-0 h-full w-80 shadow-xl`}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex flex-col h-full p-8">
+          {/* Close button */}
+          <button
+            onClick={closeMenu}
+            className="self-end mb-8 text-3xl hover:opacity-70 transition-opacity"
+            aria-label="Zavřít menu"
+          >
+            ×
+          </button>
+
+          {/* Navigation links */}
+          <nav className="flex flex-col gap-6 mb-10">
+            <Link 
+              href={ROUTES.PERFORMERS}
+              onClick={closeMenu}
+              className="text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline"
+            >
+              Účinkující
             </Link>
-          )} */}
-          {/* <Link className="font-medium" href={ROUTES.MERCHANDISE}>
-            Merchandise
-          </Link> */}
-          <Link className="font-medium no-underline" href={ROUTES.GALLERY}>
-            Fotogalerie
-          </Link>
-          <Link className="font-medium no-underline" href={ROUTES.CONTACT}>
-            Kontakt
-          </Link>
-        </div>
-        <div className=" w-3/4 mt-3 border-t-2 border-slate-400 mr-6 pt-5 flex gap-5 h-16 justify-end">
-          <a
-            className="h-full"
-            href="https://www.facebook.com/events/253428993975057"
-            target="_blank"
-          >
-            <FacebookLogo color={logoColor} />
-          </a>
-          <a
-            className="h-full"
-            href="https://www.instagram.com/budomatsuri"
-            target="_blank"
-          >
-            <InstagramLogo color={logoColor} />
-          </a>
+            <Link 
+              href={ROUTES.CONTACT}
+              onClick={closeMenu}
+              className="text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline"
+            >
+              Kontakt
+            </Link>
+            <Link 
+              href={ROUTES.GALLERY}
+              onClick={closeMenu}
+              className="text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline"
+            >
+              Fotogalerie
+            </Link>
+          </nav>
+
+          {/* Social links */}
+          <div className="border-t-2 border-gray-300 pt-6">
+            <div className="flex gap-6">
+              <a
+                href={SOCIAL_LINKS.FACEBOOK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-70 transition-opacity"
+                aria-label="Facebook"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img 
+                  width="40" 
+                  height="40" 
+                  src="https://img.icons8.com/ios-filled/50/facebook-new.png" 
+                  alt="Facebook"
+                />
+              </a>
+              <a
+                href={SOCIAL_LINKS.INSTAGRAM}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-70 transition-opacity"
+                aria-label="Instagram"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img 
+                  width="36" 
+                  height="36" 
+                  src="https://img.icons8.com/ios-glyphs/30/instagram-new.png" 
+                  alt="Instagram"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
