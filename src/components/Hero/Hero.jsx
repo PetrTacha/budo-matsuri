@@ -9,12 +9,12 @@ const Hero = () => {
     <>
       {/* Hero sekce s obrázkem (v budoucnu video) */}
       <BudoRow variant="hero" backgroundType="image">
-        <div className="container mx-auto flex items-start justify-start flex-col relative pt-72 p-32 md:pb-40 z-10 pb-16">
+        <div className="container mx-auto flex items-start justify-start flex-col relative pt-72 p-16 md:pb-40 z-10 pb-16">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logos/FullLogo.svg"
             alt="Budō Matsuri Logo"
-            className="w-96 md:w-[32rem] mb-1"
+            className="w-72 md:w-[28rem] mb-1"
             loading="eager"
             decoding="async"
           />{" "}

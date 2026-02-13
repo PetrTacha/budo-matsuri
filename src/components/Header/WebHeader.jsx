@@ -38,7 +38,7 @@ export const WebHeader = () => {
           ? (isScrolled ? styles.headerScrolled : styles.headerTransparent)
           : styles.headerStatic
       }`}>
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div className=" w-full px-9 py-4 flex justify-between items-center">
           {/* Logo nalevo */}
           <Link href={ROUTES.HOME} className="flex-shrink-0">
             <Image
@@ -51,22 +51,22 @@ export const WebHeader = () => {
           </Link>
 
           {/* Desktop navigace - uprostřed */}
-          <nav className="hidden md:flex gap-8 items-center">
+          <nav className="hidden md:flex gap-16 items-center">
             <Link 
               href={ROUTES.PERFORMERS}
-              className="text-gray-900 hover:text-primary font-medium text-lg transition-colors no-underline"
+              className={` ${styles.navLink} text-gray-900 hover:text-primary font-medium text-lg transition-colors no-underline ${styles.navLink}`}
             >
               Účinkující
             </Link>
             <Link 
               href={ROUTES.CONTACT}
-              className="text-gray-900 hover:text-primary font-medium text-lg transition-colors no-underline"
+              className={`text-gray-900 hover:text-primary font-medium text-lg transition-colors no-underline ${styles.navLink}`}
             >
               Kontakt
             </Link>
             <Link 
               href={ROUTES.GALLERY}
-              className="text-gray-900 hover:text-primary font-medium text-lg transition-colors no-underline"
+              className={`text-gray-900 hover:text-primary font-medium text-lg transition-colors no-underline ${styles.navLink}`}
             >
               Fotogalerie
             </Link>

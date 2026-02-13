@@ -43,25 +43,25 @@ export const WebMenu = ({ closeMenu }) => {
           </button>
 
           {/* Navigation links */}
-          <nav className="flex flex-col gap-6 mb-10">
+          <nav className="flex flex-col gap-6 mb-10 ">
             <Link 
               href={ROUTES.PERFORMERS}
               onClick={closeMenu}
-              className="text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline"
+              className={`text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline ${styles.navLink}`}
             >
               Účinkující
             </Link>
             <Link 
               href={ROUTES.CONTACT}
               onClick={closeMenu}
-              className="text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline"
+              className={`text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline ${styles.navLink}`}
             >
               Kontakt
             </Link>
             <Link 
               href={ROUTES.GALLERY}
               onClick={closeMenu}
-              className="text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline"
+              className={`text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline ${styles.navLink}`}
             >
               Fotogalerie
             </Link>
