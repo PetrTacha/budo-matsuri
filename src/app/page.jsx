@@ -27,7 +27,7 @@ export default function HomePage() {
         <main className="flex-grow relative">
           <Hero />
 
-          <div className="absolute top-[80vh] right-32 mt-8 mx-2 z-20">
+          <div className="absolute top-[65dvh] right-[18dvh] mt-8 mx-2 z-20">
             <Button href={LINKS.TICKETS} variant="primary" size="large">
               KOUPIT VSTUPENKU
             </Button>

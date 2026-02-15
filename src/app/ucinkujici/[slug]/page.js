@@ -50,7 +50,7 @@ export default async function PerformerPage({ params }) {
   return (
     <div className="flex flex-col md:flex-row min-h-screen">
       {/* Levá strana - obrázek (na mobilu nahoře) */}
-      <div className="relative w-full md:w-1/2 h-[60vh] md:h-screen md:sticky md:top-0">
+      <div className="relative w-full md:w-1/2 h-[60dvh] md:h-screen md:sticky md:top-0">
         <Image
           src={performer.thumbnail}
           alt={removeNewSpace(performer.name)}

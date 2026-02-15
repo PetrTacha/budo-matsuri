@@ -9,7 +9,7 @@ const Hero = () => {
     <>
       {/* Hero sekce s obrázkem (v budoucnu video) */}
       <BudoRow variant="hero" backgroundType="image">
-        <div className="relative container mx-auto flex items-start justify-start flex-col relative pt-72 p-16 md:pb-40 z-10 pb-16">
+        <div className="relative h-[100dvh] container mx-auto flex items-start justify-start flex-col relative pt-72 p-16 md:pb-40 z-10 pb-16">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logos/FullLogo.svg"
