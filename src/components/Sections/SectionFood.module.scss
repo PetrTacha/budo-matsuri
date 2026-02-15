@@ -1,0 +1,40 @@
+@import "@/styles/variables.scss";
+
+
+.foodSection{
+    display: grid;
+    grid-template-columns:  1fr 50%;
+    justify-items: center;
+    gap: 10rem;
+    align-items: center;
+}
+
+.textContent{
+    padding-top: 3rem;
+    max-width: 80%;
+
+    display: grid;
+     justify-items: start;
+    gap: 5rem;
+
+    button{
+          justify-self: start;
+    }
+}
+.image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 15;
+}
+
+.circle {
+  z-index: 10;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  margin-bottom: 15rem;
+  font-weight: 800;
+}
