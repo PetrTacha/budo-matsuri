@@ -8,7 +8,7 @@ const SectionFood = () => {
     >
       <div className={`${styles.textContent}`}>
         <div>
-          <h1>VÝBĚROVÉ SPECIALITY</h1>
+          <h2>VÝBĚROVÉ SPECIALITY</h2>
           <h3>potěšení pro vaše chuťové buňky</h3>
         </div>
         <div>

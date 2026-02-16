@@ -7,10 +7,10 @@ const SectionMerchendise = () => {
       className={`relative min-h-[35dvh] flex items-center justify-center z-10 ${styles.merchendiseSection}`}
     >
       <div className={`${styles.sectionHeader}`}>
-        <h1>
+        <h2>
           JAPONSKÝ DESIGN
           <br /> A DROBNOSTI
-        </h1>
+        </h2>
         <h3>zhmotněná vzpomínka</h3>
       </div>
       <div className={`${styles.textContent}`}>

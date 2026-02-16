@@ -12,7 +12,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 // import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
-const icon = L.icon({ iconUrl: "/calligraphy-red-small.png", iconSize: [100, 100] });
+const icon = L.icon({ iconUrl: "/icons/marker_here.svg", iconSize: [50, 50] });
 
 // let DefaultIcon = L.icon({
 //     iconUrl: icon,
@@ -35,8 +35,9 @@ const OpenStreetMap = () => {
         className="h-full w-full"
       >
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; OpenStreetMap &copy; CARTO'
+          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+          maxZoom={19}
         />
         {/* {location.loaded && !location.error && ( */}
         {/* <Marker
@@ -52,7 +53,7 @@ const OpenStreetMap = () => {
           position={[center.lat, center.lng]}
           icon={icon}
         >
-          <Popup>Sportovní areál ČVUT Pod Juliskou 4, Praha 6</Popup>
+          <Popup><b>Budo Matsuri</b><br />Sportovní areál ČVUT<br />Pod Juliskou 4, Praha 6</Popup>
         </Marker>
       </MapContainer>
     </div>
@@ -60,3 +61,42 @@ const OpenStreetMap = () => {
 };
 
 export default OpenStreetMap;
+
+
+{/* <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<div id="map" style="height:420px; border-radius:16px;"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  // souřadnice místa (Sportovní areál ČVUT)
+  const venue = [50.107224, 14.392878];
+
+  // mapa
+  const map = L.map('map', {
+    zoomControl: true,
+    scrollWheelZoom: false
+  }).setView(venue, 15);
+
+  // světle šedý minimalistický styl (stejný jako na tvém screenshotu)
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap &copy; CARTO',
+    maxZoom: 19
+  }).addTo(map);
+
+  // vlastní pin (můžeš nahradit logem)
+  const icon = L.icon({
+    iconUrl: '/img/pin.png', // nahraj sem ikonku
+    iconSize: [42, 42],
+    iconAnchor: [21, 42]
+  });
+
+  L.marker(venue, { icon: icon })
+    .addTo(map)
+    .bindPopup("<b>Budo Matsuri</b><br>Sportovní areál ČVUT<br>Pod Juliskou 4, Praha 6")
+    .openPopup();
+</script> */}

@@ -1,7 +1,7 @@
 import Citate from "@/components/Citate/Citate";
 import Hero from "@/components/Hero/Hero";
 import Information from "@/components/Information";
-import { Layout } from "@/components/Layout/Layout";
+import { LayoutHero } from "@/components/Layout/Layout";
 import Partners from "@/components/Partners";
 import SocialNetworks from "@/components/SocialNetworks";
 import BackgroundBrush1 from "@/components/BackgroundBrush/BackgroundBrush1";
@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <Layout>
+    <LayoutHero>
       <div className="flex flex-col h-screen">
         <main className="flex-grow relative">
           <div className="overflow-hidden w-full relative">
@@ -49,6 +49,6 @@ export default function HomePage() {
           </div>
         </main>
       </div>
-    </Layout>
+    </LayoutHero>
   );
 }
