@@ -1,12 +1,13 @@
 @import "@/styles/variables.scss";
 
 
-.foodSection{
+.merchendiseSection{
     display: grid;
-    grid-template-columns:  1fr 50%;
+    grid-template-columns: 55% 1fr;
     justify-items: start;
     gap: 1rem;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 .textContent{

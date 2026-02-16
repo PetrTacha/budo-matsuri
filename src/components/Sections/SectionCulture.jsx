@@ -4,7 +4,7 @@ import styles from "./SectionCulture.module.scss";
 const SectionCulture = () => {
   return (
     <section
-      className={`relative min-h-[68dvh] z-10 ${styles.sectionMartialArtContent}`}
+      className={`relative min-h-[40dvh] z-10 ${styles.sectionMartialArtContent}`}
     >
       <div className={`${styles.textContent}`}>
         <div>

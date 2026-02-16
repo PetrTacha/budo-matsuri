@@ -1,17 +1,25 @@
-
-
-.brush1{
-    width: 80%;
-    top: 70dvh;
-    left: 50%;
-    transform: translateX(-60%);
-    opacity: 0.65;
+.brush1 {
+  top: 65dvh;
+  right: 21%;
+  opacity: 0.65;
+  width: 90rem;
+  height: auto;
 }
 
-.brush2{
-    width: 80%;
-    top: 200dvh;
-    left: 50%;
-    transform: translateX(-45%);
-    opacity: 0.65;
+.brush2 {
+    //   width: 80%;
+  top: 160dvh;
+  left: 10%;
+  // overflow: hidden;
+  // left: 50%;
+  // transform: translateX(-60%);
+  opacity: 0.65;
+
+  width: 90rem;
+  height: auto;
+//   width: 80%;
+//   top: 200dvh;
+//   left: 50%;
+//   transform: translateX(-45%);
+//   opacity: 0.65;
 }

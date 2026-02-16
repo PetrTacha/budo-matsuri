@@ -4,7 +4,7 @@ import styles from "./SectionMerchendise.module.scss";
 const SectionMerchendise = () => {
   return (
     <section
-      className={`relative min-h-[60dvh] flex items-center justify-center z-10 ${styles.foodSection}`}
+      className={`relative min-h-[35dvh] flex items-center justify-center z-10 ${styles.merchendiseSection}`}
     >
       <div className={`${styles.sectionHeader}`}>
         <h1>

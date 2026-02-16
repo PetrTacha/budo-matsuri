@@ -25,13 +25,8 @@ export default function HomePage() {
     <Layout>
       <div className="flex flex-col h-screen">
         <main className="flex-grow relative">
+          <div className="overflow-hidden w-full relative">
           <Hero />
-
-          <div className="absolute top-[65dvh] right-[18dvh] mt-8 mx-2 z-20">
-            <Button href={LINKS.TICKETS} variant="primary" size="large">
-              KOUPIT VSTUPENKU
-            </Button>
-          </div>
 
           <BackgroundBrush1 />
 
@@ -51,6 +46,7 @@ export default function HomePage() {
           />
           <SocialNetworks /> */}
           <Partners />
+          </div>
         </main>
       </div>
     </Layout>
