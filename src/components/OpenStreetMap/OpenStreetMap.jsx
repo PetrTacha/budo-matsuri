@@ -8,18 +8,9 @@ import React, { useRef, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-// import icon from "leaflet/dist/images/marker-icon.png";
 import L from "leaflet";
-// import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
 const icon = L.icon({ iconUrl: "/icons/marker_here.svg", iconSize: [50, 50] });
-
-// let DefaultIcon = L.icon({
-//     iconUrl: icon,
-//     shadowUrl: iconShadow,
-//   });
-
-//   L.Marker.prototype.options.icon = DefaultIcon;
 
 const OpenStreetMap = () => {
   const [center, setCenter] = useState({ lat: 50.1105, lng: 14.3907 });
@@ -27,7 +18,7 @@ const OpenStreetMap = () => {
   const mapRef = useRef();
 
   return (
-    <div className="mx-10 sm:mx-32 sm:h-1/3 h-1/5 mt-10 mb-24 z-10 relative">
+    <div className="h-[40rem]  mb-24 z-10 relative border-4 border-solid border-red-500 rounded-lg overflow-hidden">
       <MapContainer
         center={center}
         zoom={ZOOM_LEVEL}

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./SectionMartialArt.module.scss";
 import Button from "../common/Button";
+import Circle from "../common/Circle";
 import { ROUTES } from "@/constants/routes";
 
 const SectionMartialArt = () => {
@@ -8,18 +9,18 @@ const SectionMartialArt = () => {
     <section
       className={`relative min-h-[68dvh] z-10 ${styles.sectionMartialArtContent}`}
     >
-      <div
-        className={`${styles.circle} items-center justify-center flex flex-col text-center`}
-      >
-        <h2 className={`text-4xl font-bold text-white ${styles.circleText}`}>
-          BOJOVÁ
-          <br />
-          UMĚNÍ
-        </h2>
-        <h3 className={`text-lg text-white  ${styles.circleSubText}`}>
-          na vlastní kůži
-        </h3>
-      </div>
+      <Circle
+        h2Text={
+          <>
+            BOJOVÁ
+            <br />
+            UMĚNÍ
+          </>
+        }
+        h3Text="na vlastní kůži"
+        position="relative"
+        className={styles.circlePosition}
+      />
 
       <div className={`${styles.textContent}`}>
         <div>

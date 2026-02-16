@@ -1,15 +1,36 @@
 @import "@/styles/variables.scss";
 
-.columnBorder {
-  border-right: solid $primary-color 2px;
+.informationContainer {
+
+  display: grid;
+  margin-top: 3rem;
+  grid-template-columns: 1fr 1fr;
+  // grid-template-areas:
+  //   "textContent right";
+  gap: 1rem;
+  justify-content: start;
 }
 
-@media (max-width: 640px) {
-  .columnBorder {
-    border-right: none;
-  }
+.textContent {
+  //  grid-area: "textContent";
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
 }
 
-.newWindowIcon{
-  fill: $primary-color;
+// .textContentVirtual {
+//    grid-area: "virtual";
+// }
+// .textContentContact {
+//    grid-area: "email";
+// }
+.circleWrapper{
+  //  grid-area: right;
+  height: 25rem;
+}
+.circlePosition {
+   margin-top: -3rem;
+  margin-right: 3rem;
+   justify-self: end;
+   align-self: flex-start;
 }

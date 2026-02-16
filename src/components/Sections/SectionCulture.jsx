@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./SectionCulture.module.scss";
+import Circle from "../common/Circle";
 
 const SectionCulture = () => {
   return (
@@ -19,18 +20,18 @@ const SectionCulture = () => {
           </p>
         </div>
       </div>
-      <div
-        className={`${styles.circle} items-center justify-center flex flex-col text-center`}
-      >
-        <h2 className={`text-4xl font-bold text-white ${styles.circleText}`}>
-          JAPONSKÁ
-          <br />
-          KULTURA
-        </h2>
-        <h3 className={`text-lg text-white ${styles.circleSubText}`}>
-          na vlastní oči
-        </h3>
-      </div>
+      <Circle
+        h2Text={
+          <>
+            JAPONSKÁ
+            <br />
+            KULTURA
+          </>
+        }
+        h3Text="na vlastní oči"
+        position="relative"
+        className={styles.circlePosition}
+      />
     </section>
   );
 };

@@ -1,11 +1,10 @@
 import React from "react";
 import { WebHeader } from "../Header/WebHeader";
 import Head from "next/head";
-import { Container } from "postcss";
 
 export const LayoutHero = ({ children }) => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Head>
         <title>Budō matsuri</title>
       </Head>
@@ -15,19 +14,46 @@ export const LayoutHero = ({ children }) => {
   );
 };
 
+export const Layout = ({ 
+  children, 
+  backgroundImage, 
+  backgroundOpacity = 0.2,
+  backgroundScale = 1.1,
+}) => {
+  const backgroundStyle = backgroundImage
+    ? {
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
 
-export const Layout = ({ children, header }) => {
+        backgroundRepeat: "no-repeat",
+        opacity: backgroundOpacity,
+        transform: `scale(${backgroundScale})`,
+      }
+    : {};
+
   return (
-    <div>
+    <div className="relative min-h-screen flex flex-col overflow-hidden">
+      {backgroundImage && (
+        <div
+          style={backgroundStyle}
+          className="absolute inset-0 -z-10 ml-[20rem] mt-[3rem] "
+          aria-hidden="true"
+        />
+      )}
       <Head>
         <title>Budō matsuri</title>
       </Head>
       <WebHeader />
-      <main className="flex-grow relative mt-[20dvh] ml-[10rem]" >
-        <h1 className="mb-[2rem]">{header}</h1>
-        {children}
-        </main>
-      
+      <main className="flex-grow">{children}</main>
+    </div>
+  );
+};
+
+export const HeaderContainer = ({ children, header, style = "" }) => {
+  return (
+    <div className={`relative mt-[20dvh] mx-[10rem] ${style}`}>
+      <h1 className="mb-[2crem]">{header}</h1>
+      {children}
     </div>
   );
 };

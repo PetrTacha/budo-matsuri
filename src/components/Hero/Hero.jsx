@@ -55,11 +55,11 @@ const Hero = () => {
               Festival japonských bojových umění
             </h3>
           </div>
-          <h2 className={`${styles.placeAndTime} flex mx-2 mt-5 flex-col`}>
+          <h3 className={`${styles.placeAndTime} flex flex-col`}>
             <div className="">28. října 2026, 11:00 - 18:00</div>
             <div className="">Pod Juliskou 4</div>
-          </h2>
-          <div className={`${styles.buyTickets} z-10`}>
+          </h3>
+          <div className={`${styles.buyTickets}`}>
             <Button href={LINKS.TICKETS} variant="primary" size="large">
               KOUPIT VSTUPENKU
             </Button>

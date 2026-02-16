@@ -1,0 +1,26 @@
+@import "@/styles/variables.scss";
+
+.circle {
+  z-index: 10;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  font-weight: 800;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.circleText {
+  // Add any specific text styles here
+}
+
+.circleSubText {
+  // Add any specific subtext styles here
+}
