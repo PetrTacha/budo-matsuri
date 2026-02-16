@@ -6,7 +6,7 @@ import { ROUTES } from "@/constants/routes";
 const SectionMartialArt = () => {
   return (
     <section
-      className={`relative min-h-[68dvh] ${styles.sectionMartialArtContent}`}
+      className={`relative min-h-[68dvh] z-10 ${styles.sectionMartialArtContent}`}
     >
       <div
         className={`${styles.circle} items-center justify-center flex flex-col text-center`}

@@ -5,29 +5,18 @@
     display: grid;
     grid-template-columns:  1fr 50%;
     justify-items: start;
-    gap: 10rem;
+    gap: 1rem;
     align-items: center;
 }
 
 .textContent{
-    padding-left: 5rem;
+  
     padding-top: 3rem;
     max-width: 80%;
-
-    display: grid;
-     justify-items: start;
-    gap: 5rem;
-
-    button{
-          justify-self: start;
-    }
 }
-.image{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: 15;
+.sectionHeader{
+  margin-left: 5rem;
+  margin-top: 8rem;
 }
 
 .circle {

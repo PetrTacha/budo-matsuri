@@ -4,7 +4,7 @@ import styles from "./SectionFood.module.scss";
 const SectionFood = () => {
   return (
     <section
-      className={`relative min-h-[60dvh] flex items-center justify-center ${styles.foodSection}`}
+      className={`relative min-h-[60dvh] flex items-center justify-center z-10 ${styles.foodSection}`}
     >
       <div className={`${styles.textContent}`}>
         <div>
