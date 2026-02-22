@@ -18,7 +18,7 @@ const OpenStreetMap = () => {
   const mapRef = useRef();
 
   return (
-    <div className="h-[40rem]  mb-24 z-10 relative border-4 border-solid border-red-500 rounded-lg overflow-hidden">
+    <div className="h-[40rem] w-[50%] mb-24 z-10 relative border-4 border-solid border-red-500 rounded-lg overflow-hidden">
       <MapContainer
         center={center}
         zoom={ZOOM_LEVEL}
