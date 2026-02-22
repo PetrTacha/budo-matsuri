@@ -4,16 +4,13 @@ import styles from "./SectionMerchendise.module.scss";
 const SectionMerchendise = () => {
   return (
     <section
-      className={`relative min-h-[35dvh] flex items-center justify-center z-10 ${styles.merchendiseSection}`}
+      className={`relative min-h-[35dvh]  z-10 ${styles.merchendiseSection}`}
     >
-      <div className={`${styles.sectionHeader}`}>
+      <div className={`${styles.textContent}`}>
         <h2>
-          JAPONSKÝ DESIGN
-          <br /> A DROBNOSTI
+          JAPONSKÝ DESIGN A DROBNOSTI
         </h2>
         <h3>zhmotněná vzpomínka</h3>
-      </div>
-      <div className={`${styles.textContent}`}>
         <p className="mb-4">
           K dispozici bude také malý prodejní stánek s předměty inspirovanými
           Japonskem.

@@ -5,10 +5,12 @@ import Circle from "../common/Circle";
 const SectionCulture = () => {
   return (
     <section
-      className={`relative min-h-[40dvh] z-10 ${styles.sectionMartialArtContent}`}
+      className={`relative min-h-[40dvh] mt-10 z-10 ${styles.sectionMartialArtContent}`}
     >
       <div className={`${styles.textContent}`}>
         <div>
+          <h2>Přednášky</h2>
+          <h3>a doprovodný program</h3>
           <p className="mb-4">
             Budó Matsuri není pouze o bojových uměních. Pohyb a kultura stojí
             odpradávna bok po boku.
