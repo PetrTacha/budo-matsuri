@@ -2,7 +2,7 @@
 
 import React from "react";
 import dynamic from "next/dynamic";
-import styles from "@/styles/Kontakt.module.scss";
+import styles from "./Kontakt.module.scss";
 import { HeaderContainer, Layout } from "@/components/Layout/Layout";
 import SocialNetworks from "@/components/SocialNetworks";
 import Partners from "@/components/Partners";
@@ -63,8 +63,8 @@ export default function KontaktPage() {
             <Circle
               h2Text={
                 <>
-                  Sportovní<br /> areál
-                  ČVUT
+                  Sportovní
+                  <br /> areál ČVUT
                 </>
               }
               h3Text="Pod Juliskou 4, Praha 6"
@@ -74,7 +74,7 @@ export default function KontaktPage() {
           </div>
         </div>
 
-        <h3 >Místo konání festivalu:</h3>
+        <h3>Místo konání festivalu:</h3>
         <OpenStreetMap />
       </HeaderContainer>
       {/* <Partners />

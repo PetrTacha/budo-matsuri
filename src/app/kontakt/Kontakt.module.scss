@@ -1,0 +1,25 @@
+@import "@/styles/variables.scss";
+
+.informationContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-content: start;
+}
+
+.textContent {
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+
+.circleWrapper{
+  height: 25rem;
+}
+.circlePosition {
+   margin-top: -3rem;
+  margin-right: 3rem;
+   justify-self: end;
+   align-self: flex-start;
+}
