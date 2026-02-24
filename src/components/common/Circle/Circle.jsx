@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Circle.module.scss";
 
-const Circle = ({ h2Text, h3Text, position = "relative", className = "" }) => {
+const Circle = ({ h2Text, h3Text = "", position = "relative", className = "" }) => {
   const positionClass = position === "absolute" ? styles.absolute : styles.relative;
 
   return (
