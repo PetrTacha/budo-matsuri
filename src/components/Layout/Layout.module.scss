@@ -1,0 +1,26 @@
+.headerContainer {
+  position: relative;
+  margin-top: 20dvh;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.headerContent {
+  // Left side with header and subheader
+}
+
+.rightText {
+  max-width: 28rem;
+  
+  p {
+    margin: 0;
+  }
+}

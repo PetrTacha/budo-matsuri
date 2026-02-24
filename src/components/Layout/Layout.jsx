@@ -1,6 +1,7 @@
 import React from "react";
 import { WebHeader } from "../Header/WebHeader";
 import Head from "next/head";
+import styles from "./Layout.module.scss";
 
 export const LayoutHero = ({ children }) => {
   return (
@@ -19,6 +20,7 @@ export const Layout = ({
   backgroundImage, 
   backgroundOpacity = 0.2,
   backgroundScale = 1.1,
+  backgroundMarginTop = '3rem',
 }) => {
   const backgroundStyle = backgroundImage
     ? {
@@ -28,6 +30,7 @@ export const Layout = ({
         backgroundRepeat: "no-repeat",
         opacity: backgroundOpacity,
         transform: `scale(${backgroundScale})`,
+        marginTop: backgroundMarginTop,
       }
     : {};
 
@@ -36,7 +39,7 @@ export const Layout = ({
       {backgroundImage && (
         <div
           style={backgroundStyle}
-          className="absolute inset-0 -z-10 ml-[20rem] mt-[3rem] "
+          className="absolute inset-0 -z-10 ml-[20rem]"
           aria-hidden="true"
         />
       )}
@@ -49,10 +52,20 @@ export const Layout = ({
   );
 };
 
-export const HeaderContainer = ({ children, header, style = "" }) => {
+export const HeaderContainer = ({ children, header, subheader, rightText, style = "" }) => {
   return (
-    <div className={`relative mt-[20dvh] mx-[10rem] ${style}`}>
-      <h1 className="mb-[2crem]">{header}</h1>
+    <div className={`${styles.headerContainer} ${style}`}>
+      <div className={styles.headerGrid}>
+        <div className={styles.headerContent}>
+          <h1>{header}</h1>
+          {subheader && <h3>{subheader}</h3>}
+        </div>
+        {rightText && (
+          <div className={styles.rightText}>
+            <p>{rightText}</p>
+          </div>
+        )}
+      </div>
       {children}
     </div>
   );
