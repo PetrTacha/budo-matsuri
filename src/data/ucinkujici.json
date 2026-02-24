@@ -114,5 +114,11 @@
     "url":"shakuhachi",
     "thumbnail": "/photo-square/shakuhachi.jpg",
     "description": "/texts/shakuhachi.html"
+  },
+  {
+    "name": "IMA Design",
+    "url":"ima-design",
+    "thumbnail": "/photo-square/ima-design.jpg",
+    "description": "/texts/ima-design.html"
   }
 ]

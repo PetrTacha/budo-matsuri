@@ -1,0 +1,101 @@
+{
+  "desktop": {
+    "columns": 8,
+    "rows": 6,
+    "positions": [
+      { "klubIndex": 0, "row": 1, "column": 1 },
+      { "klubIndex": 1, "row": 1, "column": 2},
+      { "klubIndex": 2, "row": 1, "column": 4 },
+
+      { "klubIndex": 3, "row": 2, "column": 3 },
+      
+      { "klubIndex": 4, "row": 3, "column": 1 },
+      { "klubIndex": 5, "row": 3, "column": 2 },
+      { "klubIndex": 6, "row": 3, "column": 4 },
+
+      { "klubIndex": 7, "row": 4, "column": 1 },
+      { "klubIndex": 8, "row": 4, "column": 3 },
+
+      { "klubIndex": 9, "row": 5, "column": 2 },
+      { "klubIndex": 10, "row": 5, "column": 4 },
+
+      { "klubIndex": 11, "row": 6, "column": 1 },
+      { "klubIndex": 12, "row": 6, "column": 3 },
+
+      { "klubIndex": 13, "row": 7, "column": 2 },
+      { "klubIndex": 14, "row": 7, "column": 4 },
+
+      { "klubIndex": 15, "row": 8, "column": 1 },
+      { "klubIndex": 16, "row":8, "column": 2 },
+      { "klubIndex": 17, "row": 8, "column": 4 },
+
+      { "klubIndex": 18, "row": 9, "column": 2 },
+      { "klubIndex": 19, "row": 9, "column": 3 }
+    ]
+  },
+  "tablet": {
+    "columns": 6,
+    "rows": 8,
+    "positions": [
+      { "klubIndex": 0, "row": 1, "column": 1 },
+      { "klubIndex": 1, "row": 1, "column": 3 },
+      { "klubIndex": 2, "row": 1, "column": 5 },
+      
+      { "klubIndex": 3, "row": 2, "column": 2 },
+      { "klubIndex": 4, "row": 2, "column": 4 },
+      { "klubIndex": 5, "row": 2, "column": 6 },
+      
+      { "klubIndex": 6, "row": 3, "column": 1 },
+      { "klubIndex": 7, "row": 3, "column": 3 },
+      { "klubIndex": 8, "row": 3, "column": 5 },
+      
+      { "klubIndex": 9, "row": 4, "column": 2 },
+      { "klubIndex": 10, "row": 4, "column": 4 },
+      { "klubIndex": 11, "row": 4, "column": 6 },
+      
+      { "klubIndex": 12, "row": 5, "column": 1 },
+      { "klubIndex": 13, "row": 5, "column": 3 },
+      { "klubIndex": 14, "row": 5, "column": 5 },
+      
+      { "klubIndex": 15, "row": 6, "column": 2 },
+      { "klubIndex": 16, "row": 6, "column": 4 },
+      
+      { "klubIndex": 17, "row": 7, "column": 1 },
+      { "klubIndex": 18, "row": 7, "column": 3 }
+    ]
+  },
+  "mobile": {
+    "columns": 4,
+    "rows": 11,
+    "positions": [
+      { "klubIndex": 0, "row": 1, "column": 1 },
+      { "klubIndex": 1, "row": 1, "column": 3 },
+      
+      { "klubIndex": 2, "row": 2, "column": 2 },
+      { "klubIndex": 3, "row": 2, "column": 4 },
+      
+      { "klubIndex": 4, "row": 3, "column": 1 },
+      { "klubIndex": 5, "row": 3, "column": 3 },
+      
+      { "klubIndex": 6, "row": 4, "column": 2 },
+      { "klubIndex": 7, "row": 4, "column": 4 },
+      
+      { "klubIndex": 8, "row": 5, "column": 1 },
+      { "klubIndex": 9, "row": 5, "column": 3 },
+      
+      { "klubIndex": 10, "row": 6, "column": 2 },
+      { "klubIndex": 11, "row": 6, "column": 4 },
+      
+      { "klubIndex": 12, "row": 7, "column": 1 },
+      { "klubIndex": 13, "row": 7, "column": 3 },
+      
+      { "klubIndex": 14, "row": 8, "column": 2 },
+      { "klubIndex": 15, "row": 8, "column": 4 },
+      
+      { "klubIndex": 16, "row": 9, "column": 1 },
+      { "klubIndex": 17, "row": 9, "column": 3 },
+      
+      { "klubIndex": 18, "row": 10, "column": 2 }
+    ]
+  }
+}
