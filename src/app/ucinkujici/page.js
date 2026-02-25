@@ -21,6 +21,15 @@ export default function UcinkujiciPage() {
   const headerParagraph =
     "Níže naleznete přehled škol, hostů a skupin, které se zúčastní 7. ročníku Budō matsuri. Každý z nich přináší vlastní zaměření, zkušenosti i způsob práce. Dohromady tvoří unikátní atmosféru celé události.";
 
+  // Restore scroll position on mount
+  useEffect(() => {
+    const savedScrollY = sessionStorage.getItem('ucinkujiciScrollY');
+    if (savedScrollY) {
+      window.scrollTo(0, parseInt(savedScrollY));
+      sessionStorage.removeItem('ucinkujiciScrollY');
+    }
+  }, []);
+
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
@@ -37,6 +46,9 @@ export default function UcinkujiciPage() {
   const layout = useMemo(() => layoutConfig[breakpoint], [breakpoint]);
 
   const handleKlubClick = (url) => {
+    // Save current scroll position before navigating
+    sessionStorage.setItem('ucinkujiciScrollY', window.scrollY.toString());
+    
     setIsNavigating(true);
     setTimeout(() => {
       router.push(`/ucinkujici/${url}`);
@@ -86,33 +98,6 @@ export default function UcinkujiciPage() {
             })}
           </div>
         </section>
-
-        {/* <div 
-        className={`flex flex-col h-screen transition-opacity duration-300 ${
-          isNavigating ? 'opacity-0' : 'opacity-100'
-        }`}
-      >
-        <main className="flex-grow">
-          <h2 className="sm:my-32 my-16 mt-28 text-center">
-            Účinkující pro ročník 2026
-          </h2>
-          <div className={`mb-32 ${styles.gridContainer}`}>
-            {ucinkujici.map((klub) => {
-              return (
-                <div 
-                  key={klub.name} 
-                  onClick={() => handleKlubClick(klub.url)}
-                  className="block cursor-pointer"
-                >
-                  <Klub data={klub} />
-                </div>
-              );
-            })}
-          </div>
-          <Citate citate={QUOTES[1].text} author={QUOTES[1].author} />
-          <SocialNetworks />
-        </main>
-      </div> */}
       </HeaderContainer>
     </Layout>
   );

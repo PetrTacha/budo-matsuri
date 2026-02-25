@@ -61,38 +61,43 @@ export default async function PerformerPage({ params }) {
       </div>
 
       {/* Pravá strana - obsah (na mobilu pod obrázkem) */}
-      <main className="w-full md:w-1/2 px-6 md:px-12 py-8 md:py-16 overflow-y-auto">
-        {/* Zpětný odkaz */}
-        <Link 
-          href="/ucinkujici" 
-          className="inline-flex items-center gap-2 no-underline text-primary transition-colors mb-6 group"
-        >
-          <ArrowLeftIcon className="group-hover:-translate-x-1 transition-transform" />
-          <span>Zpět na přehled účastníků</span>
-        </Link>
+      <main className="w-full md:w-1/2 flex flex-col md:h-screen">
+        <div className="px-6 md:px-12 pt-8 md:pt-16 pb-4">
+          {/* Zpětný odkaz */}
+          <Link 
+            href="/ucinkujici" 
+            className="inline-flex items-center gap-2 no-underline text-primary transition-colors mb-6 group"
+          >
+            <ArrowLeftIcon className="group-hover:-translate-x-1 transition-transform" />
+            <span>Zpět na přehled účastníků</span>
+          </Link>
 
-        <h1 className="text-4xl md:text-5xl font-bold mb-8">
-          {removeNewSpace(performer.name)}
-        </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-8">
+            {removeNewSpace(performer.name)}
+          </h1>
+        </div>
 
-        {/* MDX obsah se stylingem z @tailwindcss/typography */}
-        <article className="prose prose-lg max-w-none mb-12">
-          <MDXContent />
-        </article>
+        {/* Scrollable content */}
+        <div className="flex-1 overflow-y-auto px-6 md:px-12 pb-8 md:pb-16">
+          {/* MDX obsah se stylingem z @tailwindcss/typography */}
+          <article className="prose prose-lg max-w-none mb-12">
+            <MDXContent />
+          </article>
 
-        {/* Logo, pokud existuje */}
-        {performer.logo && (
-          <div className="flex justify-center mt-12">
-            <div className="relative w-48 h-48 md:w-64 md:h-64">
-              <Image
-                src={performer.logo}
-                alt={`Logo ${removeNewSpace(performer.name)}`}
-                fill
-                className="object-contain"
-              />
+          {/* Logo, pokud existuje */}
+          {performer.logo && (
+            <div className="flex justify-center mt-12">
+              <div className="relative w-48 h-48 md:w-64 md:h-64">
+                <Image
+                  src={performer.logo}
+                  alt={`Logo ${removeNewSpace(performer.name)}`}
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </main>
     </div>
   );
