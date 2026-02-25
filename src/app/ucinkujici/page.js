@@ -60,9 +60,10 @@ export default function UcinkujiciPage() {
               gridTemplateRows: `repeat(${layout.rows}, 15rem)`
             }}
           >
-            {layout.positions.map((pos) => {
+            {layout.positions.map((pos, index) => {
               const klub = ucinkujici[pos.klubIndex];
               const [offsetX, offsetY] = pos.offset || [0, 0];
+              const animationDelay = `${(index * 0.3) % 3}s`;
               return (
                 <div
                   key={`${breakpoint}-${pos.klubIndex}`}
@@ -72,11 +73,13 @@ export default function UcinkujiciPage() {
                     gridRow: pos.row,
                     transform: `translate(${offsetX}rem, ${offsetY}rem)`
                   }}
+                  onClick={() => handleKlubClick(klub.url)}
                 >
                   <Circle
                     h2Text={klub.name}
                     position="relative"
                     size="small"
+                    animationDelay={animationDelay}
                   />
                 </div>
               );

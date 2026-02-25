@@ -1,10 +1,37 @@
 @import "@/styles/variables.scss";
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+}
+
 .circle {
   z-index: 10;
   border-radius: 50%;
   background-color: $secondary-color;
   font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  
+  &:hover {
+    transform: scale(1.08) translateY(-0.5rem);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    filter: brightness(1.1);
+    z-index: 20;
+  }
+}
+
+.animated {
+  animation: float 6s ease-in-out infinite;
+  
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 
 .large {
@@ -23,12 +50,4 @@
 
 .absolute {
   position: absolute;
-}
-
-.circleText {
-  // Add any specific text styles here
-}
-
-.circleSubText {
-  // Add any specific subtext styles here
 }
