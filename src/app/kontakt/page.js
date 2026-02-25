@@ -70,6 +70,7 @@ export default function KontaktPage() {
               h3Text="Pod Juliskou 4, Praha 6"
               position="relative"
               className={styles.circlePosition}
+              interactive={false}
             />
           </div>
         </div>

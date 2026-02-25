@@ -20,6 +20,7 @@ const SectionMartialArt = () => {
         h3Text="na vlastní kůži"
         position="relative"
         className={styles.circlePosition}
+        interactive={false}
       />
 
       <div className={`${styles.textContent}`}>

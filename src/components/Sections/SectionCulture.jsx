@@ -33,6 +33,7 @@ const SectionCulture = () => {
         h3Text="na vlastní oči"
         position="relative"
         className={styles.circlePosition}
+        interactive={false}
       />
     </section>
   );
