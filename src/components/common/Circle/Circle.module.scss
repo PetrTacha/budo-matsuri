@@ -2,11 +2,19 @@
 
 .circle {
   z-index: 10;
-  width: 300px;
-  height: 300px;
   border-radius: 50%;
   background-color: $secondary-color;
   font-weight: 800;
+}
+
+.large {
+  width: 18.75rem;  // 300px
+  height: 18.75rem;
+}
+
+.small {
+  width: 17.5rem;   // 280px
+  height: 17.5rem;
 }
 
 .relative {
