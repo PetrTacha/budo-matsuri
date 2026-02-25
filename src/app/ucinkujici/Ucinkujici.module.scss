@@ -1,41 +1,21 @@
 .bubbleGrid {
+  width: 100%;
   display: grid;
-  gap: 1rem;
+  gap: 0;
   justify-items: center;
   align-items: center;
   // max-width: 90rem;
-  margin: 3rem auto;
-  padding: 2rem;
+  // margin: 3rem auto;
+  // padding: 2rem;
+  // border: solid 1px black;
+  padding-bottom: 15rem;
 }
 
 .circlePosition {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* KOLEČKO */
-.bubble {
-  width: var(--bubble-size);
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  background: #e30613;
-  color: white;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.8rem;
-
-  transition: transform 0.3s ease;
-}
-
-/* hover */
-.bubble:hover {
-  transform: scale(1.1);
+  
+  // border: solid 1px black;
+  // background-color: #4106e365;
 }

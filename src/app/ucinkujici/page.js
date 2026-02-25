@@ -57,23 +57,26 @@ export default function UcinkujiciPage() {
             className={styles.bubbleGrid}
             style={{
               gridTemplateColumns: `repeat(${layout.columns}, 1fr)`,
-              gridTemplateRows: `repeat(${layout.rows}, auto)`
+              gridTemplateRows: `repeat(${layout.rows}, 15rem)`
             }}
           >
             {layout.positions.map((pos) => {
               const klub = ucinkujici[pos.klubIndex];
+              const [offsetX, offsetY] = pos.offset || [0, 0];
               return (
                 <div
                   key={`${breakpoint}-${pos.klubIndex}`}
                   className={styles.circlePosition}
                   style={{
                     gridColumn: pos.column,
-                    gridRow: pos.row
+                    gridRow: pos.row,
+                    transform: `translate(${offsetX}rem, ${offsetY}rem)`
                   }}
                 >
                   <Circle
                     h2Text={klub.name}
                     position="relative"
+                    size="small"
                   />
                 </div>
               );
