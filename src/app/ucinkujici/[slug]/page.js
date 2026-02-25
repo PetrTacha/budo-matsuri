@@ -67,8 +67,8 @@ export default async function PerformerPage({ params }) {
           href="/ucinkujici" 
           className="inline-flex items-center gap-2 no-underline text-primary transition-colors mb-6 group"
         >
-          <ArrowLeftIcon className="w-3 h-3 group-hover:-translate-x-1 transition-transform mb-1" />
-          <span>Zpět na účastníky</span>
+          <ArrowLeftIcon className="group-hover:-translate-x-1 transition-transform" />
+          <span>Zpět na přehled účastníků</span>
         </Link>
 
         <h1 className="text-4xl md:text-5xl font-bold mb-8">

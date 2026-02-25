@@ -1,17 +1,30 @@
 import * as React from "react";
 const ArrowLeftIcon = (props) => {
+  const { width = 24, height = 24, color = "red", ...rest } = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={10}
-      height={8}
-      viewBox="0 0 10 8"
+      width={width}
+      height={height}
+      viewBox="0 0 64 64"
       fill="none"
-      {...props}
+      {...rest}
     >
+      <circle 
+        cx="32" 
+        cy="32" 
+        r="31" 
+        fill={color}
+        stroke={color}
+        strokeWidth="2"
+      />
       <path
-        d="M4.63768 1.08235C4.10628 1.85882 3.42995 2.61176 2.82609 3.11765L10 3.11765L10 4.97647L2.92271 4.97647C3.20048 5.22353 3.47826 5.52941 3.76812 5.87059C4.33575 6.57647 4.81884 7.35294 5.06039 8L2.83816 8C2.75362 7.68235 2.59662 7.30588 2.35507 6.88235C1.83575 6.04706 1.03865 5.14118 3.11637e-07 4.43529L3.86717e-07 3.57647C0.519324 3.21176 0.978261 2.81176 1.41304 2.38823C2.27053 1.51765 2.85024 0.647058 3.00725 -6.11326e-07L5.19324 -4.20221e-07C5.08454 0.329411 4.8913 0.694117 4.63768 1.08235Z"
-        fill="currentColor"
+        d="M32 20L20 32L32 44M22 32H44"
+        stroke="white"
+        strokeWidth="6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
       />
     </svg>
   );
