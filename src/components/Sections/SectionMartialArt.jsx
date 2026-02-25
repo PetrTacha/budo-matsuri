@@ -10,7 +10,7 @@ const SectionMartialArt = () => {
       className={`relative min-h-[68dvh] z-10 ${styles.sectionMartialArtContent}`}
     >
       <Circle
-        h2Text={
+        mainText={
           <>
             BOJOVÁ
             <br />

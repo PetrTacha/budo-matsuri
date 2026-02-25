@@ -59,3 +59,16 @@
 .absolute {
   position: absolute;
 }
+
+// Text size variants
+.mainText {
+  font-size: 2.25rem; // text-4xl - default size
+}
+
+.h1Text {
+  font-size: 3rem;
+}
+
+.h2Text {
+  font-size: 2rem;
+}

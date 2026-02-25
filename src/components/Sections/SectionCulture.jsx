@@ -23,7 +23,7 @@ const SectionCulture = () => {
         </div>
       </div>
       <Circle
-        h2Text={
+        mainText={
           <>
             JAPONSKÁ
             <br />
