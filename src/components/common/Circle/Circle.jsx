@@ -5,7 +5,8 @@ const Circle = ({
   mainText, 
   h1Text, 
   h2Text, 
-  h3Text = "", 
+  h3Text = false, 
+  h3TextTop = false,
   position = "relative", 
   className = "", 
   size = "large", 
@@ -33,14 +34,31 @@ const Circle = ({
     textSizeClass = styles.h2Text;
   }
 
+  // Split text by | for multi-line support
+  const renderTextLines = (text) => {
+    const lines = text.split('|');
+    return lines.map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        {index < lines.length - 1 && <br />}
+      </React.Fragment>
+    ));
+  };
+  console.log("Circle component rendered with props:", displayText)
+
   return (
     <div
-      className={`px-6 ${styles.circle} ${sizeClass} ${positionClass} ${animatedClass} ${interactiveClass} items-center justify-center flex flex-col text-center ${className}`}
+      className={`px-4 ${styles.circle} ${sizeClass} ${positionClass} ${animatedClass} ${interactiveClass} items-center justify-center flex flex-col text-center ${className}`}
       style={{ animationDelay }}
     >
+      {h3TextTop && (
+        <h3 className={`text-lg text-white ${styles.circleSubText}`}>
+          {h3TextTop}
+        </h3>
+      )}
       {displayText && (
         <h2 className={`font-bold text-white ${textSizeClass}`}>
-          {displayText}
+          {renderTextLines(displayText)}
         </h2>
       )}
       {h3Text && (
