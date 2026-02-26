@@ -1,124 +1,132 @@
 [
   {
-    "name": "KOBUDŌ",
-    "url":"kobudo",
-    "thumbnail": "/photo-square/kobudo.jpg",
-    "description": "/texts/kobudo.html"
+    "name": "Kobudō",
+    "h1text": "KOBUDŌ",
+    "url": "kobudo",
+    "thumbnail": "/photo-square/kobudo.jpg"
   },
   {
-    "name": "OKINAWSKÉ KARATE-DŌ",
-    "url":"okinawske-karate-do",
-    "thumbnail": "/photo-square/okinawske-karate-do.jpg",
-    "description": "/texts/okinawske-karate-do.html"
+    "name": "Okinawské Karate-dō",
+    "h3textTop": "OKINAWSKÉ",
+    "h2text": "KARATE-DŌ",
+    "url": "okinawske-karate-do",
+    "thumbnail": "/photo-square/okinawske-karate-do.jpg"
   },
   {
-    "name": "NAGINATA-DŌ",
-    "url":"naginata-do",
-    "thumbnail": "/photo-square/naginata-do.jpg",
-    "description": "/texts/naginata-do.html"
+    "name": "Naginata-dō",
+    "h2text": "NAGINATA-DŌ",
+    "url": "naginata-do",
+    "thumbnail": "/photo-square/naginata-do.jpg"
   },
   {
-    "name": "IAIDŌ",
-    "url":"iaido",
-    "thumbnail": "/photo-square/iaido.jpg",
-    "description": "/texts/iaido.html"
+    "name": "Iaidō",
+    "h1text": "IAIDŌ",
+    "url": "iaido",
+    "thumbnail": "/photo-square/iaido.jpg"
   },
   {
-    "name": "KYŪDŌ",
-    "url":"kyudo",
-    "thumbnail": "/photo-square/kyudo.jpg",
-    "description": "/texts/kyudo.html"
+    "name": "Kyūdō",
+    "h1text": "KYŪDŌ",
+    "url": "kyudo",
+    "thumbnail": "/photo-square/kyudo.jpg"
   },
   {
-    "name": "NINJUTSU",
-    "url":"ninjutsu",
-    "thumbnail": "/photo-square/ninjutsu.jpg",
-    "description": "/texts/ninjutsu.html"
+    "name": "Ninjutsu",
+    "h1text": "NINJUTSU",
+    "url": "ninjutsu",
+    "thumbnail": "/photo-square/ninjutsu.jpg"
   },
   {
-    "name": "TAIJUTSU",
-    "url":"taijutsu",
-    "thumbnail": "/photo-square/taijutsu.jpg",
-    "description": "/texts/taijutsu.html"
+    "name": "Taijutsu",
+    "h1text": "TAIJUTSU",
+    "url": "taijutsu",
+    "thumbnail": "/photo-square/taijutsu.jpg"
   },
   {
-    "name": "KATORI SHINTŌ RYŪ",
-    "url":"katori-shinto-ryu",
-    "thumbnail": "/photo-square/katori-shinto-ryu.jpg",
-    "description": "/texts/katori-shinto-ryu.html"
+    "name": "Katori Shintō Ryū",
+    "h2text": "KATORI SHINTŌ RYŪ",
+    "url": "katori-shinto-ryu",
+    "thumbnail": "/photo-square/katori-shinto-ryu.jpg"
   },
   {
-    "name": "AIKIDŌ",
-    "url":"aikido",
-    "thumbnail": "/photo-square/aikido.jpg",
-    "description": "/texts/aikido.html"
+    "name": "Aikidō",
+    "h1text": "AIKIDŌ",
+    "url": "aikido",
+    "thumbnail": "/photo-square/aikido.jpg"
   },
   {
-    "name": "KENDŌ",
-    "url":"kendo",
-    "thumbnail": "/photo-square/kendo.jpg",
-    "description": "/texts/kendo.html"
+    "name": "Kendō",
+    "h1text": "KENDŌ",
+    "url": "kendo",
+    "thumbnail": "/photo-square/kendo.jpg"
   },
   {
-    "name": "KENJUTSU STYLU KASHIMA NO TACHI",
-    "url":"kenjutsu-stylu-Kashima-no-tachi",
-    "thumbnail": "/photo-square/kenjutsu-stylu-Kashima-no-tachi.jpg",
-    "description": "/texts/kenjutsu-stylu-Kashima-no-tachi.html"
+    "name": "Kenjutsu stylu Kashima no Tachi",
+    "h2text": "KENJUTSU",
+    "h3text": "STYLU KASHIMA NO TACHI",
+    "url": "kenjutsu-stylu-Kashima-no-tachi",
+    "thumbnail": "/photo-square/kenjutsu-stylu-Kashima-no-tachi.jpg"
   },
   {
-    "name": "SHINTŌ MUSŌ RYŪ JŌ A PŘIPOJENÉ ŠKOLY",
-    "url":"shinto-muso-ryu-jo-a-pripojene-skoly",
-    "thumbnail": "/photo-square/shinto-muso-ryu-jo-a-pripojene-skoly.jpg",
-    "description": "/texts/shinto-muso-ryu-jo-a-pripojene-skoly.html"
+    "name": "Shintō Musō Ryū Jō a připojené školy",
+    "h2text": "SHINTŌ|MUSŌ RYŪ JŌ",
+    "h3text": "A PŘIPOJENÉ ŠKOLY",
+    "url": "shinto-muso-ryu-jo-a-pripojene-skoly",
+    "thumbnail": "/photo-square/shinto-muso-ryu-jo-a-pripojene-skoly.jpg"
   },
   {
-    "name": "BATTŌJUTSU",
-    "url":"battojutsu",
-    "thumbnail": "/photo-square/battojutsu.jpg",
-    "description": "/texts/battojutsu.html"
+    "name": "Battōjutsu",
+    "h2text": "BATTŌJUTSU",
+    "url": "battojutsu",
+    "thumbnail": "/photo-square/battojutsu.jpg"
   },
   {
-    "name": "JŪDŌ",
-    "url":"judo",
-    "thumbnail": "/photo-square/judo.jpg",
-    "description": "/texts/judo.html"
+    "name": "Jūdō",
+    "h1text": "JŪDŌ",
+    "url": "judo",
+    "thumbnail": "/photo-square/judo.jpg"
   },
   {
-    "name": "NIHONTŌ",
-    "url":"nihonto",
-    "thumbnail": "/photo-square/nihonto.jpg",
-    "description": "/texts/nihonto.html"
+    "name": "Nihontō",
+    "h1text": "NIHONTŌ",
+    "url": "nihonto",
+    "thumbnail": "/photo-square/nihonto.jpg"
   },
   {
-    "name": "DOBRÁ ČAJOVNA PRAHA",
-    "url":"dobra-cajovna-praha",
+    "name": "Dobrá čajovna Praha",
+    "h2text": "DOBRÁ ČAJOVNA",
+    "h3text": "PRAHA",
+    "url": "dobra-cajovna-praha",
     "thumbnail": "/photo-square/dobra-cajovna-praha.jpg",
-    "description": "/texts/dobra-cajovna-praha.html",
     "logo": "/logos/dobra-cajovna.jpg"
   },
   {
-    "name": "RESTAURACE MIYABI",
-    "url":"restaurace-Miyabi",
+    "name": "Restaurace Miyabi",
+    "h1text": "MIYABI",
+    "h3textTop": "RESTAURACE",
+    "url": "restaurace-Miyabi",
     "thumbnail": "/photo-square/restaurace-Miyabi.jpg",
-    "description": "/texts/restaurace-Miyabi.html",
     "logo": "/logos/myabi-logo.jpg"
   },
   {
-    "name": "JAPONSKÁ KALIGRAFIE",
-    "url":"japonska-kaligrafie",
-    "thumbnail": "/photo-square/japonska-kaligrafie.jpg",
-    "description": "/texts/japonska-kaligrafie.html"
+    "name": "Petra Vitásková - Japonská kaligrafie",
+    "h2text": "PETRA VITÁSKOVÁ",
+    "h3text": "JAPONSKÁ KALIGRAFIE",
+    "url": "japonska-kaligrafie",
+    "thumbnail": "/photo-square/japonska-kaligrafie.jpg"
   },
   {
-    "name": "SHAKUHACHI VLASTISLAV MATOUŠEK",
-    "url":"shakuhachi",
-    "thumbnail": "/photo-square/shakuhachi.jpg",
-    "description": "/texts/shakuhachi.html"
+    "name": "Vlastislav Matoušek - Shakuhachi",
+    "h2text": "VLASTISLAV MATOUŠEK",
+    "h3text": "SHAKUHACHI",
+    "url": "shakuhachi",
+    "thumbnail": "/photo-square/shakuhachi.jpg"
   },
   {
-    "name": "IMA DESIGN",
-    "url":"ima-design",
-    "thumbnail": "/photo-square/ima-design.jpg",
-    "description": "/texts/ima-design.html"
+    "name": "IMA Design - Designové předměty",
+    "h2text": "IMA DESIGN",
+    "h3text": "DESIGNOVÉ PŘEDMĚTY",
+    "url": "ima-design",
+    "thumbnail": "/photo-square/ima-design.jpg"
   }
 ]
