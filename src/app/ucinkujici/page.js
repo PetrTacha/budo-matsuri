@@ -88,7 +88,10 @@ export default function UcinkujiciPage() {
                   onClick={() => handleKlubClick(klub.url)}
                 >
                   <Circle
-                    h2Text={klub.name}
+                    h1Text={klub.h1text || false}
+                    h2Text={klub.h2text || false}
+                    h3Text={klub.h3text || false}
+                    h3TextTop={klub.h3textTop || false}
                     position="relative"
                     size="small"
                     animationDelay={animationDelay}

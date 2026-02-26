@@ -10,13 +10,7 @@ const SectionMartialArt = () => {
       className={`relative min-h-[68dvh] z-10 ${styles.sectionMartialArtContent}`}
     >
       <Circle
-        mainText={
-          <>
-            BOJOVÁ
-            <br />
-            UMĚNÍ
-          </>
-        }
+        mainText="BOJOVÁ|UMĚNÍ"
         h3Text="na vlastní kůži"
         position="relative"
         className={styles.circlePosition}

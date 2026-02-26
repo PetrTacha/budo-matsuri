@@ -23,13 +23,7 @@ const SectionCulture = () => {
         </div>
       </div>
       <Circle
-        mainText={
-          <>
-            JAPONSKÁ
-            <br />
-            KULTURA
-          </>
-        }
+        mainText="JAPONSKÁ|KULTURA"
         h3Text="na vlastní oči"
         position="relative"
         className={styles.circlePosition}
