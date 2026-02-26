@@ -4,12 +4,9 @@ import React, { useState, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import ucinkujici from "@/data/ucinkujici.json";
 import layoutConfig from "@/data/ucinkujiciLayout.json";
-import Citate from "@/components/Citate/Citate";
-import { Klub } from "@/components/Klub/Klub";
 import styles from "./Ucinkujici.module.scss";
 import { Layout } from "@/components/Layout/Layout";
-import SocialNetworks from "@/components/SocialNetworks";
-import { QUOTES } from "@/constants";
+import { getBreakpoint } from "@/constants";
 import { HeaderContainer } from "@/components/Layout/Layout";
 import Circle from "@/components/common/Circle/Circle";
 
@@ -33,7 +30,7 @@ export default function UcinkujiciPage() {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      const newBreakpoint = width < 768 ? 'mobile' : width < 1024 ? 'tablet' : 'desktop';
+      const newBreakpoint = getBreakpoint(width);
       if (newBreakpoint !== breakpoint) setBreakpoint(newBreakpoint);
     };
     

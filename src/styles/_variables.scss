@@ -8,6 +8,17 @@ $font-color-secondary: #0000009E;
 $font-family: 'montserrat', sans-serif;
 $font-family-header: 'aquavit', sans-serif;
 
+// mobile: < 640px
+// tablet: 640px – 1023px
+// laptop: 1024px – 1279px
+// desktop: 1280px – 1535px
+// wideDesktop: ≥ 1536px
+// Breakpoints
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 1024px;
+$breakpoint-laptop: 1280px;
+$breakpoint-desktop: 1536px;
+
 $h1-font-size: 4rem;
 $h2-font-size: 3.5rem;
 $h2-font-size-small: 1.5rem;

@@ -20,7 +20,7 @@
 @mixin responsive-text($mobile, $desktop) {
   font-size: $mobile;
   
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-mobile) {
     font-size: $desktop;
   }
 }
@@ -50,25 +50,56 @@
 
 // Media query breakpoints
 @mixin mobile {
-  @media (max-width: 767px) {
+  @media (max-width: #{$breakpoint-mobile - 1}) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: $breakpoint-mobile) and (max-width: #{$breakpoint-tablet - 1}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: $breakpoint-tablet) and (max-width: #{$breakpoint-laptop - 1}) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-laptop) and (max-width: #{$breakpoint-desktop - 1}) {
     @content;
   }
 }
 
-@mixin large-desktop {
-  @media (min-width: 1440px) {
+@mixin wide-desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+// Min-width breakpoints
+@mixin min-mobile {
+  @media (min-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin min-tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin min-laptop {
+  @media (min-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin min-desktop {
+  @media (min-width: $breakpoint-desktop) {
     @content;
   }
 }
