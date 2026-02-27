@@ -63,8 +63,17 @@
 }
 
 .small {
-  width: clamp(0.5rem, 42vw, 17.5rem);
-  height: clamp(2rem, 42vw, 17.5rem);
+  width: clamp(0.5rem, 42vw, 12rem);
+  height: clamp(2rem, 42vw, 12rem);
+
+  @include tablet {
+    width: clamp(0.5rem, 28vw, 16rem);
+    height: clamp(2rem, 28vw, 16rem);
+  }
+
+  // Pro laptop (1024px - 1279px)
+  @include laptop {
+  }
 }
 
 .relative {
@@ -81,7 +90,7 @@
 }
 
 .h1Text {
-  font-size: clamp(1rem, 7vw, 3rem);
+  font-size: clamp(1rem, 7vw, 2rem);
   // Pro desktop (1280px - 1535px)
   @include desktop {
     font-size: 3rem;
@@ -89,11 +98,11 @@
 }
 
 .h2Text {
-  font-size: clamp(0.8rem, 4.5vw, 2rem);
+  font-size: clamp(0.8rem, 4.5vw, 1.5rem);
 }
 
 .circleSubText {
-  font-size: clamp(0.75rem, 1.5vw, 1.5rem);
+  font-size: clamp(0.75rem, 1.5vw, 2rem);
   font-weight: 400;
   line-height: normal;
 

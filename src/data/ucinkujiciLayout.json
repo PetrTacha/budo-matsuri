@@ -37,34 +37,34 @@
     "columns": 3,
     "rows": 10,
     "positions": [
-      { "klubIndex": 0, "row": 1, "column": 1, "offset": [0, 2], "name": "kobudō" },
-      { "klubIndex": 1, "row": 1, "column": 2, "offset": [4, 0], "name": "okinawské karate-dō" },
-      { "klubIndex": 2, "row": 1, "column": 3, "offset": [0, 1], "name": "naginata-dō" },
+      { "klubIndex": 0, "row": 1, "column": 1, "offset": [0, 0], "name": "kobudō" },
+      { "klubIndex": 1, "row": 1, "column": 2, "offset": [-1, 9], "name": "okinawské karate-dō" },
+      { "klubIndex": 2, "row": 1, "column": 3, "offset": [-3, -1], "name": "naginata-dō" },
 
-      { "klubIndex": 3, "row": 2, "column": 2, "offset": [0, -1], "name": "iaidō" },
+      { "klubIndex": 3, "row": 2, "column": 3, "offset": [-3, 3], "name": "iaidō" },
       
-      { "klubIndex": 4, "row": 3, "column": 1, "offset": [5, -6], "name": "kyūdō" },
-      { "klubIndex": 5, "row": 3, "column": 2, "offset": [5, 0], "name": "ninjutsu" },
-      { "klubIndex": 6, "row": 3, "column": 3, "offset": [-1, -3], "name": "taijutsu" },
+      { "klubIndex": 4, "row": 3, "column": 1, "offset": [1, -9], "name": "kyūdō" },
+      { "klubIndex": 5, "row": 3, "column": 2, "offset": [0, 1], "name": "ninjutsu" },
+      { "klubIndex": 6, "row": 3, "column": 3, "offset": [-2, 9], "name": "taijutsu" },
 
-      { "klubIndex": 7, "row": 4, "column": 1, "offset": [0, -2], "name": "Katori shintō ryū" },
-      { "klubIndex": 8, "row": 4, "column": 3, "offset": [4, -1], "name": "aikidō" },
+      { "klubIndex": 7, "row": 4, "column": 1, "offset": [0, -5], "name": "Katori shintō ryū" },
+      { "klubIndex": 8, "row": 4, "column": 2, "offset": [1, 5], "name": "aikidō" },
 
-      { "klubIndex": 9, "row": 5, "column": 2, "offset": [0, -3], "name": "kendō" },
-      { "klubIndex": 10, "row": 5, "column": 3, "offset": [0, -2], "name": "kenjutsu stylu Kashima no tachi" },
+      { "klubIndex": 9, "row": 5, "column": 1, "offset": [2, -3], "name": "kendō" },
+      { "klubIndex": 10, "row": 5, "column": 3, "offset": [-2, 2], "name": "kenjutsu stylu Kashima no tachi" },
 
-      { "klubIndex": 11, "row": 6, "column": 1, "offset": [-1, -1], "name": "Shintō musō ryū jō a připojené školy" },
-      { "klubIndex": 12, "row": 6, "column": 2, "offset": [0, -2], "name": "battōjutsu" },
+      { "klubIndex": 11, "row": 6, "column": 1, "offset": [1, -1], "name": "Shintō musō ryū jō a připojené školy" },
+      { "klubIndex": 12, "row": 6, "column": 2, "offset": [2, 0], "name": "battōjutsu" },
 
-      { "klubIndex": 13, "row": 7, "column": 2, "offset": [-2, -3], "name": "jūdō" },
+      { "klubIndex": 13, "row": 7, "column": 1, "offset": [6, 0] , "name": "jūdō" },
       { "klubIndex": 14, "row": 7, "column": 3, "offset": [-2, -3], "name": "nihontō" },
 
-      { "klubIndex": 15, "row": 8, "column": 1, "offset": [0, -2], "name": "Dobrá čajovna Praha" },
-      { "klubIndex": 16, "row": 8, "column": 2, "offset": [6, -1], "name": "restaurace Miyabi" },
-      { "klubIndex": 17, "row": 8, "column": 3, "offset": [6, 1], "name": "japonská kaligrafie" },
+      { "klubIndex": 15, "row": 8, "column": 1, "offset": [0, 1], "name": "Dobrá čajovna Praha" },
+      { "klubIndex": 16, "row": 8, "column": 2, "offset": [1, -3], "name": "restaurace Miyabi" },
+      { "klubIndex": 17, "row": 8, "column": 3, "offset": [-1, 5], "name": "japonská kaligrafie" },
 
       { "klubIndex": 18, "row": 9, "column": 1, "offset": [5, 3], "name": "shakuhachi Vlastislav Matoušek" },
-      { "klubIndex": 19, "row": 9, "column": 3, "offset": [-2, 2], "name": "IMA Design" }
+      { "klubIndex": 19, "row": 9, "column": 3, "offset": [-4, 6], "name": "IMA Design" }
     ]
   },
   "mobile": {
@@ -77,29 +77,29 @@
       { "klubIndex": 2, "row": 2, "column": 1, "offset": [0, -4], "name": "naginata-dō" },
       { "klubIndex": 3, "row": 2, "column": 2, "offset": [0, 1], "name": "iaidō" },
       
-      { "klubIndex": 4, "row": 3, "column": 1, "offset": [3, -5], "name": "kyūdō" },
-      { "klubIndex": 5, "row": 3, "column": 2, "offset": [-3, 6], "name": "ninjutsu" },
+      { "klubIndex": 4, "row": 3, "column": 1, "offset": [1, -5], "name": "kyūdō" },
+      { "klubIndex": 5, "row": 3, "column": 2, "offset": [-1, 2], "name": "ninjutsu" },
       
       { "klubIndex": 6, "row": 4, "column": 1, "offset": [-0.5, 0], "name": "taijutsu" },
-      { "klubIndex": 7, "row": 4, "column": 2, "offset": [0, 2], "name": "Katori shintō ryū" },
+      { "klubIndex": 7, "row": 4, "column": 2, "offset": [0, 0], "name": "Katori shintō ryū" },
       
       { "klubIndex": 8, "row": 5, "column": 1, "offset": [0, 3], "name": "aikidō" },
       { "klubIndex": 9, "row": 5, "column": 2, "offset": [-1, -2], "name": "kendō" },
       
-      { "klubIndex": 10, "row": 6, "column": 1, "offset": [0, 0], "name": "kenjutsu stylu Kashima no tachi" },
+      { "klubIndex": 10, "row": 6, "column": 1, "offset": [0, 1.5], "name": "kenjutsu stylu Kashima no tachi" },
       { "klubIndex": 11, "row": 6, "column": 2, "offset": [0, -4], "name": "Shintō musō ryū jō a připojené školy" },
       
       { "klubIndex": 12, "row": 7, "column": 1, "offset": [2, 5], "name": "battōjutsu" },
-      { "klubIndex": 13, "row": 7, "column": 2, "offset": [-4, -5], "name": "jūdō" },
+      { "klubIndex": 13, "row": 7, "column": 2, "offset": [-2, -5.5], "name": "jūdō" },
       
-      { "klubIndex": 14, "row": 8, "column": 1, "offset": [0, 4], "name": "nihontō" },
+      { "klubIndex": 14, "row": 8, "column": 1, "offset": [0, 3], "name": "nihontō" },
       { "klubIndex": 15, "row": 8, "column": 2, "offset": [0, 0], "name": "Dobrá čajovna Praha" },
       
-      { "klubIndex": 16, "row": 9, "column": 1, "offset": [0, 0], "name": "restaurace Miyabi" },
-      { "klubIndex": 17, "row": 9, "column": 2, "offset": [0, -3], "name": "japonská kaligrafie" },
+      { "klubIndex": 16, "row": 9, "column": 1, "offset": [0, 1], "name": "restaurace Miyabi" },
+      { "klubIndex": 17, "row": 9, "column": 2, "offset": [0, -2], "name": "japonská kaligrafie" },
       
-      { "klubIndex": 18, "row": 10, "column": 1, "offset": [3, -4], "name": "shakuhachi Vlastislav Matoušek" },
-      { "klubIndex": 19, "row": 10, "column": 2, "offset": [-5, 8], "name": "IMA Design" }
+      { "klubIndex": 18, "row": 10, "column": 1, "offset": [3, -2], "name": "shakuhachi Vlastislav Matoušek" },
+      { "klubIndex": 19, "row": 10, "column": 2, "offset": [-5, 10], "name": "IMA Design" }
     ]
   }
 }
