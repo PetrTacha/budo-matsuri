@@ -1,4 +1,5 @@
 @import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
 
 @keyframes float {
   0%,
@@ -16,8 +17,20 @@
   background-color: $secondary-color;
   font-weight: 800;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   filter: brightness(0.9);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+
+  @include tablet {
+  }
+
+  // Pro laptop (1024px - 1279px)
+  @include laptop {
+  }
+
+  // Pro desktop (1280px - 1535px)
+  @include desktop {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .interactive {
@@ -45,13 +58,13 @@
 }
 
 .large {
-  width: 18.75rem; // 300px
-  height: 18.75rem;
+  width: clamp(3rem, 35vw, 20rem);
+  height: clamp(3rem, 35vw, 20rem);
 }
 
 .small {
-  width: 17.5rem; // 280px
-  height: 17.5rem;
+  width: clamp(0.5rem, 42vw, 17.5rem);
+  height: clamp(2rem, 42vw, 17.5rem);
 }
 
 .relative {
@@ -68,9 +81,23 @@
 }
 
 .h1Text {
-  font-size: 3rem;
+  font-size: clamp(1rem, 7vw, 3rem);
+  // Pro desktop (1280px - 1535px)
+  @include desktop {
+    font-size: 3rem;
+  }
 }
 
 .h2Text {
-  font-size: 2rem;
+  font-size: clamp(0.8rem, 4.5vw, 2rem);
+}
+
+.circleSubText {
+  font-size: clamp(0.75rem, 1.5vw, 1.5rem);
+  font-weight: 400;
+  line-height: normal;
+
+  @include min-tablet {
+    font-size: clamp(0.75rem, 2.5vw, 1.5rem);
+  }
 }
