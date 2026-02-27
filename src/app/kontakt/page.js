@@ -61,11 +61,7 @@ export default function KontaktPage() {
           </div>
           <div className={`${styles.circleWrapper}`}>
             <Circle
-              mainText={
-                <>
-                  Sportovní areál ČVUT
-                </>
-              }
+              mainText="Sportovní areál ČVUT"
               h3Text="Pod Juliskou 4, Praha 6"
               position="relative"
               className={styles.circlePosition}

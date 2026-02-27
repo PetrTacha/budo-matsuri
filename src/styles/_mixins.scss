@@ -48,6 +48,12 @@
   padding-right: 1rem;
 }
 
+// Square size helper
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
 // Media query breakpoints
 @mixin mobile {
   @media (max-width: #{$breakpoint-mobile - 1}) {
@@ -103,3 +109,15 @@
     @content;
   }
 }
+
+
+//  @include tablet {
+//   }
+
+//   // Pro laptop (1024px - 1279px)
+//   @include laptop {
+//   }
+
+//   // Pro desktop (1280px - 1535px)
+//   @include desktop {
+//   }

@@ -52,9 +52,9 @@ const Circle = ({
       style={{ animationDelay }}
     >
       {h3TextTop && (
-        <h3 className={`text-lg text-white ${styles.circleSubText}`}>
+        <div className={`text-lg text-white ${styles.circleSubText}`}>
           {h3TextTop}
-        </h3>
+        </div>
       )}
       {displayText && (
         <h2 className={`font-bold text-white ${textSizeClass}`}>
@@ -62,9 +62,9 @@ const Circle = ({
         </h2>
       )}
       {h3Text && (
-        <h3 className={`text-lg text-white ${styles.circleSubText}`}>
+        <div className={`text-lg text-white ${styles.circleSubText}`}>
           {h3Text}
-        </h3>
+        </div>
       )}
     </div>
   );

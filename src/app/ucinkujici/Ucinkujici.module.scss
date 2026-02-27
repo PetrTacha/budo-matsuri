@@ -1,14 +1,17 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
 .bubbleGrid {
   width: 100%;
   display: grid;
   gap: 0;
   justify-items: center;
   align-items: center;
-  // max-width: 90rem;
-  // margin: 3rem auto;
-  // padding: 2rem;
-  // border: solid 1px black;
-  padding-bottom: 15rem;
+
+  // Pro desktop (1280px - 1535px)
+  @include desktop {
+    padding-bottom: 15rem;
+  }
 }
 
 .circlePosition {
@@ -16,7 +19,4 @@
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  
-  // border: solid 1px black;
-  // background-color: #4106e365;
 }

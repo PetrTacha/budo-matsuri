@@ -16,7 +16,7 @@ export default function UcinkujiciPage() {
   const [breakpoint, setBreakpoint] = useState('desktop');
 
   const headerParagraph =
-    "Níže naleznete přehled škol, hostů a skupin, které se zúčastní 7. ročníku Budō matsuri. Každý z nich přináší vlastní zaměření, zkušenosti i způsob práce. Dohromady tvoří unikátní atmosféru celé události.";
+    "Níže naleznete přehled škol, hostů a skupin, které se zúčastní 7.ročníku Budō matsuri. Každý z nich přináší vlastní zaměření, zkušenosti i způsob práce. Dohromady tvoří unikátní atmosféru celé události.";
 
   // Restore scroll position on mount
   useEffect(() => {
