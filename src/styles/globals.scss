@@ -32,24 +32,28 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: $h1-font-size * 0.5;
   font-family: $font-family-header;
   font-weight: 800;
   font-style: normal;
   line-height: 2.5rem;
 
   @include tablet {
-    // padding: 0.75rem;
+    font-size: $h1-font-size * 0.8;
   }
 
   // Pro laptop (1024px - 1279px)
   @include laptop {
-    // padding: 1.5rem;
+    font-size: $h1-font-size * 0.9;
+  }
+
+  @include desktop {
+    font-size: $h1-font-size;
   }
 
   // Pro desktop (1280px - 1535px)
-  @include desktop {
-    // padding: 2rem;
+  @include wide-desktop {
+    font-size: $h1-font-size;
   }
 }
 

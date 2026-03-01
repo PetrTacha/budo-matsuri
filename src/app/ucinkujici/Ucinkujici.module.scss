@@ -12,6 +12,11 @@
   @include desktop {
     padding-bottom: 15rem;
   }
+
+  @include wide-desktop {
+    padding-top: 3rem;
+    padding-bottom: 25rem;
+  }
 }
 
 .circlePosition {

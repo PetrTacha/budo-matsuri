@@ -19,6 +19,7 @@
   transition: all 0.3s ease;
   filter: brightness(0.9);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  font-size: clamp(0.8rem, 4vw, 2rem);
 
   @include tablet {
   }
@@ -74,6 +75,18 @@
   // Pro laptop (1024px - 1279px)
   @include laptop {
   }
+
+  // Pro desktop (1280px - 1535px)
+  @include desktop {
+    width: clamp(5rem, 17vw, 35rem);
+    height: clamp(5rem, 17vw, 35rem);
+  }
+
+  // Pro desktop (1280px - 1535px)
+  @include wide-desktop {
+    width: clamp(5rem, 18vw, 20rem);
+    height: clamp(5rem, 18vw, 20rem);
+  }
 }
 
 .relative {
@@ -90,31 +103,38 @@
 }
 
 .h1Text {
-  font-size: clamp(1rem, 7vw, 2rem);
+  font-size: 115%;
 
-  @include tablet {
-    font-size: clamp(0.75rem, 4.5vw, 6rem);
-  }
 
-  @include desktop {
-    font-size: 3rem;
-  }
 }
 
 .h2Text {
-  font-size: clamp(0.8rem, 4.5vw, 1.5rem);
+  font-size: 70%;
 
-  @include tablet {
-    font-size: clamp(0.75rem, 2.8vw, 2rem);
+  @include desktop {
+    line-height: 2.5rem;
+    font-size: 100%;
+  }
+
+  @include wide-desktop {
+    line-height: 3rem;
+    font-size: 130%;
   }
 }
 
 .circleSubText {
-  font-size: clamp(0.75rem, 1.5vw, 2rem);
   font-weight: 400;
   line-height: normal;
+  font-size: 50%;
 
   @include tablet {
-    font-size: clamp(0.75rem, 2.3vw, 1.8rem);
+  }
+
+  @include desktop {
+    font-size: 60%;
+  }
+
+  @include wide-desktop {
+    font-size: 70%;
   }
 }
