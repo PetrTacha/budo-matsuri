@@ -50,7 +50,7 @@
 
   // Pro desktop (1280px - 1535px)
   @include wide-desktop {
-    grid-template-columns: auto 40%;
+    grid-template-columns: 1fr minmax(auto, 30%);
     line-height: 1rem;
     gap: 2rem;
     align-items: start;
