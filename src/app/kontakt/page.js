@@ -36,7 +36,7 @@ export default function KontaktPage() {
               <br />
               Autobus 340, 355 - stanice Nádraží Podbaba
             </div>
-            <div className={styles.textContentVirtual}>
+            {/* <div className={styles.textContentVirtual}>
               <span>
                 Pokud si chcete místo předem prohlédnout, můžete využít
                 virtuální prohlídku areálu.
@@ -51,7 +51,7 @@ export default function KontaktPage() {
                   className={`mb-1 sm:h-5 sm:w-5 h-4 w-4 ${styles.newWindowIcon}`}
                 />
               </a>
-            </div>
+            </div> */}
             <div className={styles.textContentContact}>
               V případě dotazů nás kontaktujte na:{" "}
               <a className="font-bold" href="mailto:budo.matsuri@japan.cz">
@@ -69,8 +69,8 @@ export default function KontaktPage() {
           </div>
         </div>
 
-        <h3>Místo konání festivalu:</h3>
-        {/* <OpenStreetMap /> */}
+        <div>Místo konání festivalu:</div>
+        <OpenStreetMap />
       </HeaderContainer>
       {/* <Partners />
       <SocialNetworks />

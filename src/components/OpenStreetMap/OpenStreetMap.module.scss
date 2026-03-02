@@ -12,15 +12,15 @@
   box-shadow: 0 0 2px $font-color-secondary;
 
   @include tablet {
-    // height: 25rem;
+    height: 25rem;
   }
 
   @include laptop {
-    // height: 30rem;
+    height: 30rem;
   }
 
   @include desktop {
-    // height: 35rem;
+    height: 35rem;
   }
 
   @include wide-desktop {

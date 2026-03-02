@@ -7,28 +7,29 @@
   gap: 1rem;
   justify-items: center;
   grid-template-areas: "circle" "text";
+  margin-bottom: 3rem;
 
   @include tablet {
     grid-template-columns: 1fr;
-    justify-items: center;
+    justify-items: start;
   }
 
   @include laptop {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "text circle";
-    justify-content: start;
+    justify-items: start;
   }
 
   @include desktop {
     grid-template-areas: "text circle";
     grid-template-columns: 1fr 1fr;
-    justify-content: start;
+    justify-items: start;
   }
 
   @include wide-desktop {
     grid-template-areas: "text circle";
     grid-template-columns: 1fr 1fr;
-    justify-content: start;
+    justify-items: start;
   }
 }
 
@@ -37,17 +38,18 @@
   flex-direction: column;
   gap: 3rem;
   grid-area: text;
+  margin-bottom: 1rem;
 }
 
 .circleWrapper {
   // height: 5rem;
   grid-area: circle;
-
+  justify-self: center;
   display: flex;
 
-  // @include tablet {
-  //   height: 20rem;
-  // }
+  @include tablet {
+    justify-self: center;
+  }
 
   // @include laptop {
   //   height: 25rem;
@@ -61,9 +63,16 @@
   // margin-top: 3rem;
   justify-items: center;
 
-  @include desktop {
-    margin-top: -3rem;
+  @include laptop {
+    margin-top: 0rem;
     margin-right: 3rem;
+    justify-self: end;
+    align-self: flex-start;
+  }
+
+  @include desktop {
+    // margin-top: -3rem;
+    // margin-right: 0rem;
     justify-self: end;
     align-self: flex-start;
   }

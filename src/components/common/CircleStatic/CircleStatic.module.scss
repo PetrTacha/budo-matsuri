@@ -19,8 +19,8 @@
 }
 
 .large {
-  width: clamp(5rem, 60vw, 15rem);
-  height: clamp(5rem, 60vw, 15rem);
+  width: clamp(5rem, 60vw, 20rem);
+  height: clamp(5rem, 60vw, 20rem);
 }
 
 .small {
@@ -38,13 +38,13 @@
   }
 
   @include wide-desktop {
-    width: clamp(5rem, 18vw, 20rem);
-    height: clamp(5rem, 18vw, 20rem);
+    width: clamp(5rem, 25vw, 25rem);
+    height: clamp(5rem, 25vw, 25rem);
   }
 }
 
 .mainText {
-    font-size: 100%
+    font-size: 95%
 //   font-size: clamp(1rem, 8vw, 2.25rem);
 }
 
