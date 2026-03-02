@@ -103,14 +103,29 @@
 }
 
 .h1Text {
-  font-size: 115%;
+  font-size: 130%;
+
+    @include tablet {
+      font-size: 110%;
+  }
+
+    @include laptop {
+      font-size: 100%;
+  }
 
 
 }
 
 .h2Text {
-  font-size: 70%;
+  font-size: 120%;
 
+  @include tablet {
+      font-size: 85%;
+  }
+
+    @include laptop {
+      font-size: 75%;
+  }
   @include desktop {
     line-height: 2.5rem;
     font-size: 100%;
@@ -125,9 +140,11 @@
 .circleSubText {
   font-weight: 400;
   line-height: normal;
-  font-size: 50%;
+  font-size: 75%;
 
-  @include tablet {
+  @include laptop {
+
+      font-size: 60%;
   }
 
   @include desktop {
