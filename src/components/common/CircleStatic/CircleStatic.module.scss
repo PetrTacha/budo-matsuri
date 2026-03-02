@@ -1,0 +1,71 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.circle {
+  z-index: 10;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  font-weight: 800;
+  filter: brightness(0.9);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  font-size: clamp(1rem, 8vw, 2.25rem);
+  position: relative;
+  cursor: default;
+  pointer-events: none;
+
+  @include desktop {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.large {
+  width: clamp(5rem, 60vw, 15rem);
+  height: clamp(5rem, 60vw, 15rem);
+}
+
+.small {
+  width: clamp(0.5rem, 42vw, 12rem);
+  height: clamp(2rem, 42vw, 12rem);
+
+  @include tablet {
+    width: clamp(8rem, 26vw, 16rem);
+    height: clamp(8rem, 26vw, 16rem);
+  }
+
+  @include desktop {
+    width: clamp(5rem, 17vw, 35rem);
+    height: clamp(5rem, 17vw, 35rem);
+  }
+
+  @include wide-desktop {
+    width: clamp(5rem, 18vw, 20rem);
+    height: clamp(5rem, 18vw, 20rem);
+  }
+}
+
+.mainText {
+    font-size: 100%
+//   font-size: clamp(1rem, 8vw, 2.25rem);
+}
+
+.circleSubText {
+  font-weight: 400;
+  line-height: normal;
+  font-size: 70%;
+
+   @include tablet {
+    font-size: 60%;
+  }
+
+  @include laptop {
+    font-size: 60%;
+  }
+
+  @include desktop {
+    font-size: 60%;
+  }
+
+  @include wide-desktop {
+    font-size: 70%;
+  }
+}

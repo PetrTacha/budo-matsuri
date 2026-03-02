@@ -8,7 +8,7 @@ import SocialNetworks from "@/components/SocialNetworks";
 import Partners from "@/components/Partners";
 import BudoRow from "@/components/BudoRow/BudoRow";
 import NewWindowIcon from "@/svgs/NewWindowIcon";
-import Circle from "@/components/common/Circle";
+import CircleStatic from "@/components/common/CircleStatic";
 
 const OpenStreetMap = dynamic(
   () => import("@/components/OpenStreetMap/OpenStreetMap"),
@@ -60,18 +60,17 @@ export default function KontaktPage() {
             </div>
           </div>
           <div className={`${styles.circleWrapper}`}>
-            <Circle
+            <CircleStatic
               mainText="Sportovní areál ČVUT"
               h3Text="Pod Juliskou 4, Praha 6"
-              position="relative"
               className={styles.circlePosition}
-              interactive={false}
+              size="large"
             />
           </div>
         </div>
 
         <h3>Místo konání festivalu:</h3>
-        <OpenStreetMap />
+        {/* <OpenStreetMap /> */}
       </HeaderContainer>
       {/* <Partners />
       <SocialNetworks />

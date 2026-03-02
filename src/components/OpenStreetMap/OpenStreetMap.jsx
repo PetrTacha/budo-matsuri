@@ -9,6 +9,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 import L from "leaflet";
+import styles from "./OpenStreetMap.module.scss";
 
 const icon = L.icon({ iconUrl: "/icons/marker_here.svg", iconSize: [50, 50] });
 
@@ -18,7 +19,7 @@ const OpenStreetMap = () => {
   const mapRef = useRef();
 
   return (
-    <div className="h-[40rem] w-[50%] mb-24 z-10 relative border-4 border-solid border-red-500 rounded-lg overflow-hidden">
+    <div className={styles.mapContainer}>
       <MapContainer
         center={center}
         zoom={ZOOM_LEVEL}
@@ -30,15 +31,6 @@ const OpenStreetMap = () => {
           url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
           maxZoom={19}
         />
-        {/* {location.loaded && !location.error && ( */}
-        {/* <Marker
-              position={[center.lat, center.lng]}
-            >
-                <Popup>My Location</Popup>
-                
-            </Marker> */}
-
-        {/* )} */}
         <Marker
           key="Marker key"
           position={[center.lat, center.lng]}

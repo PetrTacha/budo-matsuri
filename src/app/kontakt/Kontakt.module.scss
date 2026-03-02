@@ -1,25 +1,70 @@
 @import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
 
 .informationContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
-  justify-content: start;
+  justify-items: center;
+  grid-template-areas: "circle" "text";
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  @include laptop {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text circle";
+    justify-content: start;
+  }
+
+  @include desktop {
+    grid-template-areas: "text circle";
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+  }
+
+  @include wide-desktop {
+    grid-template-areas: "text circle";
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+  }
 }
 
 .textContent {
-   display: flex;
-   flex-direction: column;
-   gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  grid-area: text;
 }
 
+.circleWrapper {
+  // height: 5rem;
+  grid-area: circle;
 
-.circleWrapper{
-  height: 25rem;
+  display: flex;
+
+  // @include tablet {
+  //   height: 20rem;
+  // }
+
+  // @include laptop {
+  //   height: 25rem;
+  // }
+
+  @include desktop {
+    // height: 25rem;
+  }
 }
 .circlePosition {
-   margin-top: -3rem;
-  margin-right: 3rem;
-   justify-self: end;
-   align-self: flex-start;
+  // margin-top: 3rem;
+  justify-items: center;
+
+  @include desktop {
+    margin-top: -3rem;
+    margin-right: 3rem;
+    justify-self: end;
+    align-self: flex-start;
+  }
 }

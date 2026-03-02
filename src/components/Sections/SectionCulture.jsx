@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./SectionCulture.module.scss";
-import Circle from "../common/Circle";
+import CircleStatic from "../common/CircleStatic";
 
 const SectionCulture = () => {
   return (
@@ -22,12 +22,10 @@ const SectionCulture = () => {
           </p>
         </div>
       </div>
-      <Circle
+      <CircleStatic
         mainText="JAPONSKÁ|KULTURA"
         h3Text="na vlastní oči"
-        position="relative"
         className={styles.circlePosition}
-        interactive={false}
       />
     </section>
   );
