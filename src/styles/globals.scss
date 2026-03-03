@@ -64,18 +64,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
-
-  @include tablet {
-  }
-
-  // Pro laptop (1024px - 1279px)
-  @include laptop {
-  }
-
+  font-size: 1.3rem;
+  font-weight: 700;
   // Pro desktop (1280px - 1535px)
-  @include desktop {
-    font-size: 1.2rem;
+  @include min-tablet {
+    font-size: 1.5rem;
   }
 }
 
@@ -108,19 +101,4 @@ a {
   height: 100%;
   --swiper-navigation-color: var(--color-bg-0);
   margin-bottom: 10rem;
-}
-
-@media (max-width: 640px) {
-  h2 {
-    font-size: $h2-font-size-small;
-    font-weight: 600;
-  }
-
-  h3 {
-    font-size: $h3-font-size-small;
-  }
-
-  p {
-    font-size: $paragraph-font-size-small;
-  }
 }

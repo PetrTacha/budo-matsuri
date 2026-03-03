@@ -1,4 +1,5 @@
 @import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
 
 .section__bg {
   position: absolute;
@@ -13,35 +14,36 @@
   }
 }
 
-// .bgHero {
-//   position: relative;
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background-image: url("/hero_background.jpg");
-//     background-size: cover;
-//     background-position: center;
-//     opacity: 0.3;
-//     z-index: 0;
-//   }
-// }
-
-
 .heroGrid {
   z-index: 5;
   height: 100%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "top top"
-    "left right";
-  gap: 1rem;
-  padding-left: 10rem;
+    "top"
+    "left"
+    "right";
+  gap: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 6rem;
+
+  @include min-tablet {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    grid-template-areas:
+      "top top"
+      "left right";
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 1rem;
+  }
+
+  @include min-laptop {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 
 .logoHeader {
@@ -50,25 +52,30 @@
   align-self: flex-end;
 }
 
+.heroSubTitle {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  @include min-tablet {
+    margin-bottom: 0rem;
+  }
+}
+
 .placeAndTime {
   grid-area: left;
   justify-self: start;
+  margin-top: 2rem;
+
+  @include min-tablet {
+    margin-top: 0rem;
+  }
 }
 .buyTickets {
   grid-area: right;
   justify-self: center;
+
+  @include min-tablet {
+    transform: translateX(5rem);
+    justify-self: center;
+  }
 }
-
-
-
-
-// @media (max-width: 768px) {
-//   .heroSubTitle {
-//     line-height: 2rem;
-//   }
-// }
-
-// .rowDate {
-//   display: flex;
-//   gap: 5rem;
-// }

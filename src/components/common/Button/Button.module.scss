@@ -1,4 +1,5 @@
 @import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
 
 .button {
   font-family: $font-family;
@@ -32,8 +33,7 @@
     cursor: not-allowed;
   }
 
-  &.primary { 
-    // border-color: var(--primary-color, #c70000);
+  &.primary {
     color: $bg-primary;
     background-color: $secondary-color;
     &:hover:not(:disabled) {
@@ -43,7 +43,6 @@
 
   &.secondary {
     border-color: var(--secondary-color, #000);
-    
     &:hover:not(:disabled) {
       background-color: var(--secondary-color, #000);
       color: white;
@@ -61,7 +60,12 @@
   }
 
   &.large {
-    padding: 1.5rem 5rem;
-    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+
+    @include min-desktop {
+      padding: 1.5rem 5rem;
+      font-size: 1.25rem;
+    }
   }
 }
