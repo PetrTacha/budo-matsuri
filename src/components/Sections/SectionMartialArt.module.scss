@@ -1,29 +1,53 @@
 @import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
 
 .sectionMartialArtContent {
   // background-color: grey;
   display: grid;
-  grid-template-columns: 55% 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
-      gap: 1rem;
+  gap: 3rem;
   align-items: center;
+  margin-top: 2rem;
+
+  @include min-tablet {
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    justify-items: center;
+    gap: 3rem;
+  }
 }
 
 .textContent {
-  padding-top: 3rem;
   max-width: 80%;
-
   display: grid;
-  justify-items: start;
-   justify-self: start;
-  gap: 6rem;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  width: 100%;
 
   button {
+    max-width: clamp(1rem, 700%, 80rem);
+    justify-self: center;
+  }
+
+  @include min-tablet {
+    display: grid;
+    justify-items: start;
     justify-self: start;
+    gap: 6rem;
+
+    button {
+      max-width: 100%;
+      justify-self: start;
+    }
   }
 }
 
 .circlePosition {
-  margin-left: -6rem;
-  margin-bottom: 15rem;
+  margin-top: 2rem;
+
+  @include min-tablet {
+    margin-left: -6rem;
+    margin-bottom: 15rem;
+  }
 }

@@ -2,31 +2,33 @@ import React from "react";
 import Link from "next/link";
 import styles from "./Button.module.scss";
 
-const Button = ({ 
-  children, 
-  href, 
-  variant = "primary", 
+const Button = ({
+  children,
+  href,
+  variant = "primary",
   size = "medium",
   className = "",
   onClick,
   type = "button",
   disabled = false,
-  ...props 
+  ...props
 }) => {
   const buttonClasses = `${styles.button} ${styles[variant]} ${styles[size]} ${className}`;
 
   if (href) {
     return (
-      <Link href={href} className={buttonClasses} {...props}>
-        {children}
-      </Link>
+      <button>
+        <Link href={href} className={buttonClasses} {...props}>
+          {children}
+        </Link>
+      </button>
     );
   }
 
   return (
-    <button 
+    <button
       type={type}
-      className={buttonClasses} 
+      className={buttonClasses}
       onClick={onClick}
       disabled={disabled}
       {...props}
