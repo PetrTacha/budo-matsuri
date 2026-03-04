@@ -28,22 +28,22 @@
 
   //TODO: DELETE - pro testování různých breakpointů
   @include tablet {
-    background: blue;
+    // background: blue;
   }
 
   // Pro laptop (1024px - 1279px)
   @include laptop {
-    background: green;
+    // background: green;
   }
 
   // Pro desktop (1280px - 1535px)
   @include desktop {
-    background: red;
+    // background: red;
   }
 
   // Pro desktop (1280px - 1535px)
   @include wide-desktop {
-    background: grey;
+    // background: grey;
   }
 }
 

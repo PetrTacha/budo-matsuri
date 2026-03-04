@@ -9,7 +9,7 @@ const SectionCulture = () => {
     >
       <div className={`${styles.textContent}`}>
         <div>
-          <h2>Přednášky</h2>
+          <h2>PŘEDNÁŠKY</h2>
           <h3>a doprovodný program</h3>
         </div>
         <div>

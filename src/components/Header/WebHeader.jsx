@@ -64,12 +64,12 @@ export const WebHeader = () => {
             >
               Kontakt
             </Link>
-            <Link 
+            {/* <Link 
               href={ROUTES.GALLERY}
               className={`text-gray-900 hover:text-primary font-medium text-lg transition-colors no-underline ${styles.navLink}`}
             >
               Fotogalerie
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Desktop social ikony - napravo */}
