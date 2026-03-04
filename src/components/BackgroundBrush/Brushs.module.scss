@@ -1,13 +1,39 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
 .brush1 {
-  top: 65dvh;
-  right: 21%;
+  top: 79dvh;
+  // right: calc(-200% + 100vw);
+  transform: translateX(calc(-80% + 100vw));
   opacity: 0.65;
   width: 90rem;
   height: auto;
+
+  @include min-tablet {
+    top: 60dvh;
+    right: 21%;
+    transform: unset;
+    opacity: 0.65;
+    width: 90rem;
+    height: auto;
+  }
+
+@include min-laptop {
+    top: 60dvh;
+  }
+
+  @include min-desktop {
+    top: 65dvh;
+  }
+
+    @include wide-desktop {
+     right: 26%;
+  }
+
 }
 
 .brush2 {
-    //   width: 80%;
+  //   width: 80%;
   top: 160dvh;
   left: 10%;
   // overflow: hidden;
@@ -17,9 +43,9 @@
 
   width: 90rem;
   height: auto;
-//   width: 80%;
-//   top: 200dvh;
-//   left: 50%;
-//   transform: translateX(-45%);
-//   opacity: 0.65;
+  //   width: 80%;
+  //   top: 200dvh;
+  //   left: 50%;
+  //   transform: translateX(-45%);
+  //   opacity: 0.65;
 }
