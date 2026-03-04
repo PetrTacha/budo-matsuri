@@ -18,7 +18,7 @@
     height: auto;
   }
 
-@include min-laptop {
+  @include min-laptop {
     top: 60dvh;
   }
 
@@ -26,26 +26,33 @@
     top: 65dvh;
   }
 
-    @include wide-desktop {
-     right: 26%;
+  @include wide-desktop {
+    right: 26%;
   }
-
 }
 
 .brush2 {
-  //   width: 80%;
-  top: 160dvh;
-  left: 10%;
-  // overflow: hidden;
-  // left: 50%;
-  // transform: translateX(-60%);
+  top: clamp(86rem, 180dvh, 129rem);
+  left: -5%;
   opacity: 0.65;
-
   width: 90rem;
   height: auto;
-  //   width: 80%;
-  //   top: 200dvh;
-  //   left: 50%;
-  //   transform: translateX(-45%);
-  //   opacity: 0.65;
+
+  @include min-tablet {
+    top: 190dvh;
+    left: 5%;
+  }
+
+  @include min-laptop {
+    top: 180dvh;
+  }
+
+  @include min-desktop {
+    top: 140dvh;
+  }
+
+  @include wide-desktop {
+    top: 180dvh;
+    left: 15%;
+  }
 }
