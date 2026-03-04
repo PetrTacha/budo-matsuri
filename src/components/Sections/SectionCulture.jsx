@@ -11,6 +11,8 @@ const SectionCulture = () => {
         <div>
           <h2>Přednášky</h2>
           <h3>a doprovodný program</h3>
+        </div>
+        <div>
           <p className="mb-4">
             Budó Matsuri není pouze o bojových uměních. Pohyb a kultura stojí
             odpradávna bok po boku.
