@@ -108,7 +108,7 @@ export const WebHeader = () => {
 
           {/* Mobile hamburger menu */}
           <button
-            className="md:hidden flex items-center justify-center w-10 h-10 hover:opacity-70 transition-opacity"
+            className={`md:hidden flex items-center justify-center w-10 h-10 hover:opacity-70 transition-opacity ${openMenu ? 'opacity-0 pointer-events-none' : ''}`}
             onClick={() => setOpenMenu(!openMenu)}
             aria-label="Menu"
           >

@@ -24,52 +24,52 @@ export const WebMenu = ({ closeMenu }) => {
 
   return (
     <div 
-      className="md:hidden fixed inset-0 z-40 bg-black bg-opacity-50"
+      className="md:hidden fixed inset-0 z-50 bg-black bg-opacity-50"
       onClick={closeMenu}
     >
       <div
         ref={menuRef}
-        className={`${styles.mobileMenu} fixed top-0 right-0 h-full w-80 shadow-xl`}
+        className={`${styles.mobileMenu} fixed top-0 right-0 h-full w-[55vw] max-w-sm shadow-xl`}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex flex-col h-full p-8">
+        <div className="flex flex-col h-full p-6 sm:p-8">
           {/* Close button */}
           <button
             onClick={closeMenu}
-            className="self-end mb-8 text-3xl hover:opacity-70 transition-opacity"
+            className="self-end mb-6 sm:mb-8 text-4xl w-10 h-10 flex items-center justify-center hover:opacity-70 transition-opacity font-light leading-none"
             aria-label="Zavřít menu"
           >
             ×
           </button>
 
           {/* Navigation links */}
-          <nav className="flex flex-col gap-6 mb-10 ">
+          <nav className="flex flex-col gap-4 sm:gap-6 mb-8 sm:mb-10">
             <Link 
               href={ROUTES.PERFORMERS}
               onClick={closeMenu}
-              className={`text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline ${styles.navLink}`}
+              className={`text-gray-900 hover:text-primary font-medium text-lg sm:text-xl transition-colors no-underline ${styles.navLink}`}
             >
               Účinkující
             </Link>
             <Link 
               href={ROUTES.CONTACT}
               onClick={closeMenu}
-              className={`text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline ${styles.navLink}`}
+              className={`text-gray-900 hover:text-primary font-medium text-lg sm:text-xl transition-colors no-underline ${styles.navLink}`}
             >
               Kontakt
             </Link>
-            <Link 
+            {/* <Link 
               href={ROUTES.GALLERY}
               onClick={closeMenu}
               className={`text-gray-900 hover:text-primary font-medium text-xl transition-colors no-underline ${styles.navLink}`}
             >
               Fotogalerie
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Social links */}
-          <div className="border-t-2 border-gray-300 pt-6">
-            <div className="flex gap-6">
+          <div className="border-t-2 border-gray-300 pt-4 sm:pt-6 mt-auto">
+            <div className="flex gap-4 sm:gap-6 justify-center">
               <a
                 href={LINKS.FACEBOOK}
                 target="_blank"
