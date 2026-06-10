@@ -1,11 +1,41 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import styles from "@/components/Hero/Hero.module.scss";
 import BudoRow from "@/components/BudoRow/BudoRow";
 import Button from "@/components/common/Button";
 import { LINKS } from "@/constants";
 import Image from "next/image";
 
+const TARGET_DATE = new Date(2026, 9, 28); // 28.10.2026 (month is zero-based)
+
+const getRemainingDays = () => {
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const oneDayInMs = 1000 * 60 * 60 * 24;
+  const diffInMs = TARGET_DATE.getTime() - today.getTime();
+
+  if (diffInMs <= 0) {
+    return 0;
+  }
+
+  return Math.ceil(diffInMs / oneDayInMs);
+};
+
 const Hero = () => {
+  const [remainingDays, setRemainingDays] = useState(getRemainingDays);
+
+  useEffect(() => {
+    const updateCountdown = () => {
+      setRemainingDays(getRemainingDays());
+    };
+
+    updateCountdown();
+    const intervalId = setInterval(updateCountdown, 60 * 60 * 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
       <section className={`relative h-[90dvh] z-5 flex`}>
@@ -33,6 +63,9 @@ const Hero = () => {
             <h4 className={styles.heroSubTitle}>
               Festival japonských bojových umění
             </h4>
+            {remainingDays > 0 && (
+              <h4 className={styles.heroSubTitle}>Zbývá do zahájení: <b>{remainingDays} dní</b></h4>
+            )}
           </div>
           <h3 className={`${styles.placeAndTime} flex flex-col`}>
             <div className="">28. října 2026, 11:00 - 18:00</div>
