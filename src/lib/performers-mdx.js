@@ -22,6 +22,10 @@ import Shakuhachi from '@/content/performers/shakuhachi.mdx';
 import ShintoMusoRyu from '@/content/performers/shinto-muso-ryu-jo-a-pripojene-skoly.mdx';
 import Taijutsu from '@/content/performers/taijutsu.mdx';
 import ImaDesign from '@/content/performers/ima-design.mdx';
+import RomanKodet from '@/content/performers/roman-kodet.mdx';
+import OndrejHybl from '@/content/performers/ondrej-hybl.mdx';
+import VladimirHotovec from '@/content/performers/vladimir-hotovec.mdx';
+import DivadloKyogen from '@/content/performers/divadlo-kyogen.mdx';
 
 // Mapping slug → MDX komponenta
 export const performersMdx = {
@@ -45,7 +49,11 @@ export const performersMdx = {
   'shakuhachi': Shakuhachi,
   'shinto-muso-ryu-jo-a-pripojene-skoly': ShintoMusoRyu,
   'taijutsu': Taijutsu,
-  'ima-design': ImaDesign
+  'ima-design': ImaDesign,
+  'roman-kodet': RomanKodet,
+  'ondrej-hybl': OndrejHybl,
+  'vladimir-hotovec': VladimirHotovec,
+  'divadlo-kyogen': DivadloKyogen
 };
 
 // Funkce pro získání MDX komponenty podle slug

@@ -88,7 +88,7 @@
   },
   {
     "name": "Niten ichi ryū",
-    "h1text": "NITEN ICHI RYŪ",
+    "h2text": "NITEN ICHI RYŪ",
     "url": "niten-ichi-ryu",
     "thumbnail": "/photo-square/niten-ichi-ryu.jpg"
   },
@@ -137,9 +137,28 @@
   },
   {
     "name": "Roman Kodet - historik",
-    "h1text": "Roman Kodet",
+    "h2text": "Roman Kodet",
     "h3textTop": "historik",
     "url": "roman-kodet",
     "thumbnail": "/photo-square/roman-kodet.jpg"
+  },
+  {
+    "name": "Ondřej Hýbl - japanolog",
+    "h2text": "ONDŘEJ HÝBL",
+    "h3textTop": "japonolog",
+    "url": "ondrej-hybl",
+    "thumbnail": "/photo-square/ondrej-hybl.jpg"
+  },
+  {
+    "name": "Vladimír Hotovec",
+    "h2text": "VLADIMÍR HOTOVEC",
+    "url": "vladimir-hotovec",
+    "thumbnail": "/photo-square/vladimir-hotovec.jpg"
+  },
+  {
+    "name": "divadlo Kyōgen",
+    "h2text": "DIVADLO KYŌGEN",
+    "url": "divadlo-kyogen",
+    "thumbnail": "/photo-square/divadlo-kyogen.jpg"
   }
 ]
