@@ -58,7 +58,7 @@ export default function UcinkujiciPage() {
     >
       <HeaderContainer
         header={"KDO SE PŘEDSTAVÍ?"}
-        subheader={"7. ročník budo matsuri"}
+        subheader={"7. ročník budō matsuri"}
         rightText={headerParagraph}
       >
         <section>
