@@ -1,7 +1,7 @@
 [
   {
-    "name": "Kobudō",
-    "h1text": "KOBUDŌ",
+    "name": "Ryūkyū kobudō",
+    "h2text": "RYŪKYŪ KOBUDŌ",
     "url": "kobudo",
     "thumbnail": "/photo-square/kobudo.jpg"
   },
@@ -87,6 +87,12 @@
     "thumbnail": "/photo-square/judo.jpg"
   },
   {
+    "name": "Niten ichi ryū",
+    "h1text": "NITEN ICHI RYŪ",
+    "url": "niten-ichi-ryu",
+    "thumbnail": "/photo-square/niten-ichi-ryu.jpg"
+  },
+  {
     "name": "Nihontō",
     "h1text": "NIHONTŌ",
     "url": "nihonto",
@@ -106,7 +112,7 @@
     "h3textTop": "RESTAURACE",
     "url": "restaurace-Miyabi",
     "thumbnail": "/photo-square/restaurace-Miyabi.jpg",
-    "logo": "/logos/myabi-logo.jpg"
+    "logo": "/logos/miyabi-logo.jpg"
   },
   {
     "name": "Petra Vitásková - Japonská kaligrafie",
@@ -128,5 +134,12 @@
     "h3text": "DESIGNOVÉ PŘEDMĚTY",
     "url": "ima-design",
     "thumbnail": "/photo-square/ima-design.jpg"
+  },
+  {
+    "name": "Roman Kodet - historik",
+    "h1text": "Roman Kodet",
+    "h3textTop": "historik",
+    "url": "roman-kodet",
+    "thumbnail": "/photo-square/roman-kodet.jpg"
   }
 ]
