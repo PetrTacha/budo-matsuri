@@ -72,8 +72,8 @@ const Hero = () => {
             <div className="">Pod Juliskou 4</div>
           </h3>
           <div className={`${styles.buyTickets}`}>
-            <Button href={LINKS.TICKETS} variant="primary" size="large">
-              KOUPIT VSTUPENKU
+            <Button href={LINKS.TICKETS} target="_blank" variant="primary" size="large">
+              KOUPIT VSTUPENKY
             </Button>
           </div>
         </div>

@@ -74,6 +74,9 @@ const Partners = () => {
             <div className=" text-base sm:text-lg">
               Česko-japonská společnost
             </div>
+            <div className=" text-base sm:text-lg">
+              Ústav tělesné výchovy a sportu ČVUT v Praze
+            </div>
           </div>
         </div>
         <div className="text-center px-5 pb-5">

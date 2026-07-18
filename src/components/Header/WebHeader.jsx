@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import styles from "./WebHeader.module.scss";
 import { ROUTES } from "@/constants/routes";
 import { LINKS } from "@/constants/links";
+import Button from "../common/Button";
 
 export const WebHeader = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -74,6 +75,9 @@ export const WebHeader = () => {
 
           {/* Desktop social ikony - napravo */}
           <div className="hidden md:flex gap-4 items-center">
+            <Button href={LINKS.TICKETS} target="_blank" variant="primary" size="small">
+              KOUPIT VSTUPENKY
+            </Button>
             <a
               href={LINKS.FACEBOOK}
               target="_blank"
