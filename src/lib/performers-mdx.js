@@ -14,6 +14,7 @@ import Kobudo from '@/content/performers/kobudo.mdx';
 import Kyudo from '@/content/performers/kyudo.mdx';
 import NaginataDo from '@/content/performers/naginata-do.mdx';
 import Nihonto from '@/content/performers/nihonto.mdx';
+import NitenIchiRyu from '@/content/performers/niten-ichi-ryu.mdx';
 import Ninjutsu from '@/content/performers/ninjutsu.mdx';
 import OkinawskeKarate from '@/content/performers/okinawske-karate-do.mdx';
 import RestauraceMiyabi from '@/content/performers/restaurace-Miyabi.mdx';
@@ -37,6 +38,7 @@ export const performersMdx = {
   'kyudo': Kyudo,
   'naginata-do': NaginataDo,
   'nihonto': Nihonto,
+  'niten-ichi-ryu': NitenIchiRyu,
   'ninjutsu': Ninjutsu,
   'okinawske-karate-do': OkinawskeKarate,
   'restaurace-Miyabi': RestauraceMiyabi,
