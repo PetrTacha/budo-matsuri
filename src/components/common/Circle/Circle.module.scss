@@ -64,28 +64,31 @@
 }
 
 .small {
+  
   width: clamp(0.5rem, 42vw, 12rem);
   height: clamp(2rem, 42vw, 12rem);
 
   @include tablet {
+    
     width: clamp(8rem, 26vw, 16rem);
     height: clamp(8rem, 26vw, 16rem);
   }
 
   // Pro laptop (1024px - 1279px)
   @include laptop {
+    
   }
 
   // Pro desktop (1280px - 1535px)
   @include desktop {
-    width: clamp(5rem, 17vw, 35rem);
-    height: clamp(5rem, 17vw, 35rem);
+    width: clamp(5.5rem, 20vw, 35rem);
+    height: clamp(5.5rem, 20vw, 35rem);
   }
 
   // Pro desktop (1280px - 1535px)
   @include wide-desktop {
-    width: clamp(5rem, 18vw, 20rem);
-    height: clamp(5rem, 18vw, 20rem);
+    width: clamp(5.5rem, 20vw, 20rem);
+    height: clamp(5.5rem, 20vw, 20rem);
   }
 }
 
@@ -118,12 +121,15 @@
 
 .h2Text {
   font-size: 120%;
+  line-height: 1.8rem;
 
   @include tablet {
+     line-height: 1.8rem;
       font-size: 85%;
   }
 
-    @include laptop {
+  @include laptop {
+      line-height: 1.8rem;
       font-size: 75%;
   }
   @include desktop {

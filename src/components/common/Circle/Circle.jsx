@@ -44,7 +44,6 @@ const Circle = ({
       </React.Fragment>
     ));
   };
-  console.log("Circle component rendered with props:", displayText)
 
   return (
     <div
