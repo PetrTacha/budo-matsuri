@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import styles from "@/components/Hero/Hero.module.scss";
-import BudoRow from "@/components/BudoRow/BudoRow";
 import Button from "@/components/common/Button";
 import { LINKS } from "@/constants";
 import Image from "next/image";
@@ -38,15 +37,19 @@ const Hero = () => {
 
   return (
     <>
-      <section className={`relative h-[90dvh] z-5 flex`}>
-        <div className={`${styles.section__bg}`}>
-          <Image
-            width={1280}
-            height={720}
-            src="/hero_background.jpg"
-            alt="Hero Background"
-            className="w-full h-full object-cover"
-          />
+      <section className={`relative h-[90dvh] z-5 flex overflow-hidden`}>
+        <div className={styles.section__bg} aria-hidden="true">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            className={styles.heroVideo}
+          >
+            <source src="/hero_background.mp4" type="video/mp4" />
+          </video>
+          <div className={styles.heroFade} />
         </div>
 
         <div className={`${styles.heroGrid} h-full w-full`}>
