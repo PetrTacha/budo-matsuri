@@ -36,13 +36,13 @@ const transportStops = [
     position: [50.1009, 14.3922],
     iconUrl: "/icons/map_icons/metro.png",
     title: "Metro A",
-    subtitle: "stanice Dejvicka"
+    subtitle: "stanice Dejvická"
   },
   {
     id: "podbaba",
     position: [50.1117631, 14.3940572],
     iconUrl: "/icons/map_icons/tram.png",
-    title: "Nadrazi Podbaba",
+    title: "Nádraží Podbaba",
     subtitle: "Tramvaj 8; Autobus 340, 355"
   },
   {
@@ -50,7 +50,7 @@ const transportStops = [
     position: [50.1088792, 14.3940811],
     iconUrl: "/icons/map_icons/bus.png",
     title: "Autobus 107, 147",
-    subtitle: "stanice Cinska"
+    subtitle: "stanice Čínská"
   }
 ];
 
