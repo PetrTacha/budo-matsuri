@@ -4,14 +4,24 @@ import React, { useRef, useEffect } from "react";
 import Link from "next/link";
 import { ROUTES } from "@/constants/routes";
 import { LINKS } from "@/constants/links";
+import Button from "../common/Button";
 import styles from "./WebHeader.module.scss";
 
-export const WebMenu = ({ closeMenu }) => {
-  const menuRef = useRef(null);
+export const WebMenu = (
+  /** @type {{ closeMenu: () => void }} */ { closeMenu }
+) => {
+  const menuRef = useRef(/** @type {HTMLDivElement | null} */ (null));
 
   useEffect(() => {
+    /** @param {MouseEvent} event */
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      const menuNode = menuRef.current;
+
+      if (
+        menuNode &&
+        event.target instanceof Node &&
+        !menuNode.contains(event.target)
+      ) {
         closeMenu();
       }
     };
@@ -41,6 +51,18 @@ export const WebMenu = ({ closeMenu }) => {
           >
             ×
           </button>
+
+          <div className="mb-6 sm:mb-8 flex justify-center">
+            <Button
+              href={LINKS.TICKETS}
+              target="_blank"
+              variant="primary"
+              size="small"
+              onClick={closeMenu}
+            >
+              KOUPIT VSTUPENKY
+            </Button>
+          </div>
 
           {/* Navigation links */}
           <nav className="flex flex-col gap-4 sm:gap-6 mb-8 sm:mb-10">
