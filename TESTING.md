@@ -98,7 +98,7 @@ export default function Home() {
 ```jsx
 // src/app/page.jsx
 export const metadata = {
-  title: "Budō Matsuri",
+  title: "Budō matsuri",
   description: "...",
 };
 

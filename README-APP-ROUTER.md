@@ -1,4 +1,4 @@
-# Budō Matsuri - Next.js App Router + MDX
+# Budō matsuri - Next.js App Router + MDX
 
 > **✅ KOMPLETNÍ MIGRACE DOKONČENA!** Veškerý projekt je nyní na App Router.
 
@@ -269,7 +269,7 @@ Převede všechny HTML soubory z `public/texts/` na MDX v `content/performers/`.
 
 ## 📄 Licence
 
-Budō Matsuri © 2026
+Budō matsuri © 2026
 
 ---
 

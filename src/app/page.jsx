@@ -15,7 +15,7 @@ import Button from "@/components/common/Button";
 
 
 export const metadata = {
-  title: "Budō Matsuri 2026",
+  title: "Budō matsuri 2026",
   description:
     "Slavnost bojových umění - největší japonské bojové umění festival v České republice",
 };

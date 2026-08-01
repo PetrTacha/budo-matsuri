@@ -58,7 +58,7 @@ const Hero = () => {
               width={50}
               height={50}
               src="/logos/FullLogo.svg"
-              alt="Budō Matsuri Logo"
+              alt="Budō matsuri Logo"
               className="w-72 md:w-[28rem] mb-1"
               loading="eager"
               decoding="async"

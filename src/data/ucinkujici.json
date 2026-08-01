@@ -1,7 +1,8 @@
 [
   {
-    "name": "Ryūkyū kobudō",
-    "h2text": "RYŪKYŪ KOBUDŌ",
+    "name": "Okinawské kobudō",
+    "h3textTop": "OKINAWSKÉ",
+    "h2text": "KOBUDŌ",
     "url": "kobudo",
     "thumbnail": "/photo-square/kobudo.jpg"
   },
@@ -137,15 +138,15 @@
   },
   {
     "name": "Roman Kodet - historik",
-    "h2text": "Roman Kodet",
-    "h3textTop": "historik",
+    "h2text": "ROMAN KODET",
+    "h3textTop": "HISTORIK",
     "url": "roman-kodet",
     "thumbnail": "/photo-square/roman-kodet.jpg"
   },
   {
     "name": "Ondřej Hýbl - japanolog",
     "h2text": "ONDŘEJ HÝBL",
-    "h3textTop": "japonolog",
+    "h3textTop": "JAPONOLOG",
     "url": "ondrej-hybl",
     "thumbnail": "/photo-square/ondrej-hybl.jpg"
   },

@@ -1,7 +1,7 @@
 import "@/styles/globals.scss";
 
 export const metadata = {
-  title: "Budō Matsuri",
+  title: "Budō matsuri",
   description: "Slavnost bojových umění",
 };
 
