@@ -1,0 +1,33 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.merchendiseSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "blank" "content";
+  justify-items: center;
+  gap: 3rem;
+
+  @include min-tablet {
+    grid-template-columns: 50% 1fr;
+    grid-template-areas: "blank content";
+    justify-items: start;
+    gap: 1rem;
+    align-items: start;
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+  }
+}
+
+.textContent {
+  max-width: 80%;
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 4rem;
+
+  grid-area: content;
+
+  @include min-tablet {
+    padding-top: 3rem;
+  }
+}

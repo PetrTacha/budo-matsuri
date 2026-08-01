@@ -1,0 +1,165 @@
+[
+  {
+    "name": "Okinawské kobudō",
+    "h3textTop": "OKINAWSKÉ",
+    "h2text": "KOBUDŌ",
+    "url": "kobudo",
+    "thumbnail": "/photo-square/kobudo.jpg"
+  },
+  {
+    "name": "Okinawské Karate-dō",
+    "h3textTop": "OKINAWSKÉ",
+    "h2text": "KARATE-DŌ",
+    "url": "okinawske-karate-do",
+    "thumbnail": "/photo-square/okinawske-karate-do.jpg"
+  },
+  {
+    "name": "Naginata-dō",
+    "h2text": "NAGINATA-DŌ",
+    "url": "naginata-do",
+    "thumbnail": "/photo-square/naginata-do.jpg"
+  },
+  {
+    "name": "Iaidō",
+    "h1text": "IAIDŌ",
+    "url": "iaido",
+    "thumbnail": "/photo-square/iaido.jpg"
+  },
+  {
+    "name": "Kyūdō",
+    "h1text": "KYŪDŌ",
+    "url": "kyudo",
+    "thumbnail": "/photo-square/kyudo.jpg"
+  },
+  {
+    "name": "Ninjutsu",
+    "h1text": "NINJUTSU",
+    "url": "ninjutsu",
+    "thumbnail": "/photo-square/ninjutsu.jpg"
+  },
+  {
+    "name": "Taijutsu",
+    "h1text": "TAIJUTSU",
+    "url": "taijutsu",
+    "thumbnail": "/photo-square/taijutsu.jpg"
+  },
+  {
+    "name": "Katori Shintō Ryū",
+    "h2text": "KATORI SHINTŌ RYŪ",
+    "url": "katori-shinto-ryu",
+    "thumbnail": "/photo-square/katori-shinto-ryu.jpg"
+  },
+  {
+    "name": "Aikidō",
+    "h1text": "AIKIDŌ",
+    "url": "aikido",
+    "thumbnail": "/photo-square/aikido.jpg"
+  },
+  {
+    "name": "Kendō",
+    "h1text": "KENDŌ",
+    "url": "kendo",
+    "thumbnail": "/photo-square/kendo.jpg"
+  },
+  {
+    "name": "Kenjutsu stylu Kashima no Tachi",
+    "h2text": "KENJUTSU",
+    "h3text": "STYLU KASHIMA NO TACHI",
+    "url": "kenjutsu-stylu-Kashima-no-tachi",
+    "thumbnail": "/photo-square/kenjutsu-stylu-Kashima-no-tachi.jpg"
+  },
+  {
+    "name": "Shintō Musō Ryū Jō a připojené školy",
+    "h2text": "SHINTŌ|MUSŌ RYŪ JŌ",
+    "h3text": "A PŘIPOJENÉ ŠKOLY",
+    "url": "shinto-muso-ryu-jo-a-pripojene-skoly",
+    "thumbnail": "/photo-square/shinto-muso-ryu-jo-a-pripojene-skoly.jpg"
+  },
+  {
+    "name": "Battōjutsu",
+    "h2text": "BATTŌJUTSU",
+    "url": "battojutsu",
+    "thumbnail": "/photo-square/battojutsu.jpg"
+  },
+  {
+    "name": "Jūdō",
+    "h1text": "JŪDŌ",
+    "url": "judo",
+    "thumbnail": "/photo-square/judo.jpg"
+  },
+  {
+    "name": "Niten ichi ryū",
+    "h2text": "NITEN ICHI RYŪ",
+    "url": "niten-ichi-ryu",
+    "thumbnail": "/photo-square/niten-ichi-ryu.jpg"
+  },
+  {
+    "name": "Nihontō",
+    "h1text": "NIHONTŌ",
+    "url": "nihonto",
+    "thumbnail": "/photo-square/nihonto.jpg"
+  },
+  {
+    "name": "Dobrá čajovna Praha",
+    "h2text": "DOBRÁ ČAJOVNA",
+    "h3text": "PRAHA",
+    "url": "dobra-cajovna-praha",
+    "thumbnail": "/photo-square/dobra-cajovna-praha.jpg",
+    "logo": "/logos/dobra-cajovna.jpg"
+  },
+  {
+    "name": "Restaurace Miyabi",
+    "h1text": "MIYABI",
+    "h3textTop": "RESTAURACE",
+    "url": "restaurace-Miyabi",
+    "thumbnail": "/photo-square/restaurace-Miyabi.jpg",
+    "logo": "/logos/miyabi-logo.jpg"
+  },
+  {
+    "name": "Petra Vitásková - Japonská kaligrafie",
+    "h2text": "PETRA VITÁSKOVÁ",
+    "h3text": "JAPONSKÁ KALIGRAFIE",
+    "url": "japonska-kaligrafie",
+    "thumbnail": "/photo-square/japonska-kaligrafie.jpg"
+  },
+  {
+    "name": "Vlastislav Matoušek - Shakuhachi",
+    "h2text": "VLASTISLAV MATOUŠEK",
+    "h3text": "SHAKUHACHI",
+    "url": "shakuhachi",
+    "thumbnail": "/photo-square/shakuhachi.jpg"
+  },
+  {
+    "name": "IMA Design - Designové předměty",
+    "h2text": "IMA DESIGN",
+    "h3text": "DESIGNOVÉ PŘEDMĚTY",
+    "url": "ima-design",
+    "thumbnail": "/photo-square/ima-design.jpg"
+  },
+  {
+    "name": "Roman Kodet - historik",
+    "h2text": "ROMAN KODET",
+    "h3textTop": "HISTORIK",
+    "url": "roman-kodet",
+    "thumbnail": "/photo-square/roman-kodet.jpg"
+  },
+  {
+    "name": "Ondřej Hýbl - japanolog",
+    "h2text": "ONDŘEJ HÝBL",
+    "h3textTop": "JAPONOLOG",
+    "url": "ondrej-hybl",
+    "thumbnail": "/photo-square/ondrej-hybl.jpg"
+  },
+  {
+    "name": "Vladimír Hotovec",
+    "h2text": "VLADIMÍR HOTOVEC",
+    "url": "vladimir-hotovec",
+    "thumbnail": "/photo-square/vladimir-hotovec.jpg"
+  },
+  {
+    "name": "divadlo Kyōgen",
+    "h2text": "DIVADLO KYŌGEN",
+    "url": "divadlo-kyogen",
+    "thumbnail": "/photo-square/divadlo-kyogen.jpg"
+  }
+]

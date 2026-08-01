@@ -1,39 +1,99 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import styles from "@/components/Hero/Hero.module.scss";
-import CounterTime from "@/components/CounterTime/CounterTime";
-import BudoRow from "@/components/BudoRow/BudoRow";
-import BudoButtonLink from "../BudoButton/BudoButton";
+import Button from "@/components/common/Button";
+import { LINKS } from "@/constants";
+import Image from "next/image";
+
+const TARGET_DATE = new Date(2026, 9, 28); // 28.10.2026 (month is zero-based)
+
+const getRemainingDays = () => {
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const oneDayInMs = 1000 * 60 * 60 * 24;
+  const diffInMs = TARGET_DATE.getTime() - today.getTime();
+
+  if (diffInMs <= 0) {
+    return 0;
+  }
+
+  return Math.ceil(diffInMs / oneDayInMs);
+};
 
 const Hero = () => {
+  const [remainingDays, setRemainingDays] = useState(getRemainingDays);
+
+  useEffect(() => {
+    const updateCountdown = () => {
+      setRemainingDays(getRemainingDays());
+    };
+
+    updateCountdown();
+    const intervalId = setInterval(updateCountdown, 60 * 60 * 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
-    <BudoRow withImage={true}>
-      <div className="container mx-auto flex items-center justify-start flex-col relative pt-16 md:pb-40 z-10 pb-16">
-        <div
-          className={`text-6xl md:text-8xl font-bold mb-10 mx-2 text-center ${styles.heroTitle}`}
-        >
-          BUDŌ MATSURI
+    <>
+      <section className={`relative h-[90dvh] z-5 flex overflow-hidden`}>
+        <div className={styles.section__bg} aria-hidden="true">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            className={styles.heroVideo}
+          >
+            <source src="/hero_background.mp4" type="video/mp4" />
+          </video>
+          <div className={styles.heroFade} />
         </div>
-        {/* <CounterTime /> */}
-        <div
-          className={`text-2xl md:text-5xl mb-8 text-center mx-3 font-bold mt-7 md:mt-24 ${styles.heroSubTitle}`}
-        >
-          Děkujeme všem, kteří dorazili na Budō matsuri.
+
+        <div className={`${styles.heroGrid} h-full w-full`}>
+          <div className={`${styles.logoHeader}`}>
+            <Image
+              width={50}
+              height={50}
+              src="/logos/FullLogo.svg"
+              alt="Budō matsuri Logo"
+              className="w-72 md:w-[28rem] mb-1"
+              loading="eager"
+              decoding="async"
+            />
+            <h4 className={styles.heroSubTitle}>
+              Festival japonských bojových umění
+            </h4>
+            {remainingDays > 0 && (
+              <h4 className={styles.heroSubTitle}>Zbývá do zahájení: <b>{remainingDays} dní</b></h4>
+            )}
+          </div>
+          <h3 className={`${styles.placeAndTime} flex flex-col`}>
+            <div className="">28. října 2026, 11:00 - 18:00</div>
+            <div className="">Pod Juliskou 4</div>
+          </h3>
+          <div className={`${styles.buyTickets}`}>
+            <Button href={LINKS.TICKETS} target="_blank" variant="primary" size="large">
+              KOUPIT VSTUPENKY
+            </Button>
+          </div>
         </div>
-        <div className="md:text-4xl text-xl  mx-3 text-center ">Uvidíme se na dalších slavnostech v roce 2026!</div>
-        <div className="md:text-2xl text-md mx-3 md:mt-20 mt-10 text-center mb-5">Mezitím si můžete prohlédnout fotografie z minulých ročníků.</div>
-        <BudoButtonLink name="Fotogalerie" href={"/fotogalerie.html"} />
         {/* <div
-          className={`text-2xl md:text-5xl mb-8 text-center mx-3 font-bold mt-7 md:mt-24 ${styles.heroSubTitle}`}
-        >
-          FESTIVAL JAPONSKÝCH BOJOVÝCH UMĚNÍ
-        </div>
-        <div className="flex md:gap-16 font-normal mx-2 mt-5 flex-col md:flex-row text-center">
-          <div className="md:text-4xl text-xl">20. dubna 2024</div>
-          <div className="md:text-4xl text-xl font-bold">11:00 - 18:00</div>
-          <div className="md:text-4xl text-xl">Pod Juliskou 4</div>
-        </div> */}
-      </div>
-    </BudoRow>
+        className={`${styles.circle} items-center justify-center flex flex-col text-center`}
+      >
+        <h2 className={`text-4xl font-bold text-white ${styles.circleText}`}>
+          JAPONSKÁ
+          <br />
+          KULTURA
+        </h2>
+        <h3 className={`text-lg text-white ${styles.circleSubText}`}>
+          na vlastní oči
+        </h3>
+      </div> */}
+      </section>
+    </>
   );
 };
 

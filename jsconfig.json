@@ -2,8 +2,10 @@
   "compilerOptions": {
     "jsx": "react",
     "checkJs": true,
+    "resolveJsonModule": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/content/*": ["./content/*"]
     }
   }
 }

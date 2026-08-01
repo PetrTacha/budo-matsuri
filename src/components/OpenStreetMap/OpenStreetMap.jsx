@@ -8,26 +8,59 @@ import React, { useRef, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-// import icon from "leaflet/dist/images/marker-icon.png";
 import L from "leaflet";
-// import iconShadow from "leaflet/dist/images/marker-shadow.png";
+import styles from "./OpenStreetMap.module.scss";
 
-const icon = L.icon({ iconUrl: "/calligraphy-red-small.png", iconSize: [100, 100] });
+const icon = L.icon({
+  iconUrl: "/icons/marker_here.svg",
+  iconSize: [50, 50],
+  iconAnchor: [25, 50],
+  popupAnchor: [0, -50]
+});
 
-// let DefaultIcon = L.icon({
-//     iconUrl: icon,
-//     shadowUrl: iconShadow,
-//   });
+/**
+ * @param {string} iconUrl
+ */
+const createTransportIcon = (iconUrl) =>
+  L.icon({
+    iconUrl,
+    iconSize: [22, 22],
+    iconAnchor: [11, 11],
+    popupAnchor: [0, -11],
+    className: styles.transportIcon
+  });
 
-//   L.Marker.prototype.options.icon = DefaultIcon;
+const transportStops = [
+  {
+    id: "metro-dejvicka",
+    position: [50.1009, 14.3922],
+    iconUrl: "/icons/map_icons/metro.png",
+    title: "Metro A",
+    subtitle: "stanice Dejvická"
+  },
+  {
+    id: "podbaba",
+    position: [50.1117631, 14.3940572],
+    iconUrl: "/icons/map_icons/tram.png",
+    title: "Nádraží Podbaba",
+    subtitle: "Tramvaj 8; Autobus 340, 355"
+  },
+  {
+    id: "bus-cinska",
+    position: [50.1088792, 14.3940811],
+    iconUrl: "/icons/map_icons/bus.png",
+    title: "Autobus 107, 147",
+    subtitle: "stanice Čínská"
+  }
+];
 
 const OpenStreetMap = () => {
-  const [center, setCenter] = useState({ lat: 50.1105, lng: 14.3907 });
+  const [center] = useState({ lat: 50.1105, lng: 14.3907 });
   const ZOOM_LEVEL = 17;
-  const mapRef = useRef();
+  const mapRef = useRef(null);
 
   return (
-    <div className="mx-10 sm:mx-32 sm:h-1/3 h-1/5 mt-10 mb-24 z-10 relative">
+    <div className={styles.mapContainer}>
       <MapContainer
         center={center}
         zoom={ZOOM_LEVEL}
@@ -35,25 +68,31 @@ const OpenStreetMap = () => {
         className="h-full w-full"
       >
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; OpenStreetMap &copy; CARTO'
+          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+          maxZoom={19}
         />
-        {/* {location.loaded && !location.error && ( */}
-        {/* <Marker
-              position={[center.lat, center.lng]}
-            >
-                <Popup>My Location</Popup>
-                
-            </Marker> */}
-
-        {/* )} */}
         <Marker
           key="Marker key"
           position={[center.lat, center.lng]}
           icon={icon}
         >
-          <Popup>Sportovní areál ČVUT Pod Juliskou 4, Praha 6</Popup>
+          <Popup><b>Budō matsuri</b><br />Sportovní areál ČVUT<br />Pod Juliskou 4, Praha 6</Popup>
         </Marker>
+
+        {transportStops.map((stop) => (
+          <Marker
+            key={stop.id}
+            position={[stop.position[0], stop.position[1]]}
+            icon={createTransportIcon(stop.iconUrl)}
+          >
+            <Popup>
+              <b>{stop.title}</b>
+              <br />
+              {stop.subtitle}
+            </Popup>
+          </Marker>
+        ))}
       </MapContainer>
     </div>
   );

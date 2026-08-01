@@ -1,0 +1,163 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+}
+
+.circle {
+  z-index: 10;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  font-weight: 800;
+  transition: all 0.3s ease;
+  filter: brightness(0.9);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  font-size: clamp(0.8rem, 4vw, 2rem);
+
+  @include tablet {
+  }
+
+  // Pro laptop (1024px - 1279px)
+  @include laptop {
+  }
+
+  // Pro desktop (1280px - 1535px)
+  @include desktop {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.interactive {
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.08) translateY(-0.5rem);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    filter: brightness(1.1);
+    z-index: 20;
+  }
+}
+
+.nonInteractive {
+  cursor: default;
+  pointer-events: none;
+}
+
+.animated {
+  animation: float 6s ease-in-out infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.large {
+  width: clamp(3rem, 35vw, 20rem);
+  height: clamp(3rem, 35vw, 20rem);
+}
+
+.small {
+  
+  width: clamp(0.5rem, 42vw, 12rem);
+  height: clamp(2rem, 42vw, 12rem);
+
+  @include tablet {
+    
+    width: clamp(8rem, 26vw, 16rem);
+    height: clamp(8rem, 26vw, 16rem);
+  }
+
+  // Pro laptop (1024px - 1279px)
+  @include laptop {
+    
+  }
+
+  // Pro desktop (1280px - 1535px)
+  @include desktop {
+    width: clamp(5.5rem, 20vw, 35rem);
+    height: clamp(5.5rem, 20vw, 35rem);
+  }
+
+  // Pro desktop (1280px - 1535px)
+  @include wide-desktop {
+    width: clamp(5.5rem, 20vw, 20rem);
+    height: clamp(5.5rem, 20vw, 20rem);
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+// Text size variants
+.mainText {
+  font-size: 2.25rem; // text-4xl - default size
+}
+
+.h1Text {
+  font-size: 130%;
+
+    @include tablet {
+      font-size: 110%;
+  }
+
+    @include laptop {
+      font-size: 100%;
+  }
+
+
+}
+
+.h2Text {
+  font-size: 120%;
+  line-height: 1.8rem;
+
+  @include tablet {
+     line-height: 1.8rem;
+      font-size: 85%;
+  }
+
+  @include laptop {
+      line-height: 1.8rem;
+      font-size: 75%;
+  }
+  @include desktop {
+    line-height: 2.5rem;
+    font-size: 100%;
+  }
+
+  @include wide-desktop {
+    line-height: 3rem;
+    font-size: 130%;
+  }
+}
+
+.circleSubText {
+  font-weight: 400;
+  line-height: normal;
+  font-size: 75%;
+
+  @include laptop {
+
+      font-size: 60%;
+  }
+
+  @include desktop {
+    font-size: 60%;
+  }
+
+  @include wide-desktop {
+    font-size: 70%;
+  }
+}

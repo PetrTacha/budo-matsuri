@@ -1,0 +1,56 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.foodSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-area: "text" "image";
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+
+  @include min-tablet {
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    justify-items: start;
+    grid-area: "text image";
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+  }
+}
+
+.textContent {
+  max-width: 80%;
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+
+  @include min-tablet {
+    padding-left: 5rem;
+    padding-top: 3rem;
+
+    button {
+      justify-self: start;
+    }
+  }
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 15;
+}
+
+.circle {
+  z-index: 10;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  margin-bottom: 15rem;
+  font-weight: 800;
+}

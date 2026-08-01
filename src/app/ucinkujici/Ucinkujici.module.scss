@@ -1,0 +1,38 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.bubbleGrid {
+  width: 100%;
+  display: grid;
+  gap: 0;
+  justify-items: center;
+  align-items: center;
+
+  padding-bottom: 3rem;
+  // Pro desktop (1280px - 1535px)
+  @include desktop {
+    padding-bottom: 15rem;
+  }
+
+  @include wide-desktop {
+    padding-top: 3rem;
+    padding-bottom: 20rem;
+  }
+
+  @include laptop {
+    // padding-top: 15rem;
+    padding-bottom: 10rem;
+  }
+
+   @include tablet {
+    // padding-top: 15rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.circlePosition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,127 @@
+// Flexbox mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Responsive text sizing
+@mixin responsive-text($mobile, $desktop) {
+  font-size: $mobile;
+  
+  @media (min-width: $breakpoint-mobile) {
+    font-size: $desktop;
+  }
+}
+
+// Common transitions
+@mixin smooth-transition($properties: all, $duration: 0.3s) {
+  transition: $properties $duration ease;
+}
+
+// Hover lift effect
+@mixin hover-lift {
+  @include smooth-transition(transform);
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// Container queries helpers
+@mixin container($max-width: 1200px) {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+// Square size helper
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+// Media query breakpoints
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile - 1}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-mobile) and (max-width: #{$breakpoint-tablet - 1}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: $breakpoint-tablet) and (max-width: #{$breakpoint-laptop - 1}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-laptop) and (max-width: #{$breakpoint-desktop - 1}) {
+    @content;
+  }
+}
+
+@mixin wide-desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+// Min-width breakpoints
+@mixin min-mobile {
+  @media (min-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin min-tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin min-laptop {
+  @media (min-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin min-desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+
+//  @include tablet {
+//   }
+
+//   // Pro laptop (1024px - 1279px)
+//   @include laptop {
+//   }
+
+//   // Pro desktop (1280px - 1535px)
+//   @include desktop {
+//   }
+
+//   // Pro desktop (1280px - 1535px)
+//   @include wide-desktop {
+//   }

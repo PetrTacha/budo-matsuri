@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import "@/styles/mixins";
 
 @font-face {
   font-family: "DINCondensed";
@@ -12,6 +13,9 @@
 @import "variables";
 
 body {
+  margin: 0;
+  padding: 0;
+
   & > * {
     box-sizing: border-box;
   }
@@ -28,16 +32,69 @@ body {
 }
 
 h1 {
-  font-size: $h1-font-size;
+  font-size: $h1-font-size * 0.5;
+  font-family: $font-family-header;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 2.5rem;
+
+  @include tablet {
+    line-height: 2.8rem;
+    font-size: $h1-font-size * 0.8;
+  }
+
+  // Pro laptop (1024px - 1279px)
+  @include laptop {
+    font-size: $h1-font-size * 0.9;
+  }
+
+  @include desktop {
+    font-size: $h1-font-size;
+  }
+
+  // Pro desktop (1280px - 1535px)
+  @include wide-desktop {
+    font-size: $h1-font-size;
+  }
 }
 
 h2 {
-  font-size: $h2-font-size;
-  font-weight: 600;
+  font-family: $font-family;
+  font-size: $h2-font-size * 0.6;
+  font-weight: 800;
+  line-height: 2.2rem;
+
+  @include tablet {
+    line-height: 3rem;
+    font-size: $h2-font-size * 0.8;
+  }
+
+  // Pro laptop (1024px - 1279px)
+  @include laptop {
+    line-height: 4rem;
+    font-size: $h2-font-size * 0.9;
+  }
+
+  @include desktop {
+    line-height: 4rem;
+    font-size: $h2-font-size;
+  }
+
+  // Pro desktop (1280px - 1535px)
+  @include wide-desktop {
+    line-height: 4rem;
+    font-size: $h2-font-size;
+  }
 }
 
 h3 {
-  font-size: $h3-font-size;
+  font-size: 1.3rem;
+  font-weight: 600;
+  // Pro desktop (1280px - 1535px)
+  @include min-tablet {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 }
 
 h4 {
@@ -45,9 +102,8 @@ h4 {
 }
 
 p {
-  font-size: $paragraph-font-size;
+  font-size: $font-family;
   text-align: justify;
-  color: $font-color-secondary;
 }
 
 .grey-row {
@@ -70,19 +126,4 @@ a {
   height: 100%;
   --swiper-navigation-color: var(--color-bg-0);
   margin-bottom: 10rem;
-}
-
-@media (max-width: 640px) {
-  h2 {
-    font-size: $h2-font-size-small;
-    font-weight: 600;
-  }
-
-  h3 {
-    font-size: $h3-font-size-small;
-  }
-
-  p {
-    font-size: $paragraph-font-size-small;
-  }
 }
