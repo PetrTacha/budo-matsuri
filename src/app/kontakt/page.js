@@ -104,6 +104,7 @@ export default function KontaktPage() {
           </div>
         </div>
       </BudoRow> */}
+      <Partners />
     </Layout>
   );
 }

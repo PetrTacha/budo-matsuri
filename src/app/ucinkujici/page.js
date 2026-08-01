@@ -9,6 +9,7 @@ import { Layout } from "@/components/Layout/Layout";
 import { getBreakpoint } from "@/constants";
 import { HeaderContainer } from "@/components/Layout/Layout";
 import Circle from "@/components/common/Circle/Circle";
+import Partners from "@/components/Partners";
 
 export default function UcinkujiciPage() {
   const router = useRouter();
@@ -99,6 +100,7 @@ export default function UcinkujiciPage() {
           </div>
         </section>
       </HeaderContainer>
+      <Partners />
     </Layout>
   );
 }
