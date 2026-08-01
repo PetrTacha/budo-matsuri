@@ -39,9 +39,9 @@ export const WebHeader = () => {
           ? (isScrolled ? styles.headerScrolled : styles.headerTransparent)
           : styles.headerStatic
       }`}>
-        <div className=" w-full px-9 py-4 flex justify-between items-center">
+        <div className="w-full px-9 py-4 flex justify-between items-center md:grid md:grid-cols-[1fr_auto_1fr] md:items-center">
           {/* Logo nalevo */}
-          <Link href={ROUTES.HOME} className="flex-shrink-0">
+          <Link href={ROUTES.HOME} className="flex-shrink-0 md:justify-self-start">
             <Image
               src="/logos/icon_menu.svg"
               alt="Budō matsuri"
@@ -60,6 +60,12 @@ export const WebHeader = () => {
               Účinkující
             </Link>
             <Link 
+              href={ROUTES.GALLERY}
+              className={`text-gray-900 hover:text-primary font-medium text-lg transition-colors no-underline ${styles.navLink}`}
+            >
+              Fotogalerie
+            </Link>
+            <Link 
               href={ROUTES.CONTACT}
               className={`text-gray-900 hover:text-primary font-medium text-lg transition-colors no-underline ${styles.navLink}`}
             >
@@ -74,7 +80,7 @@ export const WebHeader = () => {
           </nav>
 
           {/* Desktop social ikony - napravo */}
-          <div className="hidden md:flex gap-4 items-center">
+          <div className="hidden md:flex gap-4 items-center md:justify-self-end">
             <Button href={LINKS.TICKETS} target="_blank" variant="primary" size="small">
               KOUPIT VSTUPENKY
             </Button>

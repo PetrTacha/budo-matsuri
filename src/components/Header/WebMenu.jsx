@@ -74,6 +74,13 @@ export const WebMenu = (
               Účinkující
             </Link>
             <Link 
+              href={ROUTES.GALLERY}
+              onClick={closeMenu}
+              className={`text-gray-900 hover:text-primary font-medium text-lg sm:text-xl transition-colors no-underline ${styles.navLink}`}
+            >
+              Fotogalerie
+            </Link>
+            <Link 
               href={ROUTES.CONTACT}
               onClick={closeMenu}
               className={`text-gray-900 hover:text-primary font-medium text-lg sm:text-xl transition-colors no-underline ${styles.navLink}`}
