@@ -83,7 +83,7 @@
   },
   "mobile": {
     "columns": 2,
-    "rows": 14,
+    "rows": 12,
     "positions": [
       { "klubIndex": 0, "row": 1, "column": 1, "offset": [0, -2], "name": "kobudō" },
       { "klubIndex": 1, "row": 1, "column": 2, "offset": [-0.5, 3], "name": "okinawské karate-dō" },
