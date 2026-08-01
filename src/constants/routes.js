@@ -2,7 +2,7 @@ export const ROUTES = {
   HOME: "/",
   PERFORMERS: "/ucinkujici",
   TICKETS: "/vstupenky",
-  GALLERY: "/minule-rocniky",
+  GALLERY: "/fotogalerie",
   CONTACT: "/kontakt",
   MERCHANDISE: "/merchandise",
 };
