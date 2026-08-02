@@ -2,19 +2,20 @@
 
 import React from "react";
 import { Layout } from "@/components/Layout/Layout";
-import Citate from "@/components/Citate/Citate";
 import SocialNetworks from "@/components/SocialNetworks";
 import Partners from "@/components/Partners";
+import PhotoGridModal from "@/components/Gallery/PhotoGridModal";
+import { galleryImages } from "@/data/gallery";
 
 export default function FotogaleriePage() {
   return (
-    <Layout>
+    <Layout backgroundImage={"/backgrounds/brush1.svg"}>
         <main className="">
           <h2 className="my-32 text-center">
             Fotogalerie
           </h2>
 
-          <h4 className="text-center mb-10">Pracujeme na tom...</h4>
+          <PhotoGridModal images={galleryImages} />
 
           <SocialNetworks />
         </main>
