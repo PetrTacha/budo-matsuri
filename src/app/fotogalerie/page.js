@@ -7,18 +7,16 @@ import Partners from "@/components/Partners";
 import PhotoGridModal from "@/components/Gallery/PhotoGridModal";
 import { galleryImages } from "@/data/gallery";
 
-const headerParagraph =
-    "Níže naleznete přehled škol, hostů a sku";
-
+const headerParagraph = "";
 
 export default function FotogaleriePage() {
   return (
     <Layout backgroundImage={"/backgrounds/brush1.svg"}>
       <HeaderContainer
-              header={"Fotogalerie"}
-              subheader={"předchozích ročníků"}
-              rightText={headerParagraph}
-            >
+        header={"Fotogalerie"}
+        subheader={"předchozích ročníků"}
+        rightText={headerParagraph}
+      >
         <main className="">
           <PhotoGridModal images={galleryImages} />
 

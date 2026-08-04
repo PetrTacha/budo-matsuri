@@ -1,4 +1,5 @@
 export const galleryImages = [
+  { id: "gallery-010", src: "/galerie/gallery-010.png", alt: "Gallery image 010" },
   { id: "gallery-018", src: "/galerie/gallery-018.jpg", alt: "Gallery image 018" },
   { id: "gallery-016", src: "/galerie/gallery-016.png", alt: "Gallery image 016" },
   { id: "gallery-021", src: "/galerie/gallery-021.jpg", alt: "Gallery image 021" },
@@ -6,25 +7,30 @@ export const galleryImages = [
   { id: "gallery-003", src: "/galerie/gallery-003.jpg", alt: "Gallery image 003" },
   { id: "gallery-013", src: "/galerie/gallery-013.png", alt: "Gallery image 013" },
   { id: "gallery-007", src: "/galerie/gallery-007.png", alt: "Gallery image 007" },
-  { id: "gallery-026", src: "/galerie/gallery-026.jpg", alt: "Gallery image 026" },
+  { id: "gallery-002", src: "/galerie/gallery-002.jpg", alt: "Gallery image 002" },
+
+  { id: "gallery-001", src: "/galerie/gallery-001.jpg", alt: "Gallery image 001" },
+
   { id: "gallery-028", src: "/galerie/gallery-028.jpg", alt: "Gallery image 028" },
   { id: "gallery-025", src: "/galerie/gallery-025.jpg", alt: "Gallery image 025" },
-  { id: "gallery-010", src: "/galerie/gallery-010.png", alt: "Gallery image 010" },
+  
   { id: "gallery-023", src: "/galerie/gallery-023.jpg", alt: "Gallery image 023" },
-  { id: "gallery-002", src: "/galerie/gallery-002.jpg", alt: "Gallery image 002" },
-  { id: "gallery-020", src: "/galerie/gallery-020.jpg", alt: "Gallery image 020" },
   { id: "gallery-027", src: "/galerie/gallery-027.jpg", alt: "Gallery image 027" },
   { id: "gallery-015", src: "/galerie/gallery-015.png", alt: "Gallery image 015" },
   { id: "gallery-011", src: "/galerie/gallery-011.png", alt: "Gallery image 011" },
-  { id: "gallery-019", src: "/galerie/gallery-019.jpg", alt: "Gallery image 019" },
+  
+  { id: "gallery-020", src: "/galerie/gallery-020.jpg", alt: "Gallery image 020" },
   { id: "gallery-004", src: "/galerie/gallery-004.jpg", alt: "Gallery image 004" },
-  { id: "gallery-001", src: "/galerie/gallery-001.jpg", alt: "Gallery image 001" },
+
+
   { id: "gallery-022", src: "/galerie/gallery-022.jpg", alt: "Gallery image 022" },
+  { id: "gallery-019", src: "/galerie/gallery-019.jpg", alt: "Gallery image 019" },
+
+  { id: "gallery-017", src: "/galerie/gallery-017.jpg", alt: "Gallery image 017" },
   { id: "gallery-009", src: "/galerie/gallery-009.png", alt: "Gallery image 009" },
   { id: "gallery-014", src: "/galerie/gallery-014.png", alt: "Gallery image 014" },
   { id: "gallery-012", src: "/galerie/gallery-012.png", alt: "Gallery image 012" },
   { id: "gallery-005", src: "/galerie/gallery-005.jpg", alt: "Gallery image 005" },
   { id: "gallery-006", src: "/galerie/gallery-006.png", alt: "Gallery image 006" },
-  { id: "gallery-024", src: "/galerie/gallery-024.jpg", alt: "Gallery image 024" },
-  { id: "gallery-017", src: "/galerie/gallery-017.jpg", alt: "Gallery image 017" }
+  { id: "gallery-024", src: "/galerie/gallery-024.jpg", alt: "Gallery image 024" }
 ];
