@@ -1,25 +1,30 @@
 "use client";
 
 import React from "react";
-import { Layout } from "@/components/Layout/Layout";
+import { HeaderContainer, Layout } from "@/components/Layout/Layout";
 import SocialNetworks from "@/components/SocialNetworks";
 import Partners from "@/components/Partners";
 import PhotoGridModal from "@/components/Gallery/PhotoGridModal";
 import { galleryImages } from "@/data/gallery";
 
+const headerParagraph =
+    "Níže naleznete přehled škol, hostů a sku";
+
+
 export default function FotogaleriePage() {
   return (
     <Layout backgroundImage={"/backgrounds/brush1.svg"}>
+      <HeaderContainer
+              header={"Fotogalerie"}
+              subheader={"předchozích ročníků"}
+              rightText={headerParagraph}
+            >
         <main className="">
-          <h2 className="my-32 text-center">
-            Fotogalerie
-          </h2>
-
           <PhotoGridModal images={galleryImages} />
 
           <SocialNetworks />
         </main>
-      
+      </HeaderContainer>
       <Partners />
     </Layout>
   );

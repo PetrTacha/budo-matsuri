@@ -1,8 +1,8 @@
 .wrapper {
   width: 100%;
-  max-width: 80rem;
+  // max-width: 80vw;
   margin: 0 auto;
-  padding: 0 1rem 3rem;
+  // padding: 0 1rem 3rem;
 }
 
 .grid {
@@ -99,6 +99,6 @@
 
 @media (min-width: 1280px) {
   .grid {
-    column-count: 4;
+    column-count: 3;
   }
 }
