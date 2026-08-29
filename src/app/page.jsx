@@ -39,12 +39,6 @@ export default function HomePage() {
           <SectionCulture />
           <SectionMerchendise />
 
-          {/* <Information />
-          <Citate
-            citate={QUOTES[0].text}
-            author={QUOTES[0].author}
-          />
-          <SocialNetworks /> */}
           <Partners />
           </div>
         </main>
