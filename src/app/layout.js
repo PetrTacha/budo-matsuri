@@ -1,8 +1,19 @@
 import "@/styles/globals.scss";
 
 export const metadata = {
+  metadataBase: new URL("https://slavnostibudo.japan.cz"),
   title: "Budō matsuri",
   description: "Slavnost bojových umění",
+  openGraph: {
+    title: "Budō matsuri",
+    description: "Slavnost bojových umění",
+    siteName: "Budō matsuri",
+    locale: "cs_CZ",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }) {

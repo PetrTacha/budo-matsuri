@@ -18,6 +18,11 @@ export const metadata = {
   title: "Budō matsuri 2026",
   description:
     "Slavnost bojových umění - největší japonské bojové umění festival v České republice",
+  openGraph: {
+    title: "Budō matsuri 2026",
+    description:
+      "Slavnost bojových umění - největší japonské bojové umění festival v České republice",
+  },
 };
 
 export default function HomePage() {
