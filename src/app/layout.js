@@ -3,10 +3,10 @@ import "@/styles/globals.scss";
 export const metadata = {
   metadataBase: new URL("https://slavnostibudo.japan.cz"),
   title: "Budō matsuri",
-  description: "Slavnost bojových umění",
+  description: "7. slavnosti Budō matsuri",
   openGraph: {
     title: "Budō matsuri",
-    description: "Slavnost bojových umění",
+    description: "7. slavnosti Budō matsuri",
     siteName: "Budō matsuri",
     locale: "cs_CZ",
     type: "website",

@@ -17,11 +17,11 @@ import Button from "@/components/common/Button";
 export const metadata = {
   title: "Budō matsuri 2026",
   description:
-    "Slavnost bojových umění - největší japonské bojové umění festival v České republice",
+    "7. slavnosti Budō matsuri",
   openGraph: {
     title: "Budō matsuri 2026",
     description:
-      "Slavnost bojových umění - největší japonské bojové umění festival v České republice",
+      "7. slavnosti Budō matsuri",
   },
 };
 
