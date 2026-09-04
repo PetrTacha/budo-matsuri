@@ -161,5 +161,12 @@
     "h2text": "DIVADLO KYŌGEN",
     "url": "divadlo-kyogen",
     "thumbnail": "/photo-square/divadlo-kyogen.jpg"
+  },
+  {
+    "name": "Markéta Sōkei Reiter Fujita - přednáška o Chadō",
+    "h2text": "PŘEDNÁŠKA O CHADŌ",
+    "h3textTop": "MARKÉTA SŌKEI REITER FUJITA",
+    "url": "marketa-sokei-reiter-fujita",
+    "thumbnail": "/photo-square/marketa-sokei-reiter-fujita.jpg"
   }
 ]

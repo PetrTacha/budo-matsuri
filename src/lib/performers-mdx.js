@@ -26,6 +26,7 @@ import RomanKodet from '@/content/performers/roman-kodet.mdx';
 import OndrejHybl from '@/content/performers/ondrej-hybl.mdx';
 import VladimirHotovec from '@/content/performers/vladimir-hotovec.mdx';
 import DivadloKyogen from '@/content/performers/divadlo-kyogen.mdx';
+import MarketaSokeiReiterFujita from '@/content/performers/marketa-sokei-reiter-fujita.mdx';
 
 // Mapping slug → MDX komponenta
 export const performersMdx = {
@@ -53,7 +54,8 @@ export const performersMdx = {
   'roman-kodet': RomanKodet,
   'ondrej-hybl': OndrejHybl,
   'vladimir-hotovec': VladimirHotovec,
-  'divadlo-kyogen': DivadloKyogen
+  'divadlo-kyogen': DivadloKyogen,
+  'marketa-sokei-reiter-fujita': MarketaSokeiReiterFujita
 };
 
 // Funkce pro získání MDX komponenty podle slug
