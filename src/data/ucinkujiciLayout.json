@@ -39,7 +39,9 @@
       { "klubIndex": 23, "row": 11, "column": 1, "offset": [0, 0], "name": "Vladimír Hotovec" },
       { "klubIndex": 24, "row": 11, "column": 3, "offset": [3, 2], "name": "divadlo Kyōgen" },
 
-      { "klubIndex": 25, "row": 12, "column": 2, "offset": [0, 0], "name": "Markéta Sōkei Reiter Fujita - přednáška o Chadō" }
+      { "klubIndex": 25, "row": 12, "column": 2, "offset": [-2, 0], "name": "Markéta Sōkei Reiter Fujita - přednáška o Chadō" },
+
+      { "klubIndex": 26, "row": 12, "column": 3, "offset": [-1, 8], "name": "Petr Žemla - Zenbuddhismus a budō" }
     ]
   },
   "tablet": {
@@ -82,7 +84,9 @@
       { "klubIndex": 23, "row": 12, "column": 1, "offset": [0, -8], "name": "Vladimír Hotovec" },
       { "klubIndex": 24, "row": 12, "column": 2, "offset": [3, -4], "name": "divadlo Kyōgen" },
 
-      { "klubIndex": 25, "row": 13, "column": 1, "offset": [1, -6], "name": "Markéta Sōkei Reiter Fujita - přednáška o Chadō" }
+      { "klubIndex": 25, "row": 13, "column": 1, "offset": [1, -6], "name": "Markéta Sōkei Reiter Fujita - přednáška o Chadō" },
+
+      { "klubIndex": 26, "row": 13, "column": 2, "offset": [5, -2], "name": "Petr Žemla - Zenbuddhismus a budō" }
     ]
   },
   "mobile": {
@@ -126,7 +130,9 @@
       { "klubIndex": 23, "row": 12, "column": 1, "offset": [0, -8], "name": "Vladimír Hotovec" },
       { "klubIndex": 24, "row": 12, "column": 2, "offset": [-1, 0], "name": "divadlo Kyōgen" },
 
-      { "klubIndex": 25, "row": 13, "column": 1, "offset": [1, -5], "name": "Markéta Sōkei Reiter Fujita - přednáška o Chadō" }
+      { "klubIndex": 25, "row": 13, "column": 1, "offset": [1, -5], "name": "Markéta Sōkei Reiter Fujita - přednáška o Chadō" },
+
+      { "klubIndex": 26, "row": 13, "column": 2, "offset": [-1, 2], "name": "Petr Žemla - Zenbuddhismus a budō" }
     ]
   }
 }

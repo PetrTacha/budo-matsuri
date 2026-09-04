@@ -1,0 +1,23 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(800,800,-800,800,0,0)">
+			<stop offset="0" stop-color="#1a1a1a"/>
+			<stop offset="1" stop-color="#3a2020"/>
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: url(#g1) } 
+		.t1 { font-size: 48px;fill: #ffffff;font-weight: bold;font-family: "Arial" } 
+		.t2 { font-size: 28px;fill: #cccccc;font-family: "Arial" } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m0 0h800v800h-800z"/>
+	<text id="PETR ŽEMLA" transform="translate(398,396)">
+		<tspan x="-153.3" y="0" class="t1">PETR ŽEMLA
+</tspan>
+	</text>
+	<text id="FOTOGRAFIE BRZY" transform="translate(398,446)">
+		<tspan x="-131.2" y="0" class="t2">FOTOGRAFIE BRZY
+</tspan>
+	</text>
+</svg>
