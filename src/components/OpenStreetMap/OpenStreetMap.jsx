@@ -1,15 +1,32 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 // import "leaflet/dist/leaflet.css";
 // import { MapContainer, Marker, Popup, TileLayer, Tooltip } from "react-leaflet"
 // import "leaflet/dist/leaflet.css"
 // import "leaflet-defaulticon-compatibility"
 // import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css"
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import "maplibre-gl/dist/maplibre-gl.css";
+import { maplibreGL } from "@maplibre/maplibre-gl-leaflet";
 
-import L from "leaflet";
 import styles from "./OpenStreetMap.module.scss";
+import L from "leaflet";
+
+const OPENFREEMAP_POSITRON_STYLE = "https://tiles.openfreemap.org/styles/positron";
+
+const PositronBasemap = () => {
+  const map = useMap();
+
+  useEffect(() => {
+    const layer = maplibreGL({ style: OPENFREEMAP_POSITRON_STYLE }).addTo(map);
+    return () => {
+      layer.remove();
+    };
+  }, [map]);
+
+  return null;
+};
 
 const icon = L.icon({
   iconUrl: "/icons/marker_here.svg",
@@ -67,11 +84,7 @@ const OpenStreetMap = () => {
         ref={mapRef}
         className="h-full w-full"
       >
-        <TileLayer
-          attribution='&copy; OpenStreetMap &copy; CARTO'
-          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-          maxZoom={19}
-        />
+        <PositronBasemap />
         <Marker
           key="Marker key"
           position={[center.lat, center.lng]}
