@@ -66,6 +66,9 @@ const Partners = () => {
               />
             </div> */}
           </div>
+          <div className="p-5 text-sm sm:text-base italic">
+            Akce je pořádaná s finanční podporou Hlavního města Prahy.
+          </div>
         </div>
         <div className="text-center px-5">
           <h4 className="mb-5 text-2xl font-bold">Hlavní organizátoři:</h4>

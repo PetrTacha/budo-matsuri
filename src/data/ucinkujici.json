@@ -134,7 +134,8 @@
     "h2text": "IMA DESIGN",
     "h3text": "DESIGNOVÉ PŘEDMĚTY",
     "url": "ima-design",
-    "thumbnail": "/photo-square/ima-design.jpg"
+    "thumbnail": "/photo-square/ima.jpg",
+    "logo": "/logos/ima.jpg"
   },
   {
     "name": "Roman Kodet - historik",
