@@ -21,6 +21,7 @@ export const Layout = ({
   backgroundOpacity = 0.2,
   backgroundScale = 1.1,
   backgroundMarginTop = '3rem',
+  backgroundOffsetY = '0',
 }) => {
   const backgroundStyle = backgroundImage
     ? {
@@ -29,7 +30,7 @@ export const Layout = ({
 
         backgroundRepeat: "no-repeat",
         opacity: backgroundOpacity,
-        transform: `scale(${backgroundScale})`,
+        transform: `translateY(${backgroundOffsetY}) scale(${backgroundScale})`,
         marginTop: backgroundMarginTop,
       }
     : {};

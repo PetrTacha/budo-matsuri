@@ -58,7 +58,7 @@ export default function UcinkujiciPage() {
       backgroundMarginTop="18rem"
     >
       <HeaderContainer
-        header={"KDO SE PŘEDSTAVÍ?"}
+        header={"Kdo se představí?"}
         subheader={"7. slavnosti Budō matsuri"}
         rightText={headerParagraph}
       >

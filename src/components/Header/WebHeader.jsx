@@ -60,6 +60,12 @@ export const WebHeader = () => {
               Účinkující
             </Link>
             <Link 
+              href={ROUTES.PROGRAM}
+              className={` ${styles.navLink} text-gray-900 hover:text-primary font-medium text-lg transition-colors no-underline ${styles.navLink}`}
+            >
+              Program
+            </Link>
+            <Link 
               href={ROUTES.GALLERY}
               className={`text-gray-900 hover:text-primary font-medium text-lg transition-colors no-underline ${styles.navLink}`}
             >

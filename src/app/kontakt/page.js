@@ -22,7 +22,7 @@ export default function KontaktPage() {
 
   return (
     <Layout backgroundImage={"/backgrounds/brush1.svg"}>
-      <HeaderContainer header={"JAK SE K NÁM DOSTANETE?"}>
+      <HeaderContainer header={"Jak se k nám dostanete?"}>
         <div className={`${styles.informationContainer}`}>
           <div className={`${styles.textContent}`}>
             <div className={styles.textContentBus}>

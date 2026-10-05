@@ -14,7 +14,7 @@ export default function FotogaleriePage() {
     <Layout backgroundImage={"/backgrounds/brush1.svg"}>
       <HeaderContainer
         header={"Fotogalerie"}
-        subheader={"předchozích ročníků"}
+        subheader={"předchozích slavností"}
         rightText={headerParagraph}
       >
         <main className="">
